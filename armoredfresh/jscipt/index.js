@@ -63,7 +63,6 @@ window.addEventListener("wheel", (e) => {
   if (isTransitioning) return;
 
   if (e.deltaY > 0) {
-    //마우스 내릴때
     console.log(stage);
     // scroll down
     if (stage === 0) {
