@@ -1,0 +1,167 @@
+@charset "utf-8";
+@font-face {
+  font-family: "Archivo";
+  src: url(./font/Archivo/Archivo-Regular.ttf);
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(./font/Montserrat/Montserrat-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+body {
+  overflow: hidden;
+}
+header {
+  position: relative;
+  width: 100%;
+  height: 6rem;
+  /* position: fixed;
+        left: 0;
+        top: 0; */
+  background: #fff;
+  z-index: 9999;
+}
+header > .inner {
+  height: 100%;
+  padding: 0 3.1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header > .inner > .logo {
+  width: 15.6rem;
+}
+header > .inner > .logo a img {
+  max-width: 13.7rem;
+  width: 100%;
+}
+header > .inner > nav {
+  flex-grow: 1;
+}
+header > .inner > nav > ul {
+  display: flex;
+  justify-content: flex-end;
+}
+header > .inner > nav > ul > li > a {
+  font-family: "Archivo";
+  display: block;
+  padding: 0.9rem 1.6rem;
+  color: #000;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+header > .inner > .burger {
+  width: 26px;
+  height: 30px;
+  position: relative;
+  margin-left: 1.3rem;
+  cursor: pointer;
+}
+header > .inner > .burger > span {
+  display: block;
+  width: 26px;
+  height: 2px;
+  background: #000;
+  position: absolute;
+  left: 0;
+  top: 4px;
+  border-radius: 2px;
+}
+header > .inner > .burger > span:nth-child(2) {
+  top: 14px;
+}
+header > .inner > .burger > span:nth-child(3) {
+  top: 24px;
+}
+
+section {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  -webkit-appearance: none; /* Safari 등 안전장치 */
+}
+.visible {
+  opacity: 1;
+}
+
+/* 모든 기본 비디오 컨트롤 제거 (크롬, 사파리 등) */
+video::-webkit-media-controls {
+  display: none !important;
+  -webkit-appearance: none;
+}
+video::-webkit-media-controls-enclosure {
+  display: none !important;
+}
+video::-webkit-media-controls-panel {
+  display: none !important;
+  opacity: 0 !important;
+}
+video::-webkit-media-controls-start-playback-button {
+  display: none !important;
+  -webkit-appearance: none;
+}
+
+footer {
+  /* position: sticky;
+        left: 0;
+        top: 0; */
+  position: relative;
+  /* top: 100vh; */
+  max-width: 1230px;
+  margin: 0 auto;
+  /* margin-top: -12px; */
+  /* padding: 3.7rem 0; */
+  font-family: "Archivo";
+}
+footer > nav > ul {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+}
+footer > .bot {
+  padding: 3.8rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer > .bot > .add {
+  width: 50%;
+  position: relative;
+}
+footer > .bot > .add > .info {
+  font-family: "Montserrat";
+}
+footer > .bot > .add::after {
+  content: "";
+  position: absolute;
+  height: 5.6rem;
+  width: 2px;
+  background: #dcdcdc;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -4.4rem;
+}
