@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Caffebene</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      ul {
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+        color: #444;
+      }
+      nav {
+        display: flex;
+        width: 1190px;
+        height: 123px;
+        margin: 0 auto;
+        justify-content: space-between;
+        align-items: center;
+      }
+      nav .menu {
+        display: flex;
+        font-family: "Roboto", sans-serif;
+        font-size: 15px;
+        font-weight: 500;
+        margin-top: 20px;
+      }
+      nav > .menu > li {
+        padding: 0 29px;
+        position: relative;
+      }
+      nav > .menu > li:hover > a,
+      nav > .menu > li:hover > .sub a {
+        color: #3a466a;
+      }
+      nav > .menu > li .sub {
+        position: absolute;
+        left: 0;
+        padding-top: 60px;
+        width: 100%;
+        height: 180px;
+        text-align: center;
+        font-size: 14px;
+        opacity: 0;
+        z-index: 1;
+        line-height: 2;
+      }
+      nav > .menu > li .sub li:hover a {
+        text-decoration: underline;
+        font-weight: 700;
+      }
+      nav > .menu:hover > li .sub {
+        opacity: 1;
+      }
+      nav .subbg {
+        position: absolute;
+        left: 0;
+        top: 123px;
+        width: 100%;
+        height: 205px;
+        background: rgba(242, 242, 242, 0.9);
+        opacity: 0;
+      }
+      nav .menu:hover ~ .subbg {
+        opacity: 1;
+      }
+      nav .right {
+        position: relative;
+      }
+      nav .right .lang {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 8px;
+        font-family: "Noto Sans", sans-serif;
+        font-size: 12px;
+        font-weight: 700;
+        position: absolute;
+        right: 0;
+        top: -10px;
+      }
+      nav .right .lang li:nth-child(2)::before {
+        content: "|";
+        font-size: 10px;
+        color: #d4d4d4;
+        padding-right: 5px;
+      }
+      nav .right > a {
+        display: block;
+        width: 133px;
+        background: #00a5b1;
+        color: #fff;
+        text-align: center;
+        padding: 8px 0 9px;
+        margin-top: 20px;
+        border-radius: 20px;
+        font-family: "Noto Sans", sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+      }
+      .visual {
+        width: 100%;
+        max-width: 2560px;
+        height: 720px;
+        margin: 0 auto;
+        background-image: url(http://caffebene.co.kr/uploads/banner/20241128813084.jpg);
+        background-size: cover;
+        background-position: center;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="#">
+        <img src="http://caffebene.co.kr/images/common/logo.png" alt="logo" />
+      </a>
+      <ul class="menu">
+        <li>
+          <a href="#">CAFFEBENE</a>
+          <ul class="sub">
+            <li><a href="#">브랜드 스토리</a></li>
+            <li><a href="#">베네캣 스토리</a></li>
+            <li><a href="#">카페베네 원두</a></li>
+            <li><a href="#">카페베네 소식</a></li>
+            <li><a href="#">매거진</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">MENU</a>
+          <ul class="sub">
+            <li><a href="#">신메뉴</a></li>
+            <li><a href="#">커피</a></li>
+            <li><a href="#">음료</a></li>
+            <li><a href="#">푸드</a></li>
+            <li><a href="#">MD상품</a></li>
+            <li><a href="#">Retail</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">STORE</a>
+          <ul class="sub">
+            <li><a href="#">국내</a></li>
+            <li><a href="#">해외</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">MEMBERSHIP</a>
+          <ul class="sub">
+            <li><a href="#">등급&혜택</a></li>
+            <li><a href="#">가입방법안내</a></li>
+            <li><a href="#">서비스</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">GLOBAL</a>
+          <ul class="sub">
+            <li><a href="#">해외매장안내</a></li>
+            <li><a href="#">해외사업소개</a></li>
+            <li><a href="#">해외가맹&유통문의</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">CONTENTS</a>
+          <ul class="sub">
+            <li><a href="#">커피</a></li>
+            <li><a href="#">우리동네</a></li>
+            <li><a href="#">사람들</a></li>
+            <li><a href="#">메뉴</a></li>
+            <li><a href="#">이벤트</a></li>
+            <li><a href="#">매장</a></li>
+          </ul>
+        </li>
+      </ul>
+      <div class="right">
+        <ul class="lang">
+          <li><a href="#">KR</a></li>
+          <li><a href="#">EN</a></li>
+        </ul>
+        <a href="#">가맹문의</a>
+      </div>
+      <div class="subbg"></div>
+    </nav>
+    <div class="visual"></div>
+    <div class="content">
+      <h1>Contents</h1>
+      <div class="con">
+        <ul>
+          <li>
+            <a href="#">
+              <p>
+                <img
+                  src="http://www.caffebene.co.kr/uploads/content/20230209946028.jpg"
+                  alt=""
+                />
+              </p>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="side"></div>
+    </div>
+  </body>
+</html>
