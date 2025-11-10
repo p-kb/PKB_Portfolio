@@ -8,6 +8,6 @@ window.onscroll = function () {
     document.querySelector(".topInner2").style.top = "0";
   } else {
     document.querySelector("header").style.display = "block";
-    document.querySelector(".topInner2").style.top = "-60px";
+    document.querySelector(".topInner2").style.top = "-70px";
   }
 };

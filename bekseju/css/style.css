@@ -39,14 +39,14 @@ header .logo img {
 .topInner2 {
   position: fixed;
   z-index: 20;
-  top: -60px;
+  top: -70px;
   left: 0;
   width: 100%;
-  /* background-color: antiquewhite; */
   height: 36px;
   padding: 16px 0;
   background-color: #fefef2;
   transition: 0.5s;
+  text-transform: uppercase;
 }
 .topInner2 .top {
   display: flex;
@@ -62,7 +62,6 @@ section#maintop {
   position: sticky;
   top: 0px;
   bottom: 0;
-  /* left: 40px; */
   background-color: #fefef2;
 }
 section#maintop .inner {
@@ -232,6 +231,11 @@ main section div::after {
   background-image: url(https://www.bekseju.com/images/ph.png);
   z-index: 3;
 }
+
+footer {
+  position: relative;
+  z-index: 5;
+}
 .ftop {
   position: relative;
   z-index: 5;
@@ -239,10 +243,10 @@ main section div::after {
   height: 65px;
   margin-top: -7vmin;
 }
-footer {
-  position: relative;
-  z-index: 5;
-  /* padding-bottom: 32px; */
+.ftop img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 footer .ftag {
   background-color: #242902;
