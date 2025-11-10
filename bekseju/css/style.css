@@ -20,7 +20,7 @@ header {
 }
 header .topInner {
   width: 100%;
-  border-bottom: 1px solid #aaa;
+  border-bottom: 2px solid #aaa;
   padding-bottom: 20px;
 }
 header .top {
@@ -31,10 +31,11 @@ header .top {
   justify-content: space-between;
 }
 header .logo {
+  display: block;
   text-align: center;
 }
 header .logo img {
-  width: 300px;
+  height: 8vmin;
 }
 .topInner2 {
   position: fixed;
@@ -67,16 +68,17 @@ section#maintop {
 section#maintop .inner {
   height: 100%;
   margin: 0 40px;
-  border-left: 1px solid #aaa;
-  border-right: 1px solid #aaa;
+  border-left: 2px solid #aaa;
+  border-right: 2px solid #aaa;
+  position: relative;
 }
 section#maintop .visual {
   position: absolute;
-  top: 30%;
+  top: 25%;
   left: 50%;
   transform: translateX(-50%);
   width: calc(100% - 160px);
-  height: 72%;
+  height: 65%;
   background-image: url(https://www.bekseju.com/images/mainbg.jpg);
   background-size: cover;
   background-position: center;
@@ -84,21 +86,21 @@ section#maintop .visual {
 section#maintop .visual p {
   position: absolute;
   width: 12%;
-  /* height: 110%; */
+  height: 64vmin;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
 }
 section#maintop .visual p img {
-  width: 100%;
   object-fit: cover;
-  /* height: 100%; */
+  height: 100%;
 }
 section#maintop .scroll {
   position: absolute;
   bottom: 40px;
-  left: 50%;
-  transform: translateX(-50%);
+  width: 100%;
   font-size: 13px;
   color: #999;
   display: flex;
@@ -231,11 +233,6 @@ main section div::after {
   background-image: url(https://www.bekseju.com/images/ph.png);
   z-index: 3;
 }
-
-footer {
-  position: relative;
-  z-index: 5;
-}
 .ftop {
   position: relative;
   z-index: 5;
@@ -248,8 +245,43 @@ footer {
   height: 100%;
   object-fit: cover;
 }
-footer .ftag {
+footer {
+  position: relative;
+  z-index: 5;
+  padding-bottom: 32px;
   background-color: #242902;
+}
+footer .ftag {
   color: #fff;
   padding: 0 40px 50px;
+}
+footer .inner {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 40px;
+  padding-top: 14vmin;
+}
+footer .inner div {
+  display: flex;
+  gap: 24px;
+}
+footer .finfo .infoinner {
+  display: flex;
+  justify-content: flex-start;
+  margin: 0 40px;
+  padding-top: 6vmin;
+  gap: 5vmin;
+  position: relative;
+}
+footer .finfo .infoinner .logo {
+  width: 224px;
+}
+footer .finfo .infoinner a img {
+  width: 28px;
+}
+footer .finfo .infoinner .rlogo {
+  width: 108px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
