@@ -144,6 +144,7 @@ main section .txt a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  transition: 5s;
 }
 main section .txt a h3 {
   margin-top: 10%;
@@ -158,7 +159,9 @@ main section .txt a h5 {
 }
 main section:first-child .txt a {
   background-image: url(https://www.bekseju.com/images/main-story-bg.png);
+  transition: 5s;
 }
+
 main section:nth-child(2) .txt a {
   background-image: url(https://www.bekseju.com/images/main-craft-bg.png);
 }
@@ -168,6 +171,12 @@ main section:last-child .txt {
 main section:last-child .txt a {
   padding-top: 23px;
   background-image: url(https://www.bekseju.com/images/main-taste-bg.png);
+}
+main section:first-child .txt a:hover,
+main section:nth-child(2) .txt a:hover,
+main section:last-child .txt a:hover {
+  background-position: center;
+  background-size: 105%;
 }
 main section > div.photo {
   aspect-ratio: 1 / 1.34;
