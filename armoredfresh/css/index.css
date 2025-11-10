@@ -126,36 +126,38 @@ video::-webkit-media-controls-start-playback-button {
 }
 
 footer {
-  /* position: sticky;
-        left: 0;
-        top: 0; */
   position: relative;
-  /* top: 100vh; */
+  display: none;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: -12px;
+  padding: 3.7rem 0;
+  font-family: "Archivo";
+  background: #fafafa;
+}
+footer .finner {
   max-width: 1230px;
   margin: 0 auto;
-  /* margin-top: -12px; */
-  /* padding: 3.7rem 0; */
-  font-family: "Archivo";
 }
-footer > nav > ul {
+footer .finner > nav > ul {
   display: flex;
   justify-content: space-between;
   text-transform: uppercase;
 }
-footer > .bot {
+footer .finner > .bot {
   padding: 3.8rem 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-footer > .bot > .add {
+footer .finner > .bot > .add {
   width: 50%;
   position: relative;
 }
-footer > .bot > .add > .info {
+footer .finner > .bot > .add > .info {
   font-family: "Montserrat";
 }
-footer > .bot > .add::after {
+footer .finner > .bot > .add::after {
   content: "";
   position: absolute;
   height: 5.6rem;
