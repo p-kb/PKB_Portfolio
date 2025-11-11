@@ -6,7 +6,7 @@ const videos = {
   v5: "./video/main_render_5.mp4",
   loop6: "./video/main_render_6_loop.mp4",
   R3: "./video/main_render_R_3.mp4",
-  R2: "./video/main_render_R_3.mp4",
+  R2: "./video/main_render_R_2.mp4",
 };
 
 const videoA = document.getElementById("videoA");
