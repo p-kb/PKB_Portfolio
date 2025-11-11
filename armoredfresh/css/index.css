@@ -1,11 +1,11 @@
 @charset "utf-8";
 @font-face {
   font-family: "Archivo";
-  src: url(./font/Archivo/Archivo-Regular.ttf);
+  src: url(../font/Archivo/Archivo-Regular.ttf);
 }
 @font-face {
   font-family: "Montserrat";
-  src: url(./font/Montserrat/Montserrat-Regular.ttf);
+  src: url(../font/Montserrat/Montserrat-Regular.ttf);
 }
 
 * {
@@ -112,6 +112,7 @@ footer {
   margin-top: -12px;
   padding: 3.7rem 0;
   font-family: "Archivo";
+  line-height: 1.5;
   background: #fafafa;
 }
 footer .finner {
@@ -123,6 +124,11 @@ footer .finner > nav > ul {
   justify-content: space-between;
   text-transform: uppercase;
 }
+footer .finner > nav > ul li a {
+  padding: 0.6rem 0;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
 footer .finner > .bot {
   padding: 3.8rem 0;
   display: flex;
@@ -132,9 +138,32 @@ footer .finner > .bot {
 footer .finner > .bot > .add {
   width: 50%;
   position: relative;
+  color: #888888;
+}
+footer .finner > .bot > .add .logo {
+  margin-bottom: 1.3rem;
+}
+footer .finner > .bot > .add .logo img {
+  width: 14rem;
 }
 footer .finner > .bot > .add > .info {
   font-family: "Montserrat";
+  font-weight: 300;
+  font-size: 0.9rem;
+  margin-bottom: 0.3rem;
+}
+footer .finner > .bot > .add > .info span {
+  font-weight: 700;
+}
+footer .finner > .bot > .add > .info span.line {
+  display: inline-block;
+  height: 12px;
+  margin: 0 15px;
+  border-left: 1px solid #ccc;
+}
+footer .finner > .bot > .add .copy {
+  font-size: 0.7rem;
+  font-weight: 300;
 }
 footer .finner > .bot > .add::after {
   content: "";
@@ -145,4 +174,10 @@ footer .finner > .bot > .add::after {
   top: 50%;
   transform: translateY(-50%);
   right: -4.4rem;
+}
+footer .finner > .bot .sns a {
+  margin-left: 0.6rem;
+}
+footer .finner > .bot .sns a img {
+  width: 2.2rem;
 }

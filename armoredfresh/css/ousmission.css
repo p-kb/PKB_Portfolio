@@ -1,0 +1,149 @@
+@charset "utf-8";
+@charset "utf-8";
+@font-face {
+  font-family: "Archivo";
+  src: url(../font/Archivo/Archivo-Regular.ttf);
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(../font/Montserrat/Montserrat-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+header {
+  position: fixed;
+  width: 100%;
+  height: 6rem;
+  background: #fff;
+  z-index: 9999;
+}
+header > .inner {
+  height: 100%;
+  padding: 0 3.1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header > .inner > .logo {
+  width: 15.6rem;
+}
+header > .inner > .logo a img {
+  max-width: 13.7rem;
+  width: 100%;
+}
+header > .inner > nav {
+  flex-grow: 1;
+}
+header > .inner > nav > ul {
+  display: flex;
+  justify-content: flex-end;
+}
+header > .inner > nav > ul > li > a {
+  font-family: "Archivo";
+  display: block;
+  padding: 0.9rem 1.6rem;
+  color: #000;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+header > .inner > .burger {
+  width: 26px;
+  height: 30px;
+  position: relative;
+  margin-left: 1.3rem;
+  cursor: pointer;
+}
+header > .inner > .burger > span {
+  display: block;
+  width: 26px;
+  height: 2px;
+  background: #000;
+  position: absolute;
+  left: 0;
+  top: 4px;
+  border-radius: 2px;
+}
+header > .inner > .burger > span:nth-child(2) {
+  top: 14px;
+}
+header > .inner > .burger > span:nth-child(3) {
+  top: 24px;
+}
+
+section {
+  position: relative;
+  top: 6rem;
+}
+.visual {
+  width: 100%;
+}
+.visual .bg {
+  width: 100%;
+  position: relative;
+}
+.visual .bg video {
+  width: 100%;
+  height: calc(100% + 3px);
+}
+.visual .bg img {
+  width: 100%;
+  object-fit: cover;
+}
+.visual .bg .txt {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+footer {
+  position: relative;
+  top: 6rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 3.7rem 0;
+  font-family: "Archivo";
+  background: #fafafa;
+}
+footer .finner {
+  max-width: 1230px;
+  margin: 0 auto;
+}
+footer .finner > nav > ul {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+}
+footer .finner > .bot {
+  padding: 3.8rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .finner > .bot > .add {
+  width: 50%;
+  position: relative;
+}
+footer .finner > .bot > .add > .info {
+  font-family: "Montserrat";
+}
+footer .finner > .bot > .add::after {
+  content: "";
+  position: absolute;
+  height: 5.6rem;
+  width: 2px;
+  background: #dcdcdc;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -4.4rem;
+}
