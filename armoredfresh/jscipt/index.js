@@ -1,16 +1,12 @@
 const videos = {
-  intro:
-    "https://d29wx3mrk1ysd0.cloudfront.net/video/PC_main_render_1_intro.mp4",
-  loop2:
-    "https://d29wx3mrk1ysd0.cloudfront.net/video/PC_main_render_2_loop.mp4",
-  v3: "https://d29wx3mrk1ysd0.cloudfront.net/video/PC_main_render_3.mp4",
-  loop4:
-    "https://d29wx3mrk1ysd0.cloudfront.net/video/PC_main_render_4_loop.mp4",
-  v5: "https://d29wx3mrk1ysd0.cloudfront.net/video/PC_main_render_5.mp4",
-  loop6:
-    "https://d29wx3mrk1ysd0.cloudfront.net/video/PC_main_render_6_loop.mp4",
-  R3: "https://d29wx3mrk1ysd0.cloudfront.net/video/PC_main_render_R_3.mp4",
-  R2: "https://d29wx3mrk1ysd0.cloudfront.net/video/PC_main_render_R_2.mp4",
+  intro: "./video/main_intro.mp4",
+  loop2: "./video/main_render_2_loop.mp4",
+  v3: "./video/main_render_3.mp4",
+  loop4: "./video/main_render_4_loop.mp4",
+  v5: "./video/main_render_5.mp4",
+  loop6: "./video/main_render_6_loop.mp4",
+  R3: "./video/main_render_R_3.mp4",
+  R2: "./video/main_render_R_3.mp4",
 };
 
 const videoA = document.getElementById("videoA");

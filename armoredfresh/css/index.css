@@ -23,7 +23,7 @@ body {
   overflow: hidden;
 }
 header {
-  position: relative;
+  position: fixed;
   width: 100%;
   height: 6rem;
   background: #fff;
@@ -51,7 +51,7 @@ header > .inner > nav > ul {
   justify-content: flex-end;
 }
 header > .inner > nav > ul > li > a {
-  font-family: "Archivo";
+  font-family: "Archivo", sans-serif;
   display: block;
   padding: 0.9rem 1.6rem;
   color: #000;
@@ -111,7 +111,7 @@ footer {
   margin: 0 auto;
   margin-top: -12px;
   padding: 3.7rem 0;
-  font-family: "Archivo";
+  font-family: "Archivo", sans-serif;
   line-height: 1.5;
   background: #fafafa;
 }
@@ -147,7 +147,7 @@ footer .finner > .bot > .add .logo img {
   width: 14rem;
 }
 footer .finner > .bot > .add > .info {
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-weight: 300;
   font-size: 0.9rem;
   margin-bottom: 0.3rem;

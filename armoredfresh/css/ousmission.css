@@ -1,8 +1,11 @@
 @charset "utf-8";
-@charset "utf-8";
 @font-face {
   font-family: "Archivo";
   src: url(../font/Archivo/Archivo-Regular.ttf);
+}
+@font-face {
+  font-family: "Archivo_midi";
+  src: url(../font/Archivo/Archivo-Medium.ttf);
 }
 @font-face {
   font-family: "Montserrat";
@@ -84,26 +87,86 @@ header > .inner > .burger > span:nth-child(3) {
 section {
   position: relative;
   top: 6rem;
+  width: 100%;
 }
 .visual {
   width: 100%;
+  position: relative;
 }
 .visual .bg {
   width: 100%;
-  position: relative;
 }
-.visual .bg video {
-  width: 100%;
-  height: calc(100% + 3px);
-}
+.visual .bg video,
 .visual .bg img {
   width: 100%;
   object-fit: cover;
+  display: block;
 }
-.visual .bg .txt {
+.visual .txt {
   position: absolute;
-  left: 0;
-  top: 0;
+  padding: 0 1.6rem;
+  left: 1.9rem;
+  top: 12.5rem;
+  font-family: "Archivo", sans-serif;
+  color: #353535;
+}
+.visual:first-child .txt h5 {
+  color: #005059;
+  margin-bottom: 2.2rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+.visual:first-child .txt h1 {
+  font-family: "Archivo_midi";
+  color: #272626;
+  font-size: 4.7rem;
+  line-height: 0.9;
+  margin-left: -5px;
+  margin-bottom: 2.5rem;
+  font-weight: 450;
+}
+.visual:first-child .txt p {
+  font-size: 1.3rem;
+  font-weight: 350;
+  line-height: 1;
+  margin-bottom: 1.9rem;
+  color: #353535;
+}
+.visual:nth-child(2) .txt {
+  color: #ffffff;
+}
+.visual:nth-child(2) .txt h1 {
+  font-family: "Archivo_midi";
+  font-size: 4.7rem;
+  line-height: 0.9;
+  margin-left: -5px;
+  margin-bottom: 2.5rem;
+  font-weight: 450;
+}
+.visual:nth-child(2) .txt p {
+  font-size: 1.3rem;
+  font-weight: 350;
+  line-height: 1;
+  margin-bottom: 1.9rem;
+}
+.visual:nth-child(2) .txt h3 {
+  font-size: 1.9rem;
+  font-weight: 400;
+  line-height: 1.2;
+}
+.visual:nth-child(3) .txt h1 {
+  font-family: "Archivo_midi";
+  font-size: 4.7rem;
+  line-height: 0.9;
+  font-weight: 450;
+  margin-bottom: 2.5rem;
+}
+.visual:nth-child(3) .txt p {
+  font-size: 1.25rem;
+  font-weight: 350;
+  line-height: 1;
+  margin-bottom: 1.9rem;
 }
 
 footer {
@@ -112,7 +175,7 @@ footer {
   width: 100%;
   margin: 0 auto;
   padding: 3.7rem 0;
-  font-family: "Archivo";
+  font-family: "Archivo", sans-serif;
   background: #fafafa;
 }
 footer .finner {
@@ -124,6 +187,11 @@ footer .finner > nav > ul {
   justify-content: space-between;
   text-transform: uppercase;
 }
+footer .finner > nav > ul li a {
+  padding: 0.6rem 0;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
 footer .finner > .bot {
   padding: 3.8rem 0;
   display: flex;
@@ -133,9 +201,32 @@ footer .finner > .bot {
 footer .finner > .bot > .add {
   width: 50%;
   position: relative;
+  color: #888888;
+}
+footer .finner > .bot > .add .logo {
+  margin-bottom: 1.3rem;
+}
+footer .finner > .bot > .add .logo img {
+  width: 14rem;
 }
 footer .finner > .bot > .add > .info {
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 0.9rem;
+  margin-bottom: 0.3rem;
+}
+footer .finner > .bot > .add > .info span {
+  font-weight: 700;
+}
+footer .finner > .bot > .add > .info span.line {
+  display: inline-block;
+  height: 12px;
+  margin: 0 15px;
+  border-left: 1px solid #ccc;
+}
+footer .finner > .bot > .add .copy {
+  font-size: 0.7rem;
+  font-weight: 300;
 }
 footer .finner > .bot > .add::after {
   content: "";
@@ -146,4 +237,10 @@ footer .finner > .bot > .add::after {
   top: 50%;
   transform: translateY(-50%);
   right: -4.4rem;
+}
+footer .finner > .bot .sns a {
+  margin-left: 0.6rem;
+}
+footer .finner > .bot .sns a img {
+  width: 2.2rem;
 }
