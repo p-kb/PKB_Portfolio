@@ -1,0 +1,145 @@
+@charset "utf-8";
+@font-face {
+  font-family: "Archivo";
+  src: url(../font/Archivo/Archivo-Regular.ttf);
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(../font/Montserrat/Montserrat-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+header {
+  position: fixed;
+  width: 100%;
+  height: 6rem;
+  background: #fff;
+  z-index: 9999;
+  font-family: "Archivo", sans-serif;
+}
+header > .inner {
+  height: 100%;
+  padding: 0 3.1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header > .inner > .logo {
+  width: 15.6rem;
+}
+header > .inner > .logo a img {
+  max-width: 13.7rem;
+  width: 100%;
+}
+header > .inner > nav {
+  flex-grow: 1;
+}
+header > .inner > nav > ul {
+  display: flex;
+  justify-content: flex-end;
+}
+header > .inner > nav > ul > li > a {
+  display: block;
+  padding: 0.9rem 1.6rem;
+  color: #000;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+header > .inner > .burger {
+  width: 26px;
+  height: 30px;
+  position: relative;
+  margin-left: 1.3rem;
+  z-index: 100;
+  cursor: pointer;
+}
+header > .inner > .burger > span {
+  display: block;
+  width: 26px;
+  height: 2px;
+  background: #000;
+  position: absolute;
+  left: 0;
+  top: 4px;
+  border-radius: 2px;
+  transition: all 100ms ease-out;
+}
+header > .inner > .burger > span:nth-child(2) {
+  top: 14px;
+}
+header > .inner > .burger > span:nth-child(3) {
+  top: 24px;
+}
+header > .inner > .burger > span:nth-child(1).on {
+  top: 50%;
+  transform: translateY(-50%);
+  transform: rotate(45deg);
+}
+header > .inner > .burger > span:nth-child(2).on {
+  display: none;
+}
+header > .inner > .burger > span:nth-child(3).on {
+  top: 50%;
+  transform: translateY(-50%);
+  transform: rotate(135deg);
+}
+header > .inner > .submenu {
+  max-width: 340px;
+  width: 80%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: -340px;
+  background: #fff;
+  z-index: 50;
+  transition: all 0.6s ease-in-out;
+  font-size: 14px;
+}
+header > .inner > .submenu.on {
+  right: 0;
+}
+header > .inner > .submenu .sub {
+  padding: 3.2rem;
+  padding-top: 7.5rem;
+}
+header > .inner > .submenu .sub li a {
+  color: #000;
+  display: block;
+  padding: 0.6rem 0;
+  font-weight: 700;
+}
+header > .inner > .submenu .sub li a:hover {
+  color: #636363;
+}
+header > .inner > .submenu .sub li {
+  margin-top: 1.3rem;
+}
+header > .inner > .submenu .sub li.under a {
+  font-weight: 500;
+}
+.over {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  visibility: hidden;
+  opacity: 0;
+  z-index: 30;
+}
+.over.on {
+  opacity: 1;
+  visibility: visible;
+}
