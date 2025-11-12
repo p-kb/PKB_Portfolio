@@ -13,17 +13,25 @@ a {
   text-decoration: none;
   color: #444;
 }
+body {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
 header {
-  display: flex;
-  width: 1190px;
+  width: 100%;
   height: 123px;
+  background: #fff;
+}
+header .hinner {
+  width: 1190px;
+  height: 100%;
   margin: 0 auto;
+  display: flex;
   justify-content: space-between;
   align-items: center;
-  position: fixed;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 0;
 }
 nav .menu {
   display: flex;
@@ -49,7 +57,6 @@ nav > .menu > li .sub {
   text-align: center;
   font-size: 14px;
   opacity: 0;
-  z-index: 1;
   line-height: 2;
 }
 nav > .menu > li .sub li:hover a {
@@ -58,6 +65,7 @@ nav > .menu > li .sub li:hover a {
 }
 nav > .menu:hover > li .sub {
   opacity: 1;
+  z-index: 20;
 }
 nav .subbg {
   position: absolute;
@@ -70,6 +78,7 @@ nav .subbg {
 }
 nav .menu:hover ~ .subbg {
   opacity: 1;
+  z-index: 15;
 }
 header .right {
   position: relative;
@@ -79,7 +88,6 @@ header .right .lang {
   justify-content: flex-end;
   align-items: center;
   gap: 8px;
-  font-family: "Noto Sans", sans-serif;
   font-size: 12px;
   font-weight: 700;
   position: absolute;
@@ -111,9 +119,6 @@ header .right > a {
   max-width: 2560px;
   height: 720px;
   margin: 0 auto;
-  position: relative;
-  left: 0;
-  top: 123px;
 }
 .swiper {
   width: 100%;
@@ -132,4 +137,148 @@ header .right > a {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.swiper-pagination-bullet {
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  background: #b7b7b7;
+  opacity: 1;
+  transition: all 0.5s;
+}
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: 50px;
+}
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  margin: 0 10px;
+}
+.swiper-pagination-bullet-active {
+  background: #b7b7b7;
+  width: 86px;
+  margin: 0 10px;
+}
+
+.content {
+  width: 1190px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+.content > h1 {
+  padding: 60px 0 28px;
+  font-size: 22px;
+  font-weight: 500;
+  color: #3a466a;
+}
+.content .con {
+  width: 100%;
+  display: flex;
+}
+.content .con .leftcon {
+  width: 930px;
+}
+.content .con .leftcon ul {
+  position: relative;
+  height: 953.156px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.content .con .leftcon ul li {
+  width: 260px;
+  margin-right: 50px;
+  margin-bottom: 40px;
+}
+.content .con .leftcon ul li:nth-child(4) {
+  position: relative;
+  top: -124.578px;
+}
+.content .con .leftcon ul li a img {
+  width: 258px;
+  height: 100%;
+  object-fit: cover;
+}
+.content .con .leftcon .txt {
+  padding: 17px 0 20px;
+}
+.content .con .leftcon .txt .cate {
+  margin-bottom: 10px;
+  font-size: 12px;
+  color: #888;
+  font-weight: 500;
+}
+.content .con .leftcon .txt .el::before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 2px;
+  background: #3a466a;
+  top: 9px;
+  left: 0;
+  display: block;
+}
+.content .con .leftcon .txt .el {
+  color: #222;
+  font-size: 14px;
+  line-height: 1.43;
+  position: relative;
+  padding-left: 18px;
+  letter-spacing: -0.7px;
+}
+.content .con .leftcon .more {
+  margin: -16px 0 100px;
+  width: 117px;
+  margin: 0 auto;
+  height: 29px;
+  border: 1px solid #3a466a;
+  border-radius: 15px;
+}
+.content .con .leftcon .more a {
+  display: block;
+  color: #3a466a;
+  text-align: center;
+  line-height: 29px;
+  font-size: 12px;
+}
+.content .con .rightcon {
+  margin-bottom: 100px;
+  width: 260px;
+  background: #c8e2e0 url(http://www.caffebene.co.kr/images/m-cafe-bg.jpg)
+    no-repeat;
+}
+.content .con .rightcon h3 {
+  padding: 30px 20px 80px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #00a5b1;
+  line-height: 1.38;
+}
+.content .con .rightcon ul li {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.content .con .rightcon .txt {
+  padding: 30px 20px 20px;
+}
+.content .con .rightcon .txt p:first-child {
+  margin: 0 0 16px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+}
+.content .con .rightcon .txt p:nth-child(2) {
+  font-size: 14px;
+  color: #222;
+  line-height: 1.43;
+}
+.content .con .rightcon a {
+  display: inline-block;
+  width: 117px;
+  height: 29px;
+  line-height: 29px;
+  background: #00a5b1;
+  border-radius: 15px;
+  color: #fff;
+  font-size: 12px;
 }
