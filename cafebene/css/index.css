@@ -13,13 +13,17 @@ a {
   text-decoration: none;
   color: #444;
 }
-nav {
+header {
   display: flex;
   width: 1190px;
   height: 123px;
   margin: 0 auto;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
 }
 nav .menu {
   display: flex;
@@ -67,10 +71,10 @@ nav .subbg {
 nav .menu:hover ~ .subbg {
   opacity: 1;
 }
-nav .right {
+header .right {
   position: relative;
 }
-nav .right .lang {
+header .right .lang {
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -82,13 +86,13 @@ nav .right .lang {
   right: 0;
   top: -10px;
 }
-nav .right .lang li:nth-child(2)::before {
+header .right .lang li:nth-child(2)::before {
   content: "|";
   font-size: 10px;
   color: #d4d4d4;
   padding-right: 5px;
 }
-nav .right > a {
+header .right > a {
   display: block;
   width: 133px;
   background: #00a5b1;
@@ -101,12 +105,31 @@ nav .right > a {
   font-size: 14px;
   font-weight: 500;
 }
+
 .visual {
   width: 100%;
   max-width: 2560px;
   height: 720px;
   margin: 0 auto;
-  background-image: url(http://caffebene.co.kr/uploads/banner/20241128813084.jpg);
-  background-size: cover;
-  background-position: center;
+  position: relative;
+  left: 0;
+  top: 123px;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #444;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
