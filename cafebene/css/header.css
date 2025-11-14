@@ -1,0 +1,124 @@
+@charset "utf-8";
+@font-face {
+  font-family: "Noto Sans";
+  src: url(../font/Noto_Sans/static/NotoSans-Regular.ttf);
+}
+@font-face {
+  font-family: "Noto Sans KR";
+  src: url(../font/Noto_Sans_KR/static/NotoSansKR-Regular.ttf);
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(../font/Roboto/static/Roboto-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #444;
+}
+body {
+  font-family: "Noto Sans", "Noto Sans KR", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+header {
+  width: 100%;
+  height: 123px;
+  background: #fff;
+}
+header .hinner {
+  width: 1190px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .menu {
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 20px;
+}
+nav > .menu > li {
+  padding: 0 29px;
+  position: relative;
+}
+nav > .menu > li:hover > a,
+nav > .menu > li:hover > .sub a {
+  color: #3a466a;
+}
+nav > .menu > li .sub {
+  position: absolute;
+  left: 0;
+  padding-top: 60px;
+  width: 100%;
+  height: 180px;
+  text-align: center;
+  font-size: 14px;
+  opacity: 0;
+  line-height: 2;
+}
+nav > .menu > li .sub li:hover a {
+  text-decoration: underline;
+  font-weight: 700;
+}
+nav > .menu:hover > li .sub {
+  opacity: 1;
+  z-index: 20;
+}
+nav .subbg {
+  position: absolute;
+  left: 0;
+  top: 123px;
+  width: 100%;
+  height: 205px;
+  background: rgba(242, 242, 242, 0.9);
+  opacity: 0;
+}
+nav .menu:hover ~ .subbg {
+  opacity: 1;
+  z-index: 15;
+}
+header .right {
+  position: relative;
+}
+header .right .lang {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  font-weight: 700;
+  position: absolute;
+  right: 0;
+  top: -10px;
+}
+header .right .lang li:nth-child(2)::before {
+  content: "|";
+  font-size: 10px;
+  color: #d4d4d4;
+  padding-right: 5px;
+}
+header .right > a {
+  display: block;
+  width: 133px;
+  background: #00a5b1;
+  color: #fff;
+  text-align: center;
+  padding: 8px 0 9px;
+  margin-top: 20px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+}

@@ -1,0 +1,104 @@
+@charset "utf-8";
+@font-face {
+  font-family: "Noto Sans";
+  src: url(../font/Noto_Sans/static/NotoSans-Regular.ttf);
+}
+@font-face {
+  font-family: "Noto Sans KR";
+  src: url(../font/Noto_Sans_KR/static/NotoSansKR-Regular.ttf);
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(../font/Roboto/static/Roboto-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #444;
+}
+body {
+  font-family: "Noto Sans", "Noto Sans KR", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+footer {
+  width: 100%;
+  margin: 0 auto;
+}
+footer .ft {
+  width: 1190px;
+  margin: 0 auto;
+  padding-bottom: 27px;
+  display: flex;
+  justify-content: space-between;
+}
+footer .ft .infoa {
+  display: flex;
+  gap: 30px;
+}
+footer .ft .infoa a {
+  color: #3a466a;
+  font-weight: 800;
+  font-size: 14px;
+}
+footer .ft .infoa p {
+  color: #00a6b1;
+  font-weight: 800;
+  font-size: 14px;
+}
+footer .line {
+  width: 100%;
+  height: 3px;
+  background: #3a466a;
+}
+footer .fb {
+  width: 1190px;
+  margin: 0 auto;
+  padding: 25px 0 50px;
+  display: flex;
+  justify-content: space-between;
+}
+footer .fb .infob {
+  display: flex;
+}
+footer .fb .infob .logo img {
+  width: 100%;
+}
+footer .fb .infob .txt {
+  padding-left: 60px;
+}
+footer .fb .infob .txt span {
+  margin: 4px 0;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 500;
+}
+footer .fb .infob .txt .tt {
+  margin-right: 20px;
+}
+footer .fb .infob .txt .ts {
+  margin-right: 10px;
+}
+footer .fb .infob .txt .copy {
+  margin-top: 20px;
+  color: #b8b8b8;
+  font-weight: 300;
+  font-size: 12px;
+}
+footer .fb .sns {
+  display: flex;
+  gap: 10px;
+}
+footer .fb .sns li a {
+  width: 30px;
+  height: 30px;
+}

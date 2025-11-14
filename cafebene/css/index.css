@@ -1,6 +1,16 @@
 @charset "utf-8";
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@font-face {
+  font-family: "Noto Sans";
+  src: url(../font/Noto_Sans/static/NotoSans-Regular.ttf);
+}
+@font-face {
+  font-family: "Noto Sans KR";
+  src: url(../font/Noto_Sans_KR/static/NotoSansKR-Regular.ttf);
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(../font/Roboto/static/Roboto-Regular.ttf);
+}
 
 * {
   margin: 0;
@@ -14,104 +24,10 @@ a {
   color: #444;
 }
 body {
-  font-family: "Noto Sans", sans-serif;
+  font-family: "Noto Sans", "Noto Sans KR", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.2;
-}
-
-header {
-  width: 100%;
-  height: 123px;
-  background: #fff;
-}
-header .hinner {
-  width: 1190px;
-  height: 100%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-nav .menu {
-  display: flex;
-  font-family: "Roboto", sans-serif;
-  font-size: 15px;
-  font-weight: 500;
-  margin-top: 20px;
-}
-nav > .menu > li {
-  padding: 0 29px;
-  position: relative;
-}
-nav > .menu > li:hover > a,
-nav > .menu > li:hover > .sub a {
-  color: #3a466a;
-}
-nav > .menu > li .sub {
-  position: absolute;
-  left: 0;
-  padding-top: 60px;
-  width: 100%;
-  height: 180px;
-  text-align: center;
-  font-size: 14px;
-  opacity: 0;
-  line-height: 2;
-}
-nav > .menu > li .sub li:hover a {
-  text-decoration: underline;
-  font-weight: 700;
-}
-nav > .menu:hover > li .sub {
-  opacity: 1;
-  z-index: 20;
-}
-nav .subbg {
-  position: absolute;
-  left: 0;
-  top: 123px;
-  width: 100%;
-  height: 205px;
-  background: rgba(242, 242, 242, 0.9);
-  opacity: 0;
-}
-nav .menu:hover ~ .subbg {
-  opacity: 1;
-  z-index: 15;
-}
-header .right {
-  position: relative;
-}
-header .right .lang {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 8px;
-  font-size: 12px;
-  font-weight: 700;
-  position: absolute;
-  right: 0;
-  top: -10px;
-}
-header .right .lang li:nth-child(2)::before {
-  content: "|";
-  font-size: 10px;
-  color: #d4d4d4;
-  padding-right: 5px;
-}
-header .right > a {
-  display: block;
-  width: 133px;
-  background: #00a5b1;
-  color: #fff;
-  text-align: center;
-  padding: 8px 0 9px;
-  margin-top: 20px;
-  border-radius: 20px;
-  font-family: "Noto Sans", sans-serif;
-  font-size: 14px;
-  font-weight: 500;
 }
 
 .visual {
@@ -249,8 +165,7 @@ section {
 .content .con .rightcon {
   margin-bottom: 100px;
   width: 260px;
-  background: #c8e2e0 url(http://www.caffebene.co.kr/images/m-cafe-bg.jpg)
-    no-repeat;
+  background: #c8e2e0 url(../img/m-cafe-bg.jpg) no-repeat;
 }
 .content .con .rightcon h3 {
   padding: 30px 20px 80px;
@@ -376,10 +291,10 @@ section {
   background-position: 50% 50%;
 }
 .new .swiper-button-prev:after {
-  background-image: url(http://www.caffebene.co.kr/images/common/md-arr-left.png);
+  background-image: url(../img/slide-arr-left.png);
 }
 .new .swiper-button-next:after {
-  background-image: url(http://www.caffebene.co.kr/images/common/md-arr-right.png);
+  background-image: url(../img/slide-arr-right.png);
   background-position: 53% 50%;
 }
 
@@ -452,50 +367,4 @@ section {
   height: 100%;
   display: flex;
   flex-direction: column;
-}
-
-footer {
-  width: 100%;
-  margin: 0 auto;
-}
-footer .ft {
-  width: 1190px;
-  margin: 0 auto;
-  padding-bottom: 27px;
-  display: flex;
-  justify-content: space-between;
-}
-footer .ft .infoa {
-  display: flex;
-  gap: 30px;
-}
-footer .fb {
-  width: 1190px;
-  margin: 0 auto;
-  padding: 25px 0 50px;
-  display: flex;
-  justify-content: space-between;
-}
-footer .fb .infob {
-  display: flex;
-}
-footer .fb .infob .logo img {
-  width: 100%;
-}
-footer .fb .infob .txt {
-  padding-left: 60px;
-}
-footer .fb .infob .txt .tt {
-  margin: 4px 20px 4px 0;
-}
-footer .fb .infob .txt .ts {
-  margin: 4px 10px 4px 0;
-}
-footer .fb .sns {
-  display: flex;
-  gap: 10px;
-}
-footer .fb .sns li a {
-  width: 30px;
-  height: 30px;
 }
