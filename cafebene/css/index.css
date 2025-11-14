@@ -7,10 +7,6 @@
   font-family: "Noto Sans KR";
   src: url(../font/Noto_Sans_KR/static/NotoSansKR-Regular.ttf);
 }
-@font-face {
-  font-family: "Roboto";
-  src: url(../font/Roboto/static/Roboto-Regular.ttf);
-}
 
 * {
   margin: 0;
@@ -120,6 +116,37 @@ section {
   width: 258px;
   height: 100%;
   object-fit: cover;
+}
+.content .con .leftcon .item {
+  position: relative;
+}
+.con .leftcon .item .hv {
+  position: absolute;
+}
+.con .leftcon .item .cat1 {
+  top: -37px;
+  right: 10px;
+  width: 47px;
+}
+.con .leftcon .item .cat2 {
+  top: -43px;
+  right: 6px;
+  width: 64px;
+}
+.con .leftcon .item .cat3 {
+  top: -38px;
+  right: 22px;
+  width: 64px;
+}
+.con .leftcon .item .cat4 {
+  top: -46px;
+  right: 10px;
+  width: 60px;
+}
+.con .leftcon .item .cat5 {
+  top: -45px;
+  right: 6px;
+  width: 67px;
 }
 .content .con .leftcon .txt {
   padding: 17px 0 20px;

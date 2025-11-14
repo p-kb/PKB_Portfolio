@@ -25,3 +25,7 @@ var swiper2 = new Swiper(".mySwiper2", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+let cats = {};
+
+$(".item img").hover(function () {});

@@ -7,10 +7,6 @@
   font-family: "Noto Sans KR";
   src: url(../font/Noto_Sans_KR/static/NotoSansKR-Regular.ttf);
 }
-@font-face {
-  font-family: "Roboto";
-  src: url(../font/Roboto/static/Roboto-Regular.ttf);
-}
 
 * {
   margin: 0;

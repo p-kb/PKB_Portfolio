@@ -9,7 +9,7 @@
 }
 @font-face {
   font-family: "Roboto";
-  src: url(../font/Roboto/static/Roboto-Regular.ttf);
+  src: url(../font/Roboto/static/Roboto-Medium.ttf);
 }
 
 * {
@@ -23,17 +23,12 @@ a {
   text-decoration: none;
   color: #444;
 }
-body {
-  font-family: "Noto Sans", "Noto Sans KR", sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.2;
-}
 
 header {
   width: 100%;
   height: 123px;
   background: #fff;
+  z-index: 9999;
 }
 header .hinner {
   width: 1190px;
@@ -54,42 +49,44 @@ nav > .menu > li {
   padding: 0 29px;
   position: relative;
 }
-nav > .menu > li:hover > a,
-nav > .menu > li:hover > .sub a {
-  color: #3a466a;
-}
+
 nav > .menu > li .sub {
   position: absolute;
   left: 0;
   padding-top: 60px;
   width: 100%;
-  height: 180px;
+  height: 0;
+  overflow: hidden;
   text-align: center;
   font-size: 14px;
-  opacity: 0;
   line-height: 2;
+  z-index: 20;
 }
 nav > .menu > li .sub li:hover a {
   text-decoration: underline;
   font-weight: 700;
-}
-nav > .menu:hover > li .sub {
-  opacity: 1;
-  z-index: 20;
 }
 nav .subbg {
   position: absolute;
   left: 0;
   top: 123px;
   width: 100%;
-  height: 205px;
+  height: 0;
   background: rgba(242, 242, 242, 0.9);
-  opacity: 0;
-}
-nav .menu:hover ~ .subbg {
-  opacity: 1;
   z-index: 15;
 }
+
+.menu > li a.on,
+.menu > li > .sub a.on {
+  color: #3a466a;
+}
+.menu > li .sub.on {
+  height: 180px;
+}
+.subbg.on {
+  height: 205px;
+}
+
 header .right {
   position: relative;
 }
