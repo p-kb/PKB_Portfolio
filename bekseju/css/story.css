@@ -1,0 +1,186 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "ffmarkfont";
+  src: url(../font/ff-mark-font/FontFont_FF.Mark_.Pro_.Medium.otf);
+}
+@font-face {
+  font-family: "Pretendard";
+  src: url(../font/Pretendard-1.3.9/public/static/Pretendard-Regular.otf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+body {
+  font-family: "ffmarkfont", "Pretendard", sans-serif;
+  line-height: 1.6;
+  font-size: 0.9rem;
+}
+
+.topInner2 {
+  top: 0;
+}
+
+.visual {
+  background-image: url(https://www.bekseju.com/images/bg-story.jpg);
+  width: 100%;
+  height: calc(100vh - 68px);
+  margin-top: 68px;
+  position: relative;
+}
+.visual p.txt {
+  line-height: 1.6;
+  font-weight: 500;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 26px;
+  perspective: 1000px;
+  z-index: 4;
+  position: absolute;
+  left: 50%;
+  color: #fff;
+}
+
+.visual p:nth-child(2) {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+.visual img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.visual p:nth-child(2)::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 30%;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(35, 18, 9, 0),
+    rgba(35, 18, 9, 1)
+  );
+}
+
+main .sec {
+  position: relative;
+}
+main .sec > .bg::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 30%;
+  background-image: linear-gradient(
+    to top,
+    rgba(35, 18, 9, 0),
+    rgba(35, 18, 9, 1)
+  );
+}
+main .sec .bg {
+  width: 100%;
+  height: auto;
+}
+main .sec .img {
+  max-width: 32%;
+  position: absolute;
+}
+main .sec .ho {
+  max-width: 20%;
+}
+main .sec img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+main .sec #img1 {
+  top: 5%;
+  left: 7%;
+}
+main .sec #img2 {
+  top: 32%;
+  right: 7%;
+}
+main .sec #img3 {
+  top: 64%;
+  left: 7%;
+}
+main .sec #img4 {
+  bottom: 10%;
+  right: 7%;
+}
+main .sec .txt {
+  position: absolute;
+  color: #fefef2;
+  top: 35%;
+  left: 16%;
+  max-width: 32%;
+  font-size: 20px;
+}
+
+main .bo {
+  margin-top: -79px;
+  width: 100%;
+  height: 80px;
+  position: relative;
+  z-index: 5;
+}
+main .bo img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+main .desc {
+  background: #fffbc4;
+  padding: 120px 0;
+}
+main .descinner {
+  margin: 0 40px;
+}
+main .descinner .txt {
+  width: 34%;
+}
+main .descinner video {
+  width: 60%;
+  margin-left: 40%;
+}
+
+main .tes {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  background-image: url(https://www.bekseju.com/images/heritage-bg.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+main .tes .txt {
+  position: relative;
+}
+main .tes .txt::before,
+main .tes .txt::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  background-image: url(https://www.bekseju.com/images/heritage-line-ho.png);
+  top: 0;
+}
