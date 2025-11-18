@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>백세주</title>
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/story.css" />
     <link rel="stylesheet" href="css/footer.css" />
@@ -11,7 +11,7 @@
   <body>
     <div class="topInner2">
       <ul class="top">
-        <li><a href="#">story</a></li>
+        <li><a href="./story.html">story</a></li>
         <li><a href="#">craft</a></li>
         <li class="logo">
           <a href="./index.html"><img src="./img/logo.svg" alt="" /></a>
@@ -30,7 +30,9 @@
         <span>잇</span> <span>는</span><br />
         <span>향</span> <span>기</span>
       </p>
-      <p><img src="https://www.bekseju.com/images/story-san.png" alt="" /></p>
+      <p class="sanbg">
+        <img src="https://www.bekseju.com/images/story-san.png" alt="" />
+      </p>
     </section>
 
     <main>
@@ -41,7 +43,7 @@
         <p id="img1" class="img">
           <img src="https://www.bekseju.com/images/img-story-1.jpg" alt="" />
         </p>
-        <div class="txt">
+        <div class="txt animate">
           <h2>향기로운 우리 술</h2>
           <p>
             우리 술에는 깊은 향취가 있습니다. 쌀과 누룩으로 빚지만, 술을 빚는<br />
@@ -87,28 +89,40 @@
 
       <div class="tes">
         <div class="txt">
-          <p>Heritage Forward</p>
+          <h3>Heritage Forward</h3>
           <p class="line"></p>
-          <p>앞으로 나아가는 유산, 백세주</p>
+          <h3>앞으로 나아가는 유산, 백세주</h3>
         </div>
       </div>
 
+      <p class="bo2">
+        <img
+          src="https://www.bekseju.com/images/img-addscent-head.png"
+          alt=""
+        />
+      </p>
+
       <div class="aes">
-        <p>
-          <img src="https://www.bekseju.com/images/img-addscent.jpg" alt="" />
-        </p>
-        <div class="txt">
-          <h2>자연을 담아 빚는 가향주</h2>
+        <div class="aesinner">
           <p>
-            선조들은 자연의 제철 재료로 술을 빚었습니다. 봄에는 꽃을 더해 봄의
-            정취를 느끼고<br />
-            가을에는 갓 수확한 과일로 풍성함을 즐겼습니다. 자연의 재료를 더해
-            술을 빚던<br />
-            가향주 문화를 이어받아 오미자, 산수유 등의 자연 재료로 백세주를
-            빚습니다.
+            <img src="https://www.bekseju.com/images/img-addscent.jpg" alt="" />
           </p>
+          <div class="txt">
+            <h2>자연을 담아 빚는 가향주</h2>
+            <p>
+              선조들은 자연의 제철 재료로 술을 빚었습니다. 봄에는 꽃을 더해 봄의
+              정취를 느끼고<br />
+              가을에는 갓 수확한 과일로 풍성함을 즐겼습니다. 자연의 재료를 더해
+              술을 빚던<br />
+              가향주 문화를 이어받아 오미자, 산수유 등의 자연 재료로 백세주를
+              빚습니다.
+            </p>
+          </div>
         </div>
-        <div class="ces">
+      </div>
+
+      <div class="ces">
+        <div class="cesinner">
           <div class="txt">
             <h2>다양성이 완성한 합의 미학</h2>
             <p>
@@ -117,13 +131,13 @@
               풍미는 발효 과정에서 자연스럽게<br />
               생기는 산미와 향취를 만나 깊이 있는 맛의 향연을 만들어냅니다.
             </p>
-            <p>
-              <img
-                src="https://www.bekseju.com/images/plus-beauty-bg.jpg"
-                alt=""
-              />
-            </p>
           </div>
+          <p>
+            <img
+              src="https://www.bekseju.com/images/plus-beauty-bg.jpg"
+              alt=""
+            />
+          </p>
         </div>
       </div>
     </main>
@@ -155,7 +169,9 @@
               <li><p>COPYRIGHT © 2024 KOOKSOONDANG</p></li>
               <li><p>ALL RIGHTS RESERVED</p></li>
             </ul>
-            <a href="#"><img src="./img/ico-insta.svg" alt="" /></a>
+            <a href="https://www.instagram.com/bekseju.official/#"
+              ><img src="./img/ico-insta.svg" alt=""
+            /></a>
             <p class="rlogo">
               <img src="./img/logo-ksd.svg" alt="" />
             </p>
@@ -163,5 +179,8 @@
         </div>
       </section>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="./jscript/story.js"></script>
   </body>
 </html>

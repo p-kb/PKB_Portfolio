@@ -28,6 +28,9 @@ body {
 .topInner2 {
   top: 0;
 }
+.topInner2 .top li:first-child a {
+  color: #222;
+}
 
 .visual {
   background-image: url(https://www.bekseju.com/images/bg-story.jpg);
@@ -43,26 +46,37 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   font-size: 26px;
-  perspective: 1000px;
   z-index: 4;
   position: absolute;
   left: 50%;
   color: #fff;
 }
+.visual p.txt span {
+  position: relative;
+  top: 30px;
+  opacity: 0;
+}
 
-.visual p:nth-child(2) {
+.visual .sanbg {
   width: 100%;
   position: absolute;
   bottom: 0;
 }
-.visual img {
+.visual .sanbg img {
   width: 100%;
   height: auto;
   display: block;
+  transform: translate(0, 10px);
+  transition: 1s;
+  opacity: 0;
 }
-.visual p:nth-child(2)::after {
+.visual .sanbg img.active {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.visual .sanbg::after {
   content: "";
   position: absolute;
   left: 0;
@@ -99,6 +113,8 @@ main .sec .bg {
 main .sec .img {
   max-width: 32%;
   position: absolute;
+  filter: blur(10px);
+  opacity: 0;
 }
 main .sec .ho {
   max-width: 20%;
@@ -131,6 +147,18 @@ main .sec .txt {
   left: 16%;
   max-width: 32%;
   font-size: 20px;
+}
+main .sec .animate h2 {
+  filter: blur(5px);
+  position: relative;
+  top: 20px;
+  opacity: 0;
+}
+main .sec .animate p {
+  filter: blur(5px);
+  position: relative;
+  top: 20px;
+  opacity: 0;
 }
 
 main .bo {
@@ -174,6 +202,7 @@ main .tes {
   color: #fff;
 }
 main .tes .txt {
+  width: 90%;
   position: relative;
 }
 main .tes .txt::before,
@@ -181,6 +210,90 @@ main .tes .txt::after {
   content: "";
   position: absolute;
   width: 2px;
+  height: 0;
   background-image: url(https://www.bekseju.com/images/heritage-line-ho.png);
   top: 0;
+  transition: 1.5s ease;
+}
+main .tes .txt.active::before,
+main .tes .txt.active::after {
+  height: 100%;
+}
+main .tes .txt::before {
+  left: 0;
+}
+main .tes .txt::after {
+  right: 0;
+}
+main .tes .txt h3 {
+  line-height: 1.5;
+  margin: 10px 0;
+}
+main .tes .txt h3 span {
+  opacity: 0;
+}
+main .tes .txt .line {
+  width: 0;
+  height: 2px;
+  background-image: url(https://www.bekseju.com/images/heritage-line-w.png);
+  background-position: center;
+  transition: 1.5s ease;
+}
+
+.bo2 {
+  margin-top: -39px;
+  height: 40px;
+  width: 100%;
+  position: relative;
+  z-index: 5;
+}
+.bo2 img {
+  width: 100%;
+  height: 100%;
+}
+
+main .aes {
+  width: 100%;
+  background-color: #fffde7;
+  padding: 120px 0;
+}
+main .aes .aesinner {
+  width: calc(100% - 80px);
+  height: 100%;
+  display: flex;
+  gap: 10%;
+  margin: 0 40px;
+}
+main .aes .aesinner > * {
+  flex: 1;
+}
+main .aes img {
+  width: 100%;
+}
+main .aes .aesinner .txt {
+  width: 34%;
+}
+
+main .ces {
+  width: 100%;
+  padding: 120px 0 240px;
+  background-color: #fefef2;
+}
+main .ces .cesinner {
+  margin: 0 40px;
+  box-sizing: border-box;
+}
+main .ces .cesinner .txt {
+  text-align: center;
+  max-width: 800px;
+  width: 64%;
+  margin: 0 auto;
+  margin-bottom: 64px;
+}
+main .ces .cesinner > p {
+  width: 100%;
+}
+main .ces .cesinner img {
+  width: 100%;
+  display: block;
 }
