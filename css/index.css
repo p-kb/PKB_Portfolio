@@ -1,0 +1,223 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+ul {
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background: #0a0a0a;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  z-index: 20;
+  background-color: #0a0a0a;
+}
+header #menu {
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 50px;
+  gap: 20px;
+}
+
+#section0 {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  text-align: center;
+}
+#section0 h1 {
+  color: #fff;
+  padding-top: 670px;
+}
+#section0 p {
+  width: 100%;
+  height: 20vh;
+  background: #b90e0a;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding-top: 30px;
+}
+
+#section1 {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  color: #fff;
+}
+#section1 .title {
+  margin-top: 150px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 100px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-block;
+}
+#section1 .title::after {
+  content: "";
+  width: 120%;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -20px;
+}
+.profile {
+  display: flex;
+  gap: 200px;
+}
+.profile > p {
+  width: 250px;
+  height: 350px;
+  background: #fff;
+  border-radius: 100%;
+}
+.profile .pinner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+#name {
+  text-align: left;
+  grid-column: 1 / span 2;
+}
+#name h1 {
+  font-weight: 600;
+}
+#name .nb {
+  display: flex;
+  gap: 20px;
+  align-items: flex-end;
+}
+#name .name {
+  font-size: 2em;
+}
+#name .bir {
+  display: inline-block;
+  font-size: 1em;
+}
+#name .list {
+  display: flex;
+  gap: 100px;
+}
+#name .list li {
+  padding: 10px 0;
+}
+#name h1 {
+  color: #fff;
+  font-size: 3em;
+}
+.edu h1 {
+  color: #fff;
+  font-size: 3em;
+  font-weight: 600;
+  margin-bottom: 60px;
+}
+.edu .year {
+  font-size: 1.5em;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.edu .infoa {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+.edu .infob {
+  font-size: 1.2em;
+  margin-bottom: 40px;
+}
+.skills h1 {
+  color: #fff;
+  font-size: 3em;
+  font-weight: 600;
+  margin-bottom: 60px;
+}
+.skills ul {
+  width: 300px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+.skills ul li p {
+  width: 60px;
+  height: 60px;
+}
+.skills ul li p img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.motto {
+  width: 100%;
+  background: #b50000;
+  color: #fff;
+}
+.motto h1 {
+  font-weight: 600;
+  color: #fff;
+}
+
+#section2 .tit {
+  color: #fff;
+  margin: 150px 50px 100px;
+  text-align: left;
+}
+.pwrap {
+  display: flex;
+  gap: 200px;
+  margin-bottom: 200px;
+}
+.pwrap:nth-child(even) {
+  flex-direction: row-reverse;
+}
+.pwrap:nth-child(even) .txt {
+  padding-left: 30px;
+  padding-right: 20%;
+}
+.pwrap .txt {
+  background: #b50000;
+  width: 300px;
+  height: 400px;
+  text-align: left;
+  padding-left: 20%;
+  padding-right: 30px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+.txtwrap .winfo {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  font-size: 0.6em;
+}
+.pwrap > p {
+  width: 50%;
+  height: 400px;
+}
+.pwrap > p img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
