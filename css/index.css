@@ -1,4 +1,12 @@
 @charset "utf-8";
+@font-face {
+  font-family: "Caveat";
+  src: url(/font/Caveat-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "Inter";
+  src: url(/font/Inter-VariableFont_opsz\,wght.ttf);
+}
 
 * {
   margin: 0;
@@ -36,26 +44,100 @@ header #menu {
   padding-right: 50px;
   gap: 20px;
 }
+header #menu a:hover {
+  color: #aaa;
+}
 
 #section0 {
   width: 100%;
   height: 100vh;
   position: relative;
   text-align: center;
+  overflow: hidden;
 }
 #section0 h1 {
   color: #fff;
-  padding-top: 670px;
+  font-size: 7em;
+  padding-top: 55vh;
+  color: #b90e0a;
+  font-family: "Inter";
+  font-weight: 800;
 }
 #section0 p {
   width: 100%;
-  height: 20vh;
+  height: 30vh;
   background: #b90e0a;
-  color: #fff;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  padding-top: 30px;
+  padding-top: 10px;
+  font-family: "Caveat";
+  font-size: 3em;
+  position: relative;
+  color: #777;
+  text-shadow: none;
+  animation: neonStartup 4s forwards;
+}
+@keyframes neonStartup {
+  /* 빠른 깜빡임 구간 (0%~25%) */
+  0%,
+  4%,
+  8%,
+  12%,
+  16%,
+  20%,
+  22%,
+  25% {
+    color: #fff;
+    text-shadow: 0 0 8px #fff, 0 0 20px #ff6666, 0 0 40px #ff3333;
+  }
+
+  /* 꺼진 상태들 */
+  2%,
+  6%,
+  10%,
+  14%,
+  18%,
+  21%,
+  23% {
+    color: #aaa;
+    text-shadow: none;
+  }
+
+  /* 1번 깜빡임 */
+  35% {
+    color: #fff;
+    text-shadow: 0 0 10px #fff, 0 0 25px #ff7777, 0 0 40px #ff4444;
+  }
+  45% {
+    color: #bbb;
+    text-shadow: none;
+  }
+
+  /* 2번 깜빡임 */
+  55% {
+    color: #fff;
+    text-shadow: 0 0 14px #fff, 0 0 30px #ff8888, 0 0 50px #ff4444;
+  }
+  65% {
+    color: #bbb;
+    text-shadow: none;
+  }
+
+  /* 3번 깜빡임 */
+  73% {
+    color: #fff;
+    text-shadow: 0 0 10px #fff, 0 0 22px #ff8888, 0 0 35px #ff5555,
+      0 0 50px #ff3333;
+  }
+  86% {
+    color: #bbb;
+    text-shadow: none;
+  }
+
+  /* 완전히 켜진 상태 (100%) */
+  100% {
+    color: #fff;
+    text-shadow: 0 0 12px #fff, 0 0 30px #ff6666, 0 0 50px #ff3333,
+      0 0 70px #ff1111;
+  }
 }
 
 #section1 {
@@ -63,12 +145,12 @@ header #menu {
   height: 100vh;
   position: relative;
   color: #fff;
+  overflow: hidden;
 }
 #section1 .title {
-  margin-top: 150px;
+  margin: 100px 0 100px;
   font-weight: 600;
   color: #fff;
-  margin-bottom: 100px;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
@@ -94,11 +176,13 @@ header #menu {
   height: 350px;
   background: #fff;
   border-radius: 100%;
+  overflow: hidden;
+  margin-top: 80px;
 }
 .profile .pinner {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 50px;
+  gap: 50px 80px;
 }
 #name {
   text-align: left;
@@ -112,13 +196,14 @@ header #menu {
   display: flex;
   gap: 20px;
   align-items: flex-end;
+  margin-bottom: 20px;
 }
 #name .name {
-  font-size: 2em;
+  font-size: 1.5em;
 }
 #name .bir {
   display: inline-block;
-  font-size: 1em;
+  font-size: 0.8em;
 }
 #name .list {
   display: flex;
@@ -129,32 +214,33 @@ header #menu {
 }
 #name h1 {
   color: #fff;
-  font-size: 3em;
+  font-size: 2em;
+  margin-bottom: 30px;
 }
 .edu h1 {
   color: #fff;
-  font-size: 3em;
+  font-size: 2em;
   font-weight: 600;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 }
 .edu .year {
-  font-size: 1.5em;
+  font-size: 0.8em;
   font-weight: 400;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .edu .infoa {
-  font-size: 2em;
-  margin-bottom: 20px;
+  font-size: 1.2em;
+  margin-bottom: 10px;
 }
 .edu .infob {
-  font-size: 1.2em;
-  margin-bottom: 40px;
+  font-size: 1em;
+  margin-bottom: 20px;
 }
 .skills h1 {
   color: #fff;
-  font-size: 3em;
+  font-size: 2em;
   font-weight: 600;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 }
 .skills ul {
   width: 200px;
@@ -172,18 +258,24 @@ header #menu {
 }
 
 .motto {
+  position: absolute;
+  left: 0;
+  bottom: 0;
   width: 100%;
-  background: #b50000;
+  height: 70px;
+  background: #b90e0a;
   color: #fff;
+  text-align: center;
 }
 .motto h1 {
   font-weight: 600;
   color: #fff;
+  line-height: 70px;
 }
 
-#section2 .tit {
+.tit {
   color: #fff;
-  margin: 150px 50px 100px;
+  padding: 150px 50px 100px;
   text-align: left;
 }
 .pwrap {
@@ -195,25 +287,36 @@ header #menu {
   flex-direction: row-reverse;
 }
 .pwrap:nth-child(even) .txt {
-  padding-left: 30px;
+  padding-left: 50px;
   padding-right: 20%;
+  text-align: left;
 }
 .pwrap .txt {
-  background: #b50000;
-  width: 300px;
+  background: #b90e0a;
+  /* width: 300px; */
   height: 400px;
-  text-align: left;
+  text-align: right;
   padding-left: 20%;
-  padding-right: 30px;
+  padding-right: 50px;
   display: flex;
   align-items: center;
   color: #fff;
+}
+.txtwrap .site {
+  margin-bottom: 20px;
+}
+.txtwrap .work {
+  margin-bottom: 10px;
 }
 .txtwrap .winfo {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
   font-size: 0.6em;
+  margin-bottom: 20px;
+}
+.pwrap:nth-child(odd) .txtwrap .winfo p:nth-child(4) {
+  grid-column: 2/3;
 }
 .pwrap > p {
   width: 50%;
@@ -222,5 +325,60 @@ header #menu {
 .pwrap > p img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
+}
+
+#section3 .pwrap {
+  gap: 100px;
+}
+#section3 .pwrap:nth-child(even) .txt {
+  padding-left: 50px;
+  padding-right: 30%;
+}
+#section3 .pwrap .txt {
+  padding-left: 30%;
+  padding-right: 50px;
+}
+
+footer {
+  width: 100%;
+  height: 300px;
+  margin-top: 300px;
+  background: #b90e0a;
+}
+footer .icon {
+  margin: 0 auto;
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12%;
+}
+footer .icon a {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border: 3px solid #fff;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 13px;
+}
+footer .icon a img {
+  width: 100%;
+  object-fit: cover;
+}
+footer .icon a:first-child img {
+  margin-left: 14px;
+}
+footer > a {
+  display: block;
+  width: 70px;
+  height: 70px;
+  margin: 50px auto 0;
+}
+footer > a img {
+  width: 100%;
   object-fit: cover;
 }

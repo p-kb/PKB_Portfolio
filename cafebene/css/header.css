@@ -62,6 +62,9 @@ nav > .menu > li .sub {
   line-height: 2;
   z-index: 20;
 }
+nav > .menu > li .sub a {
+  font-weight: 400;
+}
 nav > .menu > li .sub li:hover a {
   text-decoration: underline;
   font-weight: 700;

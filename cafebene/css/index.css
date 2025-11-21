@@ -87,7 +87,7 @@ section {
 .content > h1 {
   padding: 60px 0 28px;
   font-size: 22px;
-  font-weight: 500;
+  font-weight: 600;
   color: #3a466a;
 }
 .content .con {
@@ -240,7 +240,7 @@ section {
 }
 .new h1 {
   font-size: 22px;
-  font-weight: 500;
+  font-weight: 600;
   color: #3a466a;
 }
 .new .swiper {
