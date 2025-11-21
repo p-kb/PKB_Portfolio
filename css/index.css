@@ -315,6 +315,8 @@ header #menu a:hover {
   font-size: 0.6em;
   margin-bottom: 20px;
 }
+.txtwrap .link {
+}
 .pwrap:nth-child(odd) .txtwrap .winfo p:nth-child(4) {
   grid-column: 2/3;
 }
