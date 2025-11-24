@@ -309,23 +309,23 @@ header #menu a:hover {
 
 .pwrap .txt {
   background: #b90e0a;
-  /* width: 300px; */
+  width: 50%;
+  max-width: 600px;
   height: 400px;
   text-align: right;
-  padding-left: 20%;
-  padding-right: 50px;
   display: flex;
+  justify-content: flex-end;
+  padding: 0 50px;
   align-items: center;
   color: #fff;
 }
 .pwrap:nth-child(even) .txt {
-  padding-left: 50px;
-  padding-right: 20%;
+  justify-content: flex-start;
   text-align: left;
 }
 
 .txtwrap .site {
-  font-size: 1.5em;
+  font-size: 1.7em;
   font-weight: 700;
   margin-bottom: 20px;
 }
@@ -340,6 +340,12 @@ header #menu a:hover {
   gap: 20px;
   font-size: 0.9em;
   margin-bottom: 30px;
+}
+.pwrap:nth-child(3) .txtwrap .winfo {
+  grid-template-columns: 1fr 1fr;
+}
+#section3 .winfo {
+  grid-template-columns: 1fr;
 }
 .txtwrap .link {
   display: flex;
@@ -358,7 +364,7 @@ header #menu a:hover {
   width: 100%;
   object-fit: cover;
 }
-.pwrap:nth-child(odd) .txtwrap .winfo p:nth-child(4) {
+.pwrap:nth-child(1) .txtwrap .winfo p:nth-child(4) {
   grid-column: 2/3;
 }
 .pwrap > p {
@@ -450,12 +456,20 @@ footer > a img {
   }
   .pwrap .txt {
     text-align: center;
-    padding: 0 15%;
+    justify-content: center;
   }
-  .pwrap:nth-child(odd) .txtwrap .winfo p:nth-child(4) {
+  .pwrap:nth-child(even) .txt {
+    text-align: center;
+    justify-content: center;
+  }
+
+  .pwrap:nth-child(1) .txtwrap .winfo p:nth-child(4) {
     grid-column: 1;
   }
   .txtwrap .link {
+    justify-content: center;
+  }
+  .pwrap:nth-child(even) .txtwrap .link {
     justify-content: center;
   }
   .pwrap > p {

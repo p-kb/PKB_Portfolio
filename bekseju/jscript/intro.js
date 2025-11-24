@@ -23,6 +23,6 @@ $(function () {
     .fadeIn(700)
     .animate({ opacity: 1 }, { duration: 2000 })
     .fadeOut(1000, function () {
-      window.location.href = "/bekseju/index.html";
+      window.location.href = "/bekseju/main.html";
     });
 });
