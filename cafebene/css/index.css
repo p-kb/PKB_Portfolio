@@ -19,6 +19,9 @@ a {
   text-decoration: none;
   color: #444;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Noto Sans", "Noto Sans KR", sans-serif;
   font-size: 14px;
