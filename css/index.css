@@ -73,7 +73,7 @@ header #menu a:hover {
   position: relative;
   color: #777;
   text-shadow: none;
-  animation: neonStartup 4s forwards;
+  animation: neonStartup 4s 1s forwards;
 }
 @keyframes neonStartup {
   /* 빠른 깜빡임 구간 (0%~25%) */
@@ -107,7 +107,7 @@ header #menu a:hover {
     text-shadow: 0 0 10px #fff, 0 0 25px #ff7777, 0 0 40px #ff4444;
   }
   45% {
-    color: #bbb;
+    color: #ccc;
     text-shadow: none;
   }
 
@@ -117,13 +117,13 @@ header #menu a:hover {
     text-shadow: 0 0 14px #fff, 0 0 30px #ff8888, 0 0 50px #ff4444;
   }
   65% {
-    color: #bbb;
+    color: #ccc;
     text-shadow: none;
   }
 
   /* 3번 깜빡임 */
   73% {
-    color: #fff;
+    color: #ccc;
     text-shadow: 0 0 10px #fff, 0 0 22px #ff8888, 0 0 35px #ff5555,
       0 0 50px #ff3333;
   }
@@ -148,7 +148,7 @@ header #menu a:hover {
   overflow: hidden;
 }
 #section1 .title {
-  margin: 100px 0 100px;
+  margin: 80px 0 70px;
   font-weight: 600;
   color: #fff;
   position: relative;
@@ -168,7 +168,12 @@ header #menu a:hover {
 }
 .profile {
   display: flex;
-  gap: 200px;
+  width: 95%;
+  max-width: 1280px;
+  margin: 0 auto;
+  height: 70vh;
+  /* gap: 200px; */
+  gap: 50px;
   justify-content: center;
 }
 .profile > p {
@@ -178,19 +183,21 @@ header #menu a:hover {
   border-radius: 100%;
   overflow: hidden;
   margin-top: 80px;
+  flex-shrink: 0;
 }
 .profile .pinner {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 50px 80px;
+  gap: 10px 80px;
 }
 #name {
   text-align: left;
   grid-column: 1 / span 2;
 }
 #name h1 {
-  font-size: 10px;
+  font-size: 2em;
   font-weight: 500;
+  margin-bottom: 30px;
 }
 #name .nb {
   display: flex;
@@ -211,11 +218,6 @@ header #menu a:hover {
 }
 #name .list li {
   padding: 10px 0;
-}
-#name h1 {
-  color: #fff;
-  font-size: 2em;
-  margin-bottom: 30px;
 }
 .edu h1 {
   color: #fff;
@@ -241,11 +243,13 @@ header #menu a:hover {
   font-size: 2em;
   font-weight: 600;
   margin-bottom: 30px;
+  text-align: center;
 }
 .skills ul {
   width: 200px;
+  margin: 0 auto;
   display: grid;
-  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
 .skills ul li p {
@@ -258,9 +262,6 @@ header #menu a:hover {
 }
 
 .motto {
-  position: absolute;
-  left: 0;
-  bottom: 0;
   width: 100%;
   height: 70px;
   background: #b90e0a;
@@ -268,6 +269,7 @@ header #menu a:hover {
   text-align: center;
 }
 .motto h1 {
+  height: 100%;
   font-weight: 600;
   color: #fff;
   line-height: 70px;
@@ -275,8 +277,21 @@ header #menu a:hover {
 
 .tit {
   color: #fff;
-  padding: 150px 50px 100px;
+  margin: 100px 50px;
   text-align: left;
+  position: relative;
+  display: inline-block;
+}
+.tit::after {
+  content: "";
+  width: 120%;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -20px;
+  content: "";
 }
 .pwrap {
   display: flex;
@@ -286,11 +301,7 @@ header #menu a:hover {
 .pwrap:nth-child(even) {
   flex-direction: row-reverse;
 }
-.pwrap:nth-child(even) .txt {
-  padding-left: 50px;
-  padding-right: 20%;
-  text-align: left;
-}
+
 .pwrap .txt {
   background: #b90e0a;
   /* width: 300px; */
@@ -302,46 +313,59 @@ header #menu a:hover {
   align-items: center;
   color: #fff;
 }
+.pwrap:nth-child(even) .txt {
+  padding-left: 50px;
+  padding-right: 20%;
+  text-align: left;
+}
+
 .txtwrap .site {
+  font-size: 1.5em;
+  font-weight: 700;
   margin-bottom: 20px;
 }
 .txtwrap .work {
-  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 1.2em;
+  margin-bottom: 20px;
 }
 .txtwrap .winfo {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
-  font-size: 0.6em;
-  margin-bottom: 20px;
+  font-size: 0.9em;
+  margin-bottom: 30px;
 }
 .txtwrap .link {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+.pwrap:nth-child(even) .txtwrap .link {
+  justify-content: flex-start;
+}
+.txtwrap .link a {
+  display: block;
+  width: 40px;
+  height: 40px;
+}
+.txtwrap .link a img {
+  width: 100%;
+  object-fit: cover;
 }
 .pwrap:nth-child(odd) .txtwrap .winfo p:nth-child(4) {
   grid-column: 2/3;
 }
 .pwrap > p {
   width: 50%;
+  margin: 0 auto;
   height: 400px;
 }
 .pwrap > p img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
-
-#section3 .pwrap {
-  gap: 100px;
-}
-#section3 .pwrap:nth-child(even) .txt {
-  padding-left: 50px;
-  padding-right: 30%;
-}
-#section3 .pwrap .txt {
-  padding-left: 30%;
-  padding-right: 50px;
-}
-
 footer {
   width: 100%;
   height: 300px;
@@ -349,12 +373,13 @@ footer {
   background: #b90e0a;
 }
 footer .icon {
+  width: 800px;
   margin: 0 auto;
   padding-top: 50px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 12%;
+  /* gap: 40px; */
 }
 footer .icon a {
   display: block;
@@ -383,4 +408,149 @@ footer > a {
 footer > a img {
   width: 100%;
   object-fit: cover;
+}
+@media screen and (max-width: 1170px) {
+  .profile .pinner {
+    grid-template-columns: 1fr 0.5fr;
+    gap: 10px 40px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  header #menu {
+    justify-content: center;
+    padding-right: 0px;
+  }
+  .profile > p {
+    display: none;
+  }
+  .tit {
+    margin: 100px 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .pwrap {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 50px;
+  }
+  .pwrap:nth-child(even) {
+    flex-direction: column-reverse;
+  }
+  .pwrap .txt {
+    text-align: center;
+    padding: 0 15%;
+  }
+  .pwrap:nth-child(odd) .txtwrap .winfo p:nth-child(4) {
+    grid-column: 1;
+  }
+  .txtwrap .link {
+    justify-content: center;
+  }
+  .pwrap > p {
+    width: 90%;
+  }
+  #section2 .pwrap:nth-child(1) > p,
+  #section2 .pwrap:nth-child(2) > p {
+    margin-left: 60px;
+  }
+  footer .icon {
+    width: 600px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #section0 h1 {
+    font-size: 13vw;
+  }
+  #section0 p {
+    font-size: 10vw;
+  }
+  #section1 {
+    height: auto;
+  }
+  .profile {
+    height: auto;
+  }
+  #name {
+    text-align: left;
+    grid-column: 1;
+  }
+  .profile .pinner {
+    grid-template-columns: 1fr;
+    /* gap: 10px; */
+    row-gap: 50px;
+  }
+  #name {
+    justify-content: center;
+  }
+  #name h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  #name .nb {
+    /* justify-content: center; */
+    margin-left: 30px;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  #name .list {
+    gap: 50px;
+    justify-content: center;
+  }
+  .edu h1 {
+    text-align: center;
+  }
+  .motto {
+    margin-top: 50px;
+  }
+  .pwrap {
+    gap: 10px;
+  }
+  .pwrap > p {
+    height: 300px;
+  }
+  #section2 .pwrap:nth-child(1) > p,
+  #section2 .pwrap:nth-child(2) > p {
+    margin-left: 30px;
+  }
+  footer .icon {
+    width: 95%;
+    max-width: 500px;
+  }
+  footer .icon a {
+    width: 40px;
+    height: 40px;
+  }
+  footer .icon a:first-child img {
+    margin-left: 6px;
+  }
+}
+@media screen and (max-width: 480px) {
+  #section0 h1 {
+    font-size: 13vw;
+  }
+  #section0 p {
+    font-size: 30px;
+  }
+  .pwrap {
+    gap: 10px;
+    margin-bottom: 60px;
+  }
+  #section2 .pwrap:nth-child(1) > p,
+  #section2 .pwrap:nth-child(2) > p {
+    margin-left: 30px;
+  }
+  footer {
+    margin-top: 200px;
+  }
+  footer .icon {
+    width: 75%;
+  }
+  footer .icon a {
+    width: 20px;
+    height: 20px;
+  }
+  footer .icon a:first-child img {
+    margin-left: 6px;
+  }
 }
