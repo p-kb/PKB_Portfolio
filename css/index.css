@@ -178,8 +178,7 @@ header #menu a:hover {
   max-width: 1280px;
   margin: 0 auto;
   height: 70vh;
-  /* gap: 200px; */
-  gap: 50px;
+  gap: 60px;
   justify-content: center;
 }
 .profile > p {
@@ -188,28 +187,25 @@ header #menu a:hover {
   background: #fff;
   border-radius: 100%;
   overflow: hidden;
-  margin-top: 80px;
+  margin-top: 100px;
   flex-shrink: 0;
 }
 .profile .pinner {
+  height: auto;
+  padding: 40px 40px 0 70px;
+  margin-bottom: 30px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px 80px;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  box-shadow: 0 0 5px #fff;
 }
 .pinner h1 {
   position: relative;
   font-size: 1.7em;
   font-weight: 600;
   margin-bottom: 30px;
-}
-.pinner h1::after {
-  content: "";
-  width: 100%;
-  height: 2px;
-  background: #fff;
-  position: absolute;
-  left: 0;
-  bottom: -10px;
 }
 #name {
   text-align: left;
@@ -318,16 +314,19 @@ header #menu a:hover {
   padding: 0 50px;
   align-items: center;
   color: #fff;
+  border-radius: 0 50px 50px 0;
 }
 .pwrap:nth-child(even) .txt {
   justify-content: flex-start;
   text-align: left;
+  border-radius: 50px 0 0 50px;
 }
 
 .txtwrap .site {
   font-size: 1.7em;
   font-weight: 700;
   margin-bottom: 20px;
+  text-shadow: 0 0 4px #ddd;
 }
 .txtwrap .work {
   font-weight: 600;
@@ -457,10 +456,12 @@ footer > a img {
   .pwrap .txt {
     text-align: center;
     justify-content: center;
+    border-radius: 50px;
   }
   .pwrap:nth-child(even) .txt {
     text-align: center;
     justify-content: center;
+    border-radius: 50px;
   }
 
   .pwrap:nth-child(1) .txtwrap .winfo p:nth-child(4) {
@@ -504,6 +505,7 @@ footer > a img {
     grid-template-columns: 1fr;
     /* gap: 10px; */
     row-gap: 50px;
+    padding: 40px;
   }
   #name {
     justify-content: center;
