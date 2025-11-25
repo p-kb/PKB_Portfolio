@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @font-face {
   font-family: "ffmarkfont";
-  src: url(../font/FontFont_FF.Mark_.Pro_.otf);
+  src: url(../font/FontFont_FF.Mark_.Pro_.Medium.otf);
 }
 @font-face {
   font-family: "Pretendard";
@@ -32,16 +32,16 @@ body {
   left: 0;
   width: 100%;
   height: 36px;
-  padding: 16px 0;
-  background-color: #fefef2;
   transition: 0.5s;
   text-transform: uppercase;
 }
 .topInner2 .top {
+  height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 80px;
+  padding: 16px 80px;
+  background-color: #fefef2;
 }
 .topInner2 .top li a {
   color: #999999;
@@ -54,11 +54,17 @@ body {
 .topInner2 .top img {
   width: 115px;
 }
+.topInner2 p img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 
 @media screen and (max-width: 767px) {
   .topInner2 .top {
     justify-content: center;
-    padding: 0 20px;
+    align-items: flex-end;
+    padding: 10px 0 3px;
   }
   .topInner2 .top img {
     height: 28px;

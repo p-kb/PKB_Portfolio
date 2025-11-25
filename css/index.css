@@ -191,10 +191,11 @@ header #menu a:hover {
   flex-shrink: 0;
 }
 .profile .pinner {
-  height: auto;
-  padding: 40px 40px 0 70px;
+  height: 600px;
+  padding: 40px 40px 0 60px;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: 300px 300px;
   gap: 10px 80px;
   border: 2px solid #fff;
   border-radius: 50px;
@@ -445,9 +446,15 @@ footer > a img {
   object-fit: cover;
 }
 @media screen and (max-width: 1170px) {
+  .profile {
+    height: 60vh;
+  }
   .profile .pinner {
     grid-template-columns: 1fr 0.5fr;
     gap: 10px 40px;
+  }
+  .motto {
+    margin-top: 0;
   }
   .tit {
     padding-top: 50px;

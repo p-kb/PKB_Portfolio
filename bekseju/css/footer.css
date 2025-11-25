@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @font-face {
   font-family: "ffmarkfont";
-  src: url(../font/FontFont_FF.Mark_.Pro_.otf);
+  src: url(../font/FontFont_FF.Mark_.Pro_.Medium.otf);
 }
 @font-face {
   font-family: "Pretendard";
@@ -18,11 +18,6 @@ ul {
 a {
   text-decoration: none;
   color: #333;
-}
-body {
-  font-family: "ffmarkfont", "Pretendard", sans-serif;
-  line-height: 1.6;
-  font-size: 0.9rem;
 }
 
 .ftop {
@@ -52,6 +47,7 @@ footer .inner {
   justify-content: space-between;
   margin: 0 40px;
   padding-top: 14vmin;
+  font-size: 15px;
 }
 footer .inner div {
   display: flex;
@@ -64,12 +60,22 @@ footer .finfo .infoinner {
   padding-top: 9vmin;
   gap: 5vmin;
   position: relative;
+  font-size: 14px;
+  font-weight: 500;
 }
 footer .finfo .infoinner .logo {
   width: 224px;
 }
-footer .finfo .infoinner a img {
+footer .finfo .infoinner img {
+  width: 100%;
+}
+footer .finfo .infoinner a {
   width: 28px;
+  height: 28px;
+}
+footer .finfo .infoinner a img {
+  width: 100%;
+  height: 100%;
 }
 footer .finfo .infoinner .rlogo {
   width: 108px;
@@ -77,20 +83,34 @@ footer .finfo .infoinner .rlogo {
   right: 0;
   bottom: 0;
 }
+footer .finfo .infoinner .rlogo img {
+  width: 100%;
+}
 
 @media screen and (max-width: 980px) {
   footer .finfo .infoinner {
     flex-direction: column;
   }
+  footer .finfo .infoinner .logo {
+    width: 164px;
+  }
 }
 @media screen and (max-width: 767px) {
   footer .inner {
     flex-direction: column;
+    font-size: 11.5px;
+    line-height: 1.5;
+    gap: 4px;
+  }
+  footer .inner div {
+    gap: 8px;
   }
   footer .finfo .infoinner {
     flex-direction: column;
     padding-top: 0;
     margin-top: 24vmin;
+    font-size: 12.8px;
+    line-height: 1.5;
   }
   footer .finfo .infoinner .info {
     border-top: 1px solid #777;
@@ -100,5 +120,11 @@ footer .finfo .infoinner .rlogo {
     position: absolute;
     top: 0;
     right: 0;
+  }
+  footer .finfo .infoinner .logo {
+    width: 120px;
+  }
+  footer .finfo .infoinner .rlogo {
+    width: 54px;
   }
 }

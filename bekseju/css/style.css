@@ -1,11 +1,15 @@
 @charset "UTF-8";
 @font-face {
   font-family: "ffmarkfont";
-  src: url(../font/FontFont_FF.Mark_.Pro_.otf);
+  src: url(../font/FontFont_FF.Mark_.Pro_.Medium.otf);
 }
 @font-face {
   font-family: "Pretendard";
-  src: url(../font/PretendardVariable.ttf);
+  src: url(../font/Pretendard-Regular.otf);
+}
+@font-face {
+  font-family: "yg130";
+  src: url(../font/YDGothic130Pro.otf);
 }
 
 * {
@@ -132,8 +136,9 @@ main.v1 section .hbo {
   height: 24px;
 }
 main.v1 section .hbo img {
+  display: block;
   width: 100%;
-  height: 100%;
+  height: 24px;
   object-fit: cover;
 }
 main.v1 section .txt a {
@@ -151,11 +156,11 @@ main.v1 section .txt a {
 main.v1 section .txt a h3 {
   margin-top: 10%;
   font-size: calc(1.5rem + 0.35vw);
-  font-weight: 200;
+  font-weight: 500;
 }
 main.v1 section .txt a h4 {
   font-size: 1.1rem;
-  font-weight: 100;
+  font-weight: 500;
 }
 main.v1 section .txt a h5 {
   margin: auto 0 4.5vmin 0;
@@ -280,6 +285,9 @@ main.v2 .fir .firtxt {
 main.v2 .fir .firtxt span {
   display: block;
   font-size: 20px;
+  font-weight: 500;
+  line-height: 1.6;
+  color: #444444;
 }
 #inner2 .bek {
   width: 100%;
@@ -312,13 +320,19 @@ main.v2 #inner2 .txt a {
 main.v2 #inner2 .txt a h3 {
   margin-top: 8vmin;
   font-size: 20px;
+  font-weight: 200;
+  line-height: 1.6;
 }
 main.v2 #inner2 .txt a h4 {
   font-size: 16.4px;
+  font-weight: 500;
+  line-height: 1.6;
 }
 main.v2 #inner2 .txt a h5 {
   font-size: 13.4px;
   margin: auto 0 8vmin;
+  font-weight: 500;
+  line-height: 1.6;
 }
 
 main.v2 #inner2 .sto a {
@@ -373,10 +387,6 @@ main.v2 #inner2 div::after {
   }
 }
 @media screen and (max-width: 767px) {
-  body {
-    font-size: 0.2rem;
-    line-height: 1;
-  }
   header {
     padding: 20px 20px;
   }
@@ -384,6 +394,7 @@ main.v2 #inner2 div::after {
     padding-bottom: 30px;
   }
   header .top {
+    font-size: 13.4px;
     padding: 0px 20px;
   }
   header .logo img {
