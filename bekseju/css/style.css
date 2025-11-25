@@ -1,11 +1,11 @@
 @charset "UTF-8";
 @font-face {
   font-family: "ffmarkfont";
-  src: url(../font/ff-mark-font/FontFont_FF.Mark_.Pro_.Medium.otf);
+  src: url(../font/FontFont_FF.Mark_.Pro_.otf);
 }
 @font-face {
   font-family: "Pretendard";
-  src: url(../font/Pretendard-1.3.9/public/static/Pretendard-Regular.otf);
+  src: url(../font/PretendardVariable.ttf);
 }
 
 * {
@@ -250,8 +250,12 @@ main.v2 .mo {
   top: -40px;
   width: 100%;
   height: 100px;
-  object-fit: cover;
   z-index: -1;
+}
+main.v2 .mo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 main.v2 #inner2 {
   flex-direction: column;
@@ -275,12 +279,12 @@ main.v2 .fir .firtxt {
 }
 main.v2 .fir .firtxt span {
   display: block;
+  font-size: 20px;
 }
 #inner2 .bek {
   width: 100%;
   height: auto;
   background: #fffde7;
-
   overflow: hidden;
 }
 #inner2 .bek img {
@@ -303,6 +307,7 @@ main.v2 #inner2 .txt a {
   align-items: center;
   aspect-ratio: 1 / 1;
   color: #fefef2;
+  font-weight: 300;
 }
 main.v2 #inner2 .txt a h3 {
   margin-top: 8vmin;

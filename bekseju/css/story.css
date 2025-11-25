@@ -1,11 +1,11 @@
 @charset "UTF-8";
 @font-face {
   font-family: "ffmarkfont";
-  src: url(../font/ff-mark-font/FontFont_FF.Mark_.Pro_.Medium.otf);
+  src: url(../font/FontFont_FF.Mark_.Pro_.otf);
 }
 @font-face {
   font-family: "Pretendard";
-  src: url(../font/Pretendard-1.3.9/public/static/Pretendard-Regular.otf);
+  src: url(../font/PretendardVariable.ttf);
 }
 
 * {
