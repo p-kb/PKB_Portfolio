@@ -153,7 +153,7 @@ header #menu a:hover {
   /* overflow: hidden; */
 }
 #section1 .title {
-  margin: 80px 0 80px;
+  margin: 80px 0 60px;
   font-size: 2em;
   font-weight: 600;
   color: #fff;
@@ -187,13 +187,12 @@ header #menu a:hover {
   background: #fff;
   border-radius: 100%;
   overflow: hidden;
-  margin-top: 100px;
+  margin-top: 130px;
   flex-shrink: 0;
 }
 .profile .pinner {
   height: auto;
   padding: 40px 40px 0 70px;
-  margin-bottom: 30px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px 80px;
@@ -233,17 +232,20 @@ header #menu a:hover {
   padding: 10px 0;
 }
 .edu .year {
-  font-size: 0.8em;
-  font-weight: 400;
-  margin-bottom: 10px;
+  font-size: 0.7em;
+  font-weight: 800;
+  margin-bottom: 8px;
+  color: #bbb;
 }
 .edu .infoa {
   font-size: 1.2em;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 .edu .infob {
-  font-size: 0.9em;
-  margin-bottom: 20px;
+  font-size: 0.8em;
+  font-weight: 600;
+  margin-bottom: 25px;
+  color: #ddd;
 }
 .skills ul {
   width: 200px;
@@ -262,6 +264,7 @@ header #menu a:hover {
 
 .motto {
   width: 100%;
+  margin-top: 30px;
   height: auto;
   background: #b90e0a;
   color: #fff;
@@ -276,6 +279,11 @@ header #menu a:hover {
   animation: neonStartup 4s 1s forwards;
 }
 
+#section2,
+#section3 {
+  width: 100%;
+  overflow: hidden;
+}
 .tit {
   color: #fff;
   margin: 100px 50px;
@@ -335,13 +343,13 @@ header #menu a:hover {
 }
 .txtwrap .winfo {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 20px;
   font-size: 0.9em;
   margin-bottom: 30px;
 }
-.pwrap:nth-child(3) .txtwrap .winfo {
-  grid-template-columns: 1fr 1fr;
+.pwrap:nth-child(1) .txtwrap .winfo {
+  grid-template-columns: 1fr 1fr 1fr;
 }
 #section3 .winfo {
   grid-template-columns: 1fr;
@@ -366,10 +374,24 @@ header #menu a:hover {
 .pwrap:nth-child(1) .txtwrap .winfo p:nth-child(4) {
   grid-column: 2/3;
 }
+.pwrap > p::before {
+  content: "";
+  position: absolute;
+  width: 90%;
+  height: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50px;
+  filter: blur(50px);
+  z-index: -1;
+}
 .pwrap > p {
   width: 50%;
   margin: 0 auto;
   height: 400px;
+  position: relative;
 }
 .pwrap > p img {
   width: 100%;
@@ -379,7 +401,7 @@ header #menu a:hover {
 footer {
   width: 100%;
   height: 300px;
-  margin-top: 300px;
+  margin-top: 150px;
   background: #b90e0a;
 }
 footer .icon {
@@ -476,10 +498,6 @@ footer > a img {
   .pwrap > p {
     width: 90%;
   }
-  #section2 .pwrap:nth-child(1) > p,
-  #section2 .pwrap:nth-child(2) > p {
-    margin-left: 60px;
-  }
   footer .icon {
     width: 600px;
   }
@@ -506,6 +524,7 @@ footer > a img {
     /* gap: 10px; */
     row-gap: 50px;
     padding: 40px;
+    justify-items: center;
   }
   #name {
     justify-content: center;
@@ -523,14 +542,17 @@ footer > a img {
     gap: 50px;
     justify-content: center;
   }
+  /* .edu {
+    text-align: center;
+  } */
   .edu h1 {
     text-align: center;
   }
   .skills h1 {
     text-align: center;
   }
-  .skills ul {
-    margin: 0 auto;
+  .skills ul li {
+    justify-items: center;
   }
   .motto {
     margin-top: 50px;
@@ -540,10 +562,6 @@ footer > a img {
   }
   .pwrap > p {
     height: 300px;
-  }
-  #section2 .pwrap:nth-child(1) > p,
-  #section2 .pwrap:nth-child(2) > p {
-    margin-left: 30px;
   }
   footer .icon {
     width: 95%;
@@ -564,13 +582,15 @@ footer > a img {
   #section0 p {
     font-size: 30px;
   }
+  .profile .pinner {
+    padding: 30px;
+  }
+  #name .list {
+    gap: 20px;
+  }
   .pwrap {
     gap: 10px;
     margin-bottom: 60px;
-  }
-  #section2 .pwrap:nth-child(1) > p,
-  #section2 .pwrap:nth-child(2) > p {
-    margin-left: 30px;
   }
   footer {
     margin-top: 200px;

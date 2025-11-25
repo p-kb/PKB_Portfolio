@@ -10,3 +10,5 @@ $(".icon a").hover(
     img.attr("src", img.attr("data-orig"));
   }
 );
+
+AOS.init();

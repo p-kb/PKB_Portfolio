@@ -77,6 +77,7 @@ section#maintop .visual {
   height: 58%;
   background-image: url(../img/mainbg.jpg);
   background-size: cover;
+  background-repeat: repeat-y;
   background-position: center;
 }
 section#maintop .visual p {
@@ -112,30 +113,30 @@ section#maintop .scroll h6 {
 section#maintop .scroll p {
   width: 24px;
 }
-main {
+main.v1 {
   position: relative;
   top: 30px;
   z-index: 1;
   display: flex;
 }
-main section {
+main.v1 section {
   flex: 1;
   display: flex;
   flex-direction: column;
 }
-main section div {
+main.v1 section div {
   position: relative;
 }
-main section .hbo {
+main.v1 section .hbo {
   width: 100%;
   height: 24px;
 }
-main section .hbo img {
+main.v1 section .hbo img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-main section .txt a {
+main.v1 section .txt a {
   display: block;
   aspect-ratio: 1 / 1.34;
   background-size: 100%;
@@ -147,65 +148,65 @@ main section .txt a {
   transition: 5s;
   line-height: 1.5;
 }
-main section .txt a h3 {
+main.v1 section .txt a h3 {
   margin-top: 10%;
   font-size: calc(1.5rem + 0.35vw);
   font-weight: 200;
 }
-main section .txt a h4 {
+main.v1 section .txt a h4 {
   font-size: 1.1rem;
   font-weight: 100;
 }
-main section .txt a h5 {
+main.v1 section .txt a h5 {
   margin: auto 0 4.5vmin 0;
   font-size: 0.9rem;
   line-height: 1.5;
   font-weight: 500;
 }
-main section:first-child .txt a {
+main.v1 section:first-child .txt a {
   background-image: url(../img/main-story-bg.png);
   transition: 5s;
 }
-main section:nth-child(2) .txt a {
+main.v1 section:nth-child(2) .txt a {
   background-image: url(../img/main-craft-bg.png);
 }
-main section:last-child .txt {
+main.v1 section:last-child .txt {
   margin-top: -23px;
 }
-main section:last-child .txt a {
+main.v1 section:last-child .txt a {
   padding-top: 23px;
   background-image: url(../img/main-taste-bg.png);
 }
-main section:first-child .txt a:hover,
-main section:nth-child(2) .txt a:hover,
-main section:last-child .txt a:hover {
+main.v1 section:first-child .txt a:hover,
+main.v1 section:nth-child(2) .txt a:hover,
+main.v1 section:last-child .txt a:hover {
   background-position: center;
   background-size: 105%;
 }
-main section > div.photo {
+main.v1 section > div.photo {
   aspect-ratio: 1 / 1.34;
 }
-main section > div.medi p {
+main.v1 section > div.medi p {
   height: 100%;
 }
-main section:nth-child(2) div.medi {
+main.v1 section:nth-child(2) div.medi {
   height: 100%;
   aspect-ratio: 1/1.6;
 }
-main section img,
-main section video {
+main.v1 section img,
+main.v1 section video {
   width: 100%;
   height: 100%;
   display: block;
   object-fit: cover;
 }
-main section .bek {
+main.v1 section .bek {
   background: #fefef2;
 }
-main section .bek img {
+main.v1 section .bek img {
   transform: scale(94%);
 }
-main section div::before {
+main.v1 section div::before {
   content: "";
   position: absolute;
   width: 8px;
@@ -213,21 +214,21 @@ main section div::before {
   background-image: url(../img/p.png);
   z-index: 2;
 }
-main section:first-child div::before {
+main.v1 section:first-child div::before {
   right: -4px;
   top: 2px;
 }
-main section:last-child div::before {
+main.v1 section:last-child div::before {
   left: -4px;
   top: 3px;
 }
-main section:nth-child(2) div:first-child:before {
+main.v1 section:nth-child(2) div:first-child:before {
   top: 10px;
 }
-main section:last-child div.txt::before {
+main.v1 section:last-child div.txt::before {
   top: 22px;
 }
-main section div::after {
+main.v1 section div::after {
   content: "";
   position: absolute;
   bottom: -4px;
@@ -236,4 +237,136 @@ main section div::after {
   height: 8px;
   background-image: url(../img/ph.png);
   z-index: 5;
+}
+main.v2 {
+  display: none;
+  position: relative;
+  top: 30px;
+  z-index: 1;
+}
+main.v2 .mo {
+  position: absolute;
+  top: -40px;
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  z-index: -1;
+}
+main.v2 #inner2 {
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+main.v2 .fir .firtop {
+  width: 100%;
+}
+main.v2 .fir .firtop img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+main.v2 .fir .firtxt {
+  width: 100%;
+  padding: 4vh 0;
+  background: #fffde7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main.v2 .fir .firtxt span {
+  display: block;
+}
+#inner2 .bek {
+  width: 100%;
+  height: auto;
+  background: #fffde7;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+}
+#inner2 .bek img {
+  transform: scale(94%);
+  width: 100%;
+  height: 375px;
+  object-fit: cover;
+}
+main.v2 #inner2 .txt {
+  width: 100%;
+}
+main.v2 #inner2 .txt a {
+  background-size: 100%;
+  background-position: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  aspect-ratio: 1 / 1;
+  color: #fefef2;
+}
+main.v2 #inner2 .txt a h3 {
+  margin-top: 8vmin;
+  font-size: 20px;
+}
+main.v2 #inner2 .txt a h4 {
+  font-size: 16.4px;
+}
+main.v2 #inner2 .txt a h5 {
+  font-size: 13.4px;
+  margin: auto 0 8vmin;
+}
+
+main.v2 #inner2 .sto a {
+  background-image: url(../img/main-story-bg.png);
+}
+main.v2 #inner2 .cra a {
+  background-image: url(../img/main-craft-bg.png);
+}
+main.v2 #inner2 .tas a {
+  background-image: url(../img/main-taste-bg.png);
+}
+
+@media screen and (max-width: 980px) {
+  header .logo img {
+    height: 15vh;
+    margin-top: 2vh;
+  }
+  section#maintop .visual {
+    top: 32%;
+    width: calc(100% - 100px);
+  }
+}
+@media screen and (max-width: 767px) {
+  body {
+    font-size: 0.2rem;
+    line-height: 1;
+  }
+  header {
+    padding: 20px 20px;
+  }
+  header .topInner {
+    padding-bottom: 30px;
+  }
+  header .top {
+    padding: 0px 20px;
+  }
+  header .logo img {
+    width: auto;
+    height: 10vh;
+    margin-top: 20px;
+  }
+  section#maintop .inner {
+    margin: 0 20px;
+  }
+  section#maintop .visual {
+    top: 35%;
+    width: calc(100% - 40px);
+    height: 375px;
+  }
+  section#maintop .visual p {
+    height: 50vh;
+  }
+  main.v1 {
+    display: none;
+  }
+  main.v2 {
+    display: block;
+  }
 }

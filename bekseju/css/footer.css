@@ -77,3 +77,28 @@ footer .finfo .infoinner .rlogo {
   right: 0;
   bottom: 0;
 }
+
+@media screen and (max-width: 980px) {
+  footer .finfo .infoinner {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 767px) {
+  footer .inner {
+    flex-direction: column;
+  }
+  footer .finfo .infoinner {
+    flex-direction: column;
+    padding-top: 0;
+    margin-top: 24vmin;
+  }
+  footer .finfo .infoinner .info {
+    border-top: 1px solid #777;
+    padding-top: 20px;
+  }
+  footer .finfo .infoinner > a {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="css/index.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
   </head>
   <body>
@@ -30,8 +31,17 @@
     <div class="section" id="section1">
       <h1 class="title">About Me</h1>
       <div class="profile">
-        <p></p>
-        <div class="pinner">
+        <p
+          data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000"
+        ></p>
+        <div
+          class="pinner"
+          data-aos="fade-up"
+          data-aos-delay="200"
+          data-aos-duration="1000"
+        >
           <div id="name">
             <h1>Profile</h1>
             <div class="nb">
@@ -117,7 +127,12 @@
       <h1 class="tit">Project</h1>
       <div class="project">
         <div class="pwrap">
-          <div class="txt">
+          <div
+            class="txt"
+            data-aos="fade-right"
+            data-aos-offset="500"
+            data-aos-easing="ease-in-sine"
+          >
             <div class="txtwrap">
               <p class="site">Subway</p>
               <p class="work">작업</p>
@@ -141,10 +156,17 @@
               </div>
             </div>
           </div>
-          <p><img src="img/Apple-Devices1.png" alt="" /></p>
+          <p data-aos="fade-up" data-aos-duration="1000">
+            <img src="img/Apple-Devices1.png" alt="" />
+          </p>
         </div>
         <div class="pwrap">
-          <div class="txt">
+          <div
+            class="txt"
+            data-aos="fade-left"
+            data-aos-offset="500"
+            data-aos-easing="ease-in-sine"
+          >
             <div class="txtwrap">
               <p class="site">Armoredfresh</p>
               <p class="work">작업</p>
@@ -168,10 +190,17 @@
               </div>
             </div>
           </div>
-          <p><img src="img/Apple-Devices1.png" alt="" /></p>
+          <p data-aos="fade-up" data-aos-duration="1000">
+            <img src="img/ar-device.png" alt="" />
+          </p>
         </div>
         <div class="pwrap">
-          <div class="txt">
+          <div
+            class="txt"
+            data-aos="fade-right"
+            data-aos-offset="550"
+            data-aos-easing="ease-in-sine"
+          >
             <div class="txtwrap">
               <p class="site">백세주</p>
               <p class="work">작업</p>
@@ -195,10 +224,17 @@
               </div>
             </div>
           </div>
-          <p><img src="img/Apple-Devices1.png" alt="" /></p>
+          <p data-aos="fade-up" data-aos-duration="3000">
+            <img src="img/Apple-Devices1.png" alt="" />
+          </p>
         </div>
         <div class="pwrap">
-          <div class="txt">
+          <div
+            class="txt"
+            data-aos="fade-left"
+            data-aos-offset="500"
+            data-aos-easing="ease-in-sine"
+          >
             <div class="txtwrap">
               <p class="site">Cafebene</p>
               <p class="work">작업</p>
@@ -222,7 +258,9 @@
               </div>
             </div>
           </div>
-          <p><img src="img/iMac1.png" alt="" /></p>
+          <p data-aos="fade-up" data-aos-duration="1000">
+            <img src="img/iMac1.png" alt="" />
+          </p>
         </div>
       </div>
     </div>
@@ -231,7 +269,12 @@
       <h1 class="tit">Design</h1>
       <div class="project">
         <div class="pwrap">
-          <div class="txt">
+          <div
+            class="txt"
+            data-aos="fade-right"
+            data-aos-offset="500"
+            data-aos-easing="ease-in-sine"
+          >
             <div class="txtwrap">
               <p class="site">zix&dacx</p>
               <p class="work">작업</p>
@@ -247,10 +290,17 @@
               </div>
             </div>
           </div>
-          <p><img src="img/iMac1.png" alt="" /></p>
+          <p data-aos="fade-up" data-aos-duration="1000">
+            <img src="img/iMac1.png" alt="" />
+          </p>
         </div>
         <div class="pwrap">
-          <div class="txt">
+          <div
+            class="txt"
+            data-aos="fade-left"
+            data-aos-offset="500"
+            data-aos-easing="ease-in-sine"
+          >
             <div class="txtwrap">
               <p class="site">오설록</p>
               <p class="work">작업</p>
@@ -266,7 +316,9 @@
               </div>
             </div>
           </div>
-          <p><img src="img/iMac1.png" alt="" /></p>
+          <p data-aos="fade-up" data-aos-duration="1000">
+            <img src="img/iMac1.png" alt="" />
+          </p>
         </div>
       </div>
     </div>
@@ -297,6 +349,7 @@
       </a>
     </footer>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/index.js"></script>
   </body>
 </html>
