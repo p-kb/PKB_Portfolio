@@ -353,8 +353,12 @@ section {
   display: inline-block;
   position: relative;
 }
+#s2 .order .orwr {
+  width: 90%;
+  margin: 0 auto;
+}
 #s2 .order .orwr .btn2 {
-  margin-left: 50px;
+  margin-left: 100px;
 }
 #s2 .order .orwr .btn2 li {
   margin-bottom: 20px;
