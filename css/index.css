@@ -357,7 +357,7 @@ header #menu a:hover {
   grid-template-columns: 1fr 1fr 1fr;
 }
 #section3 .winfo {
-  grid-template-columns: 1fr;
+  grid-template-columns: 100px;
 }
 .txtwrap .link {
   display: flex;
