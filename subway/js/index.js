@@ -83,9 +83,12 @@ con2[0].classList.add("on");
 btn2.forEach(function (v, k, ar) {
   v.onclick = function () {
     ar.forEach(function (v) {
-      v.classList.remove("on");
+      v.classList.remove("prev", "on");
     });
-    this.classList.add("on");
+    for (let i = 0; i < k; i++) {
+      ar[i].classList.add("prev");
+    }
+    ar[k].classList.add("on");
     con2.forEach(function (v) {
       v.classList.remove("on");
     });
@@ -97,7 +100,7 @@ var swiper2 = new Swiper(".mySwiper2", {
   spaceBetween: 30,
   loop: true,
   autoplay: {
-    delay: 4000,
+    delay: 6000,
     disableOnInteraction: false,
   },
   pagination: {
@@ -110,7 +113,7 @@ var swiper4 = new Swiper(".mySwiper4", {
   spaceBetween: 30,
   loop: true,
   autoplay: {
-    delay: 4000,
+    delay: 5000,
     disableOnInteraction: false,
   },
   pagination: {
@@ -118,3 +121,5 @@ var swiper4 = new Swiper(".mySwiper4", {
     clickable: true,
   },
 });
+
+AOS.init();

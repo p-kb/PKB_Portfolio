@@ -7,6 +7,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: "Pretendard";
 }
 a {
   text-decoration: none;
@@ -15,10 +16,6 @@ a {
 ul {
   list-style: none;
 }
-body {
-  font-family: "Pretendard";
-}
-
 header {
   position: fixed;
   left: 0;
@@ -46,6 +43,10 @@ header .hinner .menu {
   display: flex;
   gap: 40px;
 }
+header .hinner .menu li a {
+  font-size: 16px;
+  font-weight: 500;
+}
 
 .visual {
   width: 100%;
@@ -64,7 +65,7 @@ header .hinner .menu {
   transform: translateY(-50%);
   width: 34px;
   height: 34px;
-  background-image: url(../img/icon_franchise.png);
+  background-image: url(../img/icon_map.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -73,14 +74,26 @@ header .hinner .menu {
   display: inline-block;
   margin: 30px 0 0 30px;
   padding: 15px 20px 15px 60px;
-  border: 2px solid #ffce32;
-  border-radius: 100px;
+  border: 3px solid #ffce32;
+  border-radius: 0 30px;
   position: relative;
+  font-size: 24px;
+  font-weight: 700;
+  color: #009223;
+  background: #ffce32;
+  transition: 0.3s;
+}
+.visual .fra a:hover {
+  color: #fff;
 }
 .visual > p:nth-child(2) {
   position: absolute;
   right: 30px;
   top: 30px;
+  font-size: 70px;
+  text-align: right;
+  font-weight: 700;
+  color: #009223;
 }
 .visual .logo {
   position: absolute;
@@ -94,7 +107,7 @@ header .hinner .menu {
   transform: translate(-50%, -50%);
 }
 .visual .logo p {
-  width: 60%;
+  width: 56%;
 }
 .visual .logo p img {
   width: 100%;
@@ -116,6 +129,9 @@ header .hinner .menu {
   position: absolute;
   left: 30px;
   bottom: 30px;
+  font-size: 40px;
+  font-weight: 700;
+  color: #ffce32;
 }
 .visual .scroll {
   position: absolute;
@@ -126,6 +142,9 @@ header .hinner .menu {
   flex-direction: column;
   align-items: center;
   gap: 5px;
+  font-size: 13px;
+  color: #009223;
+  font-weight: 500;
 }
 .visual .scroll p.sicon {
   width: 30px;
@@ -148,7 +167,7 @@ header .hinner .menu {
   transform: translateY(-50%);
   width: 30px;
   height: 30px;
-  background-image: url(../img/icon_map.png);
+  background-image: url(../img/icon_franchise.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -156,9 +175,17 @@ header .hinner .menu {
 .visual .map a {
   display: inline-block;
   padding: 15px 30px 15px 70px;
-  border: 2px solid #009223;
-  border-radius: 100px;
+  border: 3px solid #009223;
+  border-radius: 0 30px;
   position: relative;
+  font-size: 24px;
+  color: #ffce32;
+  font-weight: 700;
+  background: #009223;
+  transition: 0.3s;
+}
+.visual .map a:hover {
+  color: #fff;
 }
 
 section {
@@ -205,11 +232,14 @@ section {
   color: #777;
   background: #fff;
   cursor: pointer;
+  font-size: 13px;
+  font-weight: 550;
+  transition: 0.3s;
 }
 #s1 .btn li button.on {
   color: #009223;
   background: #ffce32;
-  font-weight: 500;
+  font-weight: 700;
 }
 .weinner .mySwiper1 {
   width: 100%;
@@ -229,6 +259,12 @@ section {
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  text-align: center;
+}
+.weinner .swiper-slide img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
 }
 
 .weinner .swiper-slide a {
@@ -250,16 +286,21 @@ section {
   transform: scale(1.1);
 }
 .weinner .swiper-slide .txt {
-  padding-top: 14px;
   text-align: center;
   white-space: wrap;
 }
 .weinner .swiper-slide .txt p:nth-child(1) {
   overflow: hidden;
-  font-size: 14px;
+  font-size: 18px;
+  font-weight: 600;
   line-height: 1.43;
   color: #222;
   text-overflow: ellipsis;
+  margin-bottom: 10px;
+}
+.weinner .swiper-slide .txt p:nth-child(2) {
+  font-size: 14px;
+  line-height: 1.7;
 }
 .weinner .swiper-button-next,
 .weinner .swiper-button-prev {
@@ -321,13 +362,26 @@ section {
 #s2 .order .orwr .btn2 li button {
   background: #fff;
   color: #777;
-  border: 1px solid #777;
+  border: 2px solid #777;
   border-radius: 50%;
-  padding: 8px;
+  padding: 8px 14px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+  transition: 0.2s;
+}
+#s2 .order .orwr .btn2 li button strong {
+  font-size: 20px;
+  font-weight: 800;
+}
+#s2 .order .orwr .btn2 li button.prev {
+  color: #009223;
+  border: 2px solid #009223;
+  background: #fff;
 }
 #s2 .order .orwr .btn2 li button.on {
   color: #fff;
-  border: 1px solid #009223;
+  border: 2px solid #009223;
   background: #009223;
 }
 #s2 .order .orwr .wrapper {
@@ -342,6 +396,7 @@ section {
   top: 0;
   width: 100%;
   opacity: 0;
+  transition: 0.3s;
 }
 #s2 .order .orwr .wrap.on {
   opacity: 1;
@@ -362,23 +417,47 @@ section {
   flex-direction: column;
   justify-content: space-around;
 }
+#s2 .order .orwr .wrap .txt h4 {
+  position: relative;
+  font-size: 18px;
+}
+#s2 .order .orwr .wrap .txt h4::after {
+  content: "";
+  position: absolute;
+  width: 30%;
+  height: 3px;
+  background: #ffce32;
+  left: -2px;
+  bottom: -20px;
+}
+#s2 .order .orwr .wrap .txt h3 {
+  font-size: 25px;
+}
+#s2 .order .orwr .wrap .txt p {
+  font-size: 15px;
+  line-height: 1.8;
+}
 #s2 .order .orwr .wrap .txt .sear {
   display: flex;
   gap: 10px;
 }
 #s2 .order .orwr .wrap .txt .sear p {
-  border: 1px solid #333;
-  padding: 10px 10px 10px 15px;
+  border: 1px solid #555;
+  padding: 5px 10px 5px 15px;
   border-radius: 50px;
   text-align: center;
+  font-size: 13px;
+  color: #555;
+  font-weight: 500;
 }
 #s2 .order .orwr .wrap .txt .sear img {
-  width: 20px;
-  vertical-align: top;
+  width: 18px;
+  vertical-align: middle;
+  padding-bottom: 2px;
 }
 
 #s3 {
-  margin-top: 200px;
+  margin-top: 150px;
   width: 100%;
   height: 750px;
   background: #ffce32;
@@ -404,6 +483,7 @@ section {
 .mySwiper2 .swiper-slide {
   display: flex;
   gap: 70px;
+  height: 600px;
 }
 #s3 .recipe {
   width: 40%;
@@ -413,14 +493,12 @@ section {
   text-align: center;
 }
 #s3 .recipe h3 {
-  margin: 30px 0;
+  margin: 30px 0 20px;
 }
 #s3 .recipe .reinner {
-  display: flex;
-  flex-wrap: wrap;
-}
-#s3 .recipe .reinner p {
-  flex: 1 0 30%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
 }
 #s3 .recipe .reinner p img {
   width: 100px;
@@ -429,7 +507,7 @@ section {
   width: 750px;
   position: absolute;
   right: -100px;
-  bottom: -70px;
+  bottom: 10px;
 }
 #s3 .pro h1 {
   line-height: 0.8;
@@ -440,6 +518,12 @@ section {
 }
 #s3 .pro h1:nth-child(2) {
   font-size: 6rem;
+}
+#s3 .swiper-wrapper div:nth-child(4) .pro h1:nth-child(1) {
+  font-size: 2rem;
+}
+#s3 .swiper-wrapper div:nth-child(4) .pro h1:nth-child(2) {
+  font-size: 4rem;
 }
 #s3 .pro > p img {
   width: 100%;
@@ -455,7 +539,7 @@ section {
 }
 #s3 .swiper-horizontal > .swiper-pagination-bullets,
 #s3 .swiper-pagination-bullets.swiper-pagination-horizontal {
-  bottom: 30px;
+  bottom: 40px;
 }
 #s3 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
 #s3
@@ -470,7 +554,7 @@ section {
 }
 
 .event {
-  margin-top: 200px;
+  margin-top: 70px;
   position: relative;
 }
 .mySwiper4 {
@@ -482,6 +566,7 @@ section {
 .mySwiper4 .swiper-slide {
   text-align: center;
   font-size: 18px;
+  height: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -489,10 +574,11 @@ section {
 .mySwiper4 .swiper-slide img {
   display: block;
   width: 100%;
-  height: 100%;
-  border-radius: 50px;
+  height: 285px;
+  border-radius: 30px;
   object-fit: cover;
 }
+
 .event .swiper-pagination-bullet {
   width: 8px;
   height: 8px;
@@ -503,7 +589,7 @@ section {
 }
 .event .swiper-horizontal > .swiper-pagination-bullets,
 .event .swiper-pagination-bullets.swiper-pagination-horizontal {
-  bottom: -10px;
+  bottom: 10px;
 }
 .event
   .swiper-horizontal
@@ -520,8 +606,57 @@ section {
   margin: 0 10px;
 }
 
+.con {
+  width: 90%;
+  margin: 0 auto;
+  border-top: 1px solid #ccc;
+  margin-top: 60px;
+  padding-top: 60px;
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+}
+.con li a {
+  height: 70px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.con li a > p {
+  width: 70px;
+  height: 70px;
+  background-image: url(../img/icon_quickmenu.png);
+  background-repeat: no-repeat;
+}
+.con li:nth-child(1) a > p {
+  background-position: 0 0;
+}
+.con li:nth-child(2) a > p {
+  background-position: -70px 0;
+}
+.con li:nth-child(3) a > p {
+  background-position: -140px 0;
+}
+.con li:nth-child(4) a > p {
+  background-position: -210px 0;
+}
+.con li a .txt p:nth-child(1) {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.con li a .txt p:nth-child(2) {
+  font-size: 14px;
+  font-weight: 500;
+  color: #aaa;
+}
+
 footer {
-  margin-top: 200px;
+  margin-top: 100px;
   width: 100%;
-  height: 500px;
+  height: auto;
+}
+footer img {
+  display: block;
+  width: 100%;
 }
