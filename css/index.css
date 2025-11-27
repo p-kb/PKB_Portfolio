@@ -147,10 +147,8 @@ header #menu a:hover {
 
 #section1 {
   width: 100%;
-  height: 100vh;
   position: relative;
   color: #fff;
-  /* overflow: hidden; */
 }
 #section1 .title {
   margin: 80px 0 60px;
@@ -180,6 +178,7 @@ header #menu a:hover {
   height: 600px;
   gap: 60px;
   justify-content: center;
+  margin-bottom: 30px;
 }
 .profile > p {
   width: 250px;
@@ -197,6 +196,7 @@ header #menu a:hover {
   object-fit: cover;
 }
 .profile .pinner {
+  height: 100%;
   padding: 40px 40px 0 60px;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -269,15 +269,14 @@ header #menu a:hover {
 
 .motto {
   width: 100%;
-  margin-top: 30px;
   height: auto;
   background: #b90e0a;
   color: #fff;
   text-align: center;
+  margin-top: 85px;
 }
 .motto h1 {
   font-family: "Caveat";
-  height: 100%;
   font-weight: 600;
   color: #fff;
   line-height: 70px;
@@ -309,7 +308,7 @@ header #menu a:hover {
 }
 .pwrap {
   display: flex;
-  gap: 150px;
+  gap: 100px;
   margin-bottom: 200px;
 }
 .pwrap:nth-child(even) {
@@ -353,6 +352,7 @@ header #menu a:hover {
   font-size: 0.9em;
   margin-bottom: 30px;
   text-align: center;
+  justify-content: flex-end;
 }
 .txtwrap .winfo p {
   border: 2px solid #fff;
@@ -457,13 +457,16 @@ footer > a img {
 }
 @media screen and (max-width: 1170px) {
   .profile {
-    height: 60vh;
+    height: 550px;
   }
   .profile .pinner {
     grid-template-columns: 1fr 0.5fr;
     gap: 10px 40px;
   }
-
+  #name .list {
+    display: flex;
+    gap: 50px;
+  }
   .tit {
     padding-top: 50px;
   }
@@ -504,6 +507,9 @@ footer > a img {
   .pwrap:nth-child(1) .txtwrap .winfo p:nth-child(4) {
     grid-column: 1;
   }
+  .txtwrap .winfo {
+    justify-content: center;
+  }
   .txtwrap .link {
     justify-content: center;
   }
@@ -537,6 +543,7 @@ footer > a img {
   .profile .pinner {
     grid-template-columns: 1fr;
     /* gap: 10px; */
+    height: auto;
     row-gap: 50px;
     padding: 40px;
     justify-items: center;
