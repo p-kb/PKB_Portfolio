@@ -102,13 +102,21 @@ window.addEventListener("wheel", (e) => {
     모바일: 터치 기반 스크롤
 ----------------------- */
 let touchStartY = 0;
+let touchCurrentY = 0;
 
 window.addEventListener("touchstart", (e) => {
   touchStartY = e.touches[0].clientY;
 });
 
-window.addEventListener("touchend", (e) => {
-  const endY = e.changedTouches[0].clientY;
-  const deltaY = touchStartY - endY;
+window.addEventListener(
+  "touchmove",
+  (e) => {
+    touchCurrentY = e.touches[0].clientY;
+  },
+  { passive: true }
+);
+
+window.addEventListener("touchend", () => {
+  const deltaY = touchStartY - touchCurrentY;
   handleScroll(deltaY);
 });
