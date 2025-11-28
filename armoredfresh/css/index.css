@@ -31,6 +31,7 @@ section {
   height: 100vh;
   overflow: hidden;
   touch-action: pan-y;
+  background: #000;
 }
 video {
   position: absolute;
@@ -40,6 +41,10 @@ video {
   height: 100%;
   object-fit: cover;
   opacity: 0;
+  will-change: opacity;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  background: #000;
 }
 .visible {
   opacity: 1;

@@ -27,6 +27,7 @@ function fadePlay(src, loop = false, nextLoop = null, nextStage = stage) {
   next.src = src;
   next.loop = loop;
   next.currentTime = 0;
+  next.style.opacity = 0;
   next.classList.remove("visible");
 
   // 영상 로드되면 실행
