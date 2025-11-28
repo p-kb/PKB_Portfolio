@@ -11,12 +11,16 @@ const videos = {
 
 const videoA = document.getElementById("videoA");
 const videoB = document.getElementById("videoB");
+
 let current = videoA;
 let next = videoB;
+
 let stage = 0;
 let isTransitioning = false;
 
-/** 부드러운 전환 함수 **/
+/* -----------------------
+    비디오 전환 함수
+----------------------- */
 function fadePlay(src, loop = false, nextLoop = null, nextStage = stage) {
   isTransitioning = true;
 
@@ -25,7 +29,7 @@ function fadePlay(src, loop = false, nextLoop = null, nextStage = stage) {
   next.currentTime = 0;
   next.classList.remove("visible");
 
-  // 영상이 로드될 때만 전환 실행
+  // 영상 로드되면 실행
   next.oncanplay = () => {
     next.play();
     next.classList.add("visible");
@@ -37,7 +41,7 @@ function fadePlay(src, loop = false, nextLoop = null, nextStage = stage) {
       stage = nextStage;
       isTransitioning = false;
 
-      // 다음 루프 이벤트 설정
+      // 루프 비디오 자동 설정
       if (nextLoop) {
         current.onended = () => fadePlay(nextLoop, true, null, stage);
       } else {
@@ -45,40 +49,66 @@ function fadePlay(src, loop = false, nextLoop = null, nextStage = stage) {
       }
     }, 800);
 
-    next.oncanplay = null; // 중복 이벤트 방지
+    next.oncanplay = null;
   };
 }
 
-/** 초기 설정 **/
+/* -----------------------
+    초기 비디오 설정
+----------------------- */
 current.src = videos.intro;
 current.classList.add("visible");
 current.onended = () => fadePlay(videos.loop2, true, null, 0);
 
-/** 스크롤 이벤트 **/
-window.addEventListener("wheel", (e) => {
+/* -----------------------
+    스크롤 처리 함수
+----------------------- */
+function handleScroll(deltaY) {
   if (isTransitioning) return;
 
-  if (e.deltaY > 0) {
-    console.log(stage);
-    // scroll down
+  if (deltaY > 20) {
+    // ↓↓↓ scroll down
     if (stage === 0) {
       fadePlay(videos.v3, false, videos.loop4, 1);
     } else if (stage === 1) {
       fadePlay(videos.v5, false, videos.loop6, 2);
     } else if (stage === 2) {
-      document.querySelector("body").style.overflow = "visible";
+      document.body.style.overflow = "visible";
       document.querySelector("section").style.position = "relative";
       document.querySelector("footer").style.display = "block";
     }
-  } else {
-    // scroll up
-    document.querySelector("body").style.overflow = "hidden";
+  } else if (deltaY < -20) {
+    // ↑↑↑ scroll up
+    document.body.style.overflow = "hidden";
     document.querySelector("section").style.position = "fixed";
     document.querySelector("footer").style.display = "none";
+
     if (stage === 2) {
       fadePlay(videos.R3, false, videos.loop4, 1);
     } else if (stage === 1) {
       fadePlay(videos.R2, false, videos.loop2, 0);
     }
   }
+}
+
+/* -----------------------
+    PC: wheel 이벤트
+----------------------- */
+window.addEventListener("wheel", (e) => {
+  handleScroll(e.deltaY);
+});
+
+/* -----------------------
+    모바일: 터치 기반 스크롤
+----------------------- */
+let touchStartY = 0;
+
+window.addEventListener("touchstart", (e) => {
+  touchStartY = e.touches[0].clientY;
+});
+
+window.addEventListener("touchend", (e) => {
+  const endY = e.changedTouches[0].clientY;
+  const deltaY = touchStartY - endY;
+  handleScroll(deltaY);
 });
