@@ -20,7 +20,8 @@ a {
   color: #333;
 }
 body {
-  overflow: hidden;
+  overflow: visible;
+  touch-action: pan-y;
 }
 
 section {
@@ -31,7 +32,7 @@ section {
   height: 100vh;
   overflow: hidden;
   touch-action: pan-y;
-  background: #000;
+  -webkit-overflow-scrolling: touch;
 }
 video {
   position: absolute;
@@ -44,12 +45,16 @@ video {
   will-change: opacity;
   transform: translateZ(0);
   backface-visibility: hidden;
-  background: #000;
 }
 .visible {
   opacity: 1;
 }
 
 footer {
-  display: none;
+  /* display: none; */
+  opacity: 0;
+}
+footer.show {
+  opacity: 1;
+  pointer-events: auto;
 }

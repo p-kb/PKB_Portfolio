@@ -149,6 +149,7 @@ header #menu a:hover {
   width: 100%;
   position: relative;
   color: #fff;
+  overflow: hidden;
 }
 #section1 .title {
   margin: 80px 0 60px;
@@ -271,16 +272,15 @@ header #menu a:hover {
   width: 100%;
   height: auto;
   background: #b90e0a;
-  color: #fff;
   text-align: center;
   margin-top: 85px;
 }
 .motto h1 {
   font-family: "Caveat";
   font-weight: 600;
-  color: #fff;
+  color: #777;
   line-height: 70px;
-  animation: neonStartup 4s 1s forwards;
+  animation-fill-mode: forwards;
 }
 
 #section2,
@@ -347,12 +347,16 @@ header #menu a:hover {
 }
 .txtwrap .winfo {
   display: grid;
+  width: 250px;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
   font-size: 0.9em;
   margin-bottom: 30px;
   text-align: center;
   justify-content: flex-end;
+}
+.pwrap:nth-child(even) .txtwrap .winfo {
+  justify-content: flex-start;
 }
 .txtwrap .winfo p {
   border: 2px solid #fff;
@@ -382,7 +386,7 @@ header #menu a:hover {
   width: 100%;
   object-fit: cover;
 }
-.pwrap:nth-child(1) .txtwrap .winfo p:nth-child(4) {
+#section2 .pwrap:nth-child(1) .txtwrap .winfo p:nth-child(4) {
   grid-column: 2/3;
 }
 .pwrap > p::before {
@@ -503,8 +507,10 @@ footer > a img {
     justify-content: center;
     border-radius: 50px;
   }
-
-  .pwrap:nth-child(1) .txtwrap .winfo p:nth-child(4) {
+  .pwrap:nth-child(even) .txtwrap .winfo {
+    justify-content: center;
+  }
+  #section2 .pwrap:nth-child(1) .txtwrap .winfo p:nth-child(4) {
     grid-column: 1;
   }
   .txtwrap .winfo {

@@ -11,12 +11,34 @@ const videos = {
 
 const videoA = document.getElementById("videoA");
 const videoB = document.getElementById("videoB");
+const section = document.getElementById("video-section");
+
+let footer = document.querySelector("footer");
 
 let current = videoA;
 let next = videoB;
-
 let stage = 0;
 let isTransitioning = false;
+
+const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+
+if (!isMobile) {
+  window.addEventListener("wheel", (e) => handleScroll(e.deltaY));
+}
+
+if (isMobile) {
+  section.style.position = "sticky";
+  section.style.top = "0";
+} else {
+  section.style.position = "fixed";
+}
+
+function lockScroll() {
+  document.body.style.overflow = "hidden";
+}
+function unlockScroll() {
+  document.body.style.overflow = "visible";
+}
 
 /* -----------------------
     비디오 전환 함수
@@ -27,7 +49,6 @@ function fadePlay(src, loop = false, nextLoop = null, nextStage = stage) {
   next.src = src;
   next.loop = loop;
   next.currentTime = 0;
-  next.style.opacity = 0;
   next.classList.remove("visible");
 
   // 영상 로드되면 실행
@@ -60,6 +81,7 @@ function fadePlay(src, loop = false, nextLoop = null, nextStage = stage) {
 current.src = videos.intro;
 current.classList.add("visible");
 current.onended = () => fadePlay(videos.loop2, true, null, 0);
+lockScroll();
 
 /* -----------------------
     스크롤 처리 함수
@@ -74,15 +96,18 @@ function handleScroll(deltaY) {
     } else if (stage === 1) {
       fadePlay(videos.v5, false, videos.loop6, 2);
     } else if (stage === 2) {
+      section.style.position = "relative";
       document.body.style.overflow = "visible";
-      document.querySelector("section").style.position = "relative";
-      document.querySelector("footer").style.display = "block";
+      // document.querySelector("section").style.position = "relative";
+      // document.querySelector("footer").style.display = "block";
+      footer.classList.add("show");
     }
   } else if (deltaY < -20) {
     // ↑↑↑ scroll up
     document.body.style.overflow = "hidden";
     document.querySelector("section").style.position = "fixed";
-    document.querySelector("footer").style.display = "none";
+    // document.querySelector("footer").style.display = "none";
+    footer.classList.remove("show");
 
     if (stage === 2) {
       fadePlay(videos.R3, false, videos.loop4, 1);
