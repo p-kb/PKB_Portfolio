@@ -274,11 +274,13 @@ header #menu a:hover {
   background: #b90e0a;
   text-align: center;
   margin-top: 85px;
+  color: #fff;
+  text-shadow: 0 0 12px #fff, 0 0 30px #ff6666, 0 0 50px #ff3333,
+    0 0 70px #ff1111;
 }
 .motto h1 {
   font-family: "Caveat";
   font-weight: 600;
-  color: #777;
   line-height: 70px;
   animation-fill-mode: forwards;
 }
