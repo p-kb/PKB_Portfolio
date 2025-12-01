@@ -123,3 +123,7 @@ var swiper4 = new Swiper(".mySwiper4", {
 });
 
 AOS.init();
+
+$("footer .sns li a").hover(function () {
+  $(this).toggleClass("on");
+});
