@@ -55,9 +55,9 @@ body {
   width: 115px;
 }
 .topInner2 p img {
-  width: 100%;
-  height: auto;
   display: block;
+  width: 100%;
+  object-fit: cover;
 }
 
 @media screen and (max-width: 767px) {

@@ -90,6 +90,13 @@ body {
   );
 }
 
+main .txt {
+  font-weight: 500;
+}
+main .txt h2,
+main .txt h3 {
+  font-weight: 500;
+}
 main .sec {
   position: relative;
 }
@@ -153,6 +160,8 @@ main .sec .animate h2 {
   position: relative;
   top: 20px;
   opacity: 0;
+  margin-bottom: 8px;
+  line-height: 1.8;
 }
 main .sec .animate p {
   filter: blur(5px);
@@ -183,6 +192,11 @@ main .descinner {
 }
 main .descinner .txt {
   width: 34%;
+  font-size: 20px;
+  color: #444444;
+}
+main .descinner .txt h2 {
+  margin-bottom: 8px;
 }
 main .descinner video {
   width: 60%;
@@ -204,6 +218,8 @@ main .tes {
 main .tes .txt {
   width: 90%;
   position: relative;
+  font-size: 27px;
+  color: #fefef2;
 }
 main .tes .txt::before,
 main .tes .txt::after {
@@ -228,6 +244,7 @@ main .tes .txt::after {
 main .tes .txt h3 {
   line-height: 1.5;
   margin: 10px 0;
+  font-size: 27px;
 }
 main .tes .txt h3 span {
   opacity: 0;
@@ -272,6 +289,11 @@ main .aes img {
 }
 main .aes .aesinner .txt {
   width: 34%;
+  font-size: 20px;
+  color: #444444;
+}
+main .aes .aesinner .txt h2 {
+  margin-bottom: 8px;
 }
 
 main .ces {
@@ -289,6 +311,11 @@ main .ces .cesinner .txt {
   width: 64%;
   margin: 0 auto;
   margin-bottom: 64px;
+  font-size: 20px;
+  color: #444444;
+}
+main .ces .cesinner .txt h2 {
+  margin-bottom: 8px;
 }
 main .ces .cesinner > p {
   width: 100%;
