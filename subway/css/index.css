@@ -100,14 +100,14 @@ header .hinner .menu li a {
   width: 100%;
   display: flex;
   justify-content: center;
-  gap: 30%;
+  gap: 35%;
   align-items: center;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 .visual .logo p {
-  width: 56%;
+  width: 50%;
 }
 .visual .logo p img {
   width: 100%;
@@ -123,7 +123,6 @@ header .hinner .menu li a {
 .visual .bsan img {
   width: 100%;
   object-fit: cover;
-  /* transform: rotate(-20deg); */
 }
 .visual > ul {
   position: absolute;
