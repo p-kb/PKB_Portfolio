@@ -25,12 +25,15 @@ a {
 }
 
 section {
-  position: relative;
   top: 6rem;
   width: 100%;
+  height: auto;
+  margin-top: 96px;
 }
 .visual {
+  margin-top: -5px;
   width: 100%;
+  height: 100%;
   position: relative;
 }
 .visual .bg {
@@ -48,29 +51,30 @@ section {
 .visual .txt {
   position: absolute;
   padding: 0 1.6rem;
-  left: 1.9rem;
-  top: 12.5rem;
+  left: 30px;
+  top: 200px;
   font-family: "Archivo", sans-serif;
   color: #353535;
+  white-space: nowrap;
 }
 .visual:first-child .txt h5 {
   color: #005059;
   margin-bottom: 2.2rem;
   font-family: "Montserrat", sans-serif;
-  font-size: 1.3rem;
+  font-size: 20px;
   font-weight: 400;
 }
 .visual:first-child .txt h1 {
   font-family: "Archivo_midi";
   color: #272626;
-  font-size: 4.7rem;
+  font-size: 75px;
   line-height: 0.9;
+  margin-bottom: 40px;
   margin-left: -5px;
-  margin-bottom: 2.5rem;
   font-weight: 450;
 }
 .visual:first-child .txt p {
-  font-size: 1.3rem;
+  font-size: 20px;
   font-weight: 350;
   line-height: 1;
   margin-bottom: 1.9rem;
@@ -81,33 +85,206 @@ section {
 }
 .visual:nth-child(2) .txt h1 {
   font-family: "Archivo_midi";
-  font-size: 4.7rem;
+  font-size: 75px;
   line-height: 0.9;
   margin-left: -5px;
   margin-bottom: 2.5rem;
   font-weight: 450;
 }
 .visual:nth-child(2) .txt p {
-  font-size: 1.3rem;
+  font-size: 20px;
   font-weight: 350;
   line-height: 1;
   margin-bottom: 1.9rem;
 }
 .visual:nth-child(2) .txt h3 {
-  font-size: 1.9rem;
+  font-size: 30px;
   font-weight: 400;
   line-height: 1.2;
 }
 .visual:nth-child(3) .txt h1 {
   font-family: "Archivo_midi";
-  font-size: 4.7rem;
+  font-size: 75px;
   line-height: 0.9;
   font-weight: 450;
   margin-bottom: 2.5rem;
 }
 .visual:nth-child(3) .txt p {
-  font-size: 1.25rem;
+  font-size: 20px;
   font-weight: 350;
   line-height: 1;
   margin-bottom: 1.9rem;
+}
+footer {
+  margin-top: -5px;
+}
+
+@media screen and (max-width: 1199px) {
+  section {
+    margin-top: 91.19px;
+  }
+  .visual .txt {
+    left: 28.5px;
+    top: 190px;
+  }
+
+  .visual:first-child .txt h5 {
+    font-size: 19px;
+    margin-bottom: 33px;
+  }
+  .visual:first-child .txt h1 {
+    font-size: 71px;
+    margin-bottom: 38px;
+  }
+  .visual:first-child .txt p {
+    font-size: 19px;
+    margin-bottom: 28.5px;
+  }
+  .visual:nth-child(2) .txt h1 {
+    font-size: 71px;
+    margin-bottom: 38px;
+  }
+  .visual:nth-child(2) .txt p {
+    font-size: 19px;
+    margin-bottom: 28.5px;
+  }
+  .visual:nth-child(2) .txt h3 {
+    font-size: 28.5px;
+  }
+  .visual:nth-child(3) .txt h1 {
+    font-size: 71px;
+    margin-bottom: 38px;
+  }
+  .visual:nth-child(3) .txt p {
+    font-size: 19px;
+    margin-bottom: 28.5px;
+  }
+}
+@media screen and (max-width: 991px) {
+  section {
+    margin-top: 86.39px;
+  }
+  .visual .txt {
+    left: 27px;
+    top: 180px;
+  }
+  .visual:first-child .txt h5 {
+    font-size: 18px;
+    margin-bottom: 31.5px;
+  }
+  .visual:first-child .txt h1 {
+    font-size: 67px;
+    margin-bottom: 36px;
+  }
+  .visual:first-child .txt p {
+    font-size: 18px;
+    margin-bottom: 27px;
+  }
+  .visual:nth-child(2) .txt h1 {
+    font-size: 67px;
+    margin-bottom: 36px;
+  }
+  .visual:nth-child(2) .txt p {
+    font-size: 18px;
+    margin-bottom: 27px;
+  }
+  .visual:nth-child(2) .txt h3 {
+    font-size: 27px;
+  }
+  .visual:nth-child(3) .txt h1 {
+    font-size: 67px;
+    margin-bottom: 36px;
+  }
+  .visual:nth-child(3) .txt p {
+    font-size: 18px;
+    margin-bottom: 27px;
+  }
+}
+@media screen and (max-width: 767px) {
+  section {
+    margin-top: 65px;
+  }
+  .visual .txt {
+    left: 25.5px;
+    top: 170px;
+  }
+  .visual:first-child .txt {
+    padding: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+  .visual:first-child .txt h5 {
+    font-size: 12.7px;
+    color: #fff;
+    margin-bottom: 21px;
+  }
+  .visual:first-child .txt h1 {
+    font-size: 46.7px;
+    margin-bottom: 25.5px;
+  }
+  .visual:first-child .txt p {
+    font-size: 20.4px;
+    color: #fff;
+    margin-bottom: 17px;
+  }
+  .visual:nth-child(2) .txt h1 {
+    font-size: 46.7px;
+    margin-bottom: 25.5px;
+  }
+  .visual:nth-child(2) .txt p {
+    font-size: 20.4px;
+    margin-bottom: 17px;
+  }
+  .visual:nth-child(2) .txt h3 {
+    font-size: 25.5px;
+  }
+  .visual:nth-child(3) .txt h1 {
+    font-size: 46.7px;
+    margin-bottom: 25.5px;
+  }
+  .visual:nth-child(3) .txt p {
+    font-size: 20.4px;
+    margin-bottom: 17px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .visual .txt {
+    padding: 0;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+  .visual:first-child .txt h5 {
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+  .visual:first-child .txt h1 {
+    font-size: 28px;
+    margin-bottom: 24px;
+  }
+  .visual:first-child .txt p {
+    font-size: 14.4px;
+    margin-bottom: 16px;
+  }
+  .visual:nth-child(2) .txt h1 {
+    font-size: 28px;
+    margin-bottom: 24px;
+  }
+  .visual:nth-child(2) .txt p {
+    font-size: 14.4px;
+    margin-bottom: 16px;
+  }
+  .visual:nth-child(2) .txt h3 {
+    font-size: 16px;
+  }
+  .visual:nth-child(3) .txt h1 {
+    font-size: 28px;
+    margin-bottom: 24px;
+  }
+  .visual:nth-child(3) .txt p {
+    font-size: 14.4px;
+    margin-bottom: 16px;
+  }
 }
