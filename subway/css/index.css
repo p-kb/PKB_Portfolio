@@ -123,7 +123,7 @@ header .hinner .menu li a {
 .visual .bsan img {
   width: 100%;
   object-fit: cover;
-  transform: rotate(20deg);
+  /* transform: rotate(-20deg); */
 }
 .visual > ul {
   position: absolute;
