@@ -1,3 +1,53 @@
+AOS.init({ offset: 300, once: true });
+
+$("[data-aos]").addClass("aos-init");
+
+function animateWithOffset(selector) {
+  $(selector + " [data-aos]").each(function () {
+    const offset = Number($(this).data("aos-offset")) || 0;
+    const elementTop = $(this).offset().top;
+    const wHeight = $(window).height();
+
+    // 요소가 화면 아래에서 offset만큼 올라왔을 때 animate
+    if (elementTop < wHeight - offset) {
+      $(this).addClass("aos-animate");
+    }
+  });
+}
+
+$("#fullpage").fullpage({
+  anchors: ["firstPage", "secondPage", "3rdPage", "4thPage", "5thPage"],
+  menu: "#menu",
+  scrollOverflow: true,
+  slidesNavigation: true,
+  controlArrows: false,
+
+  onLeave: function () {
+    $("[data-aos]").removeClass("aos-animate");
+  },
+
+  onSlideLeave: function () {
+    $("[data-aos]").removeClass("aos-animate");
+  },
+
+  afterLoad: function () {
+    animateWithOffset(".section.active");
+  },
+
+  afterSlideLoad: function () {
+    animateWithOffset(".slide.active");
+  },
+});
+
+// 내부 스크롤 감지
+$(document).on("scroll", ".fp-scrollable", function () {
+  animateWithOffset(".section.active");
+});
+// 일반 스크롤 감지 (혹시 섹션이 화면보다 클 때)
+$(window).on("scroll", function () {
+  animateWithOffset(".section.active");
+});
+
 $(".icon a").hover(
   function () {
     const img = $(this).find("img");
@@ -10,35 +60,3 @@ $(".icon a").hover(
     img.attr("src", img.attr("data-orig"));
   }
 );
-
-AOS.init();
-
-updateAOSOffset();
-
-function updateAOSOffset() {
-  const txtElements = document.querySelectorAll(".pwrap .txt");
-
-  if (!txtElements.length) return;
-
-  let offsetValue = 500;
-
-  // 화면이 줄면 offset = 200
-  if (window.innerWidth <= 1024) {
-    offsetValue = 300;
-  }
-
-  txtElements.forEach((el) => {
-    el.setAttribute("data-aos-offset", offsetValue);
-  });
-
-  // AOS 업데이트
-  if (typeof AOS !== "undefined") {
-    AOS.refreshHard();
-  }
-}
-
-// 페이지 로드 시
-window.addEventListener("load", updateAOSOffset);
-
-// 브라우저 사이즈 변경 시
-window.addEventListener("resize", updateAOSOffset);

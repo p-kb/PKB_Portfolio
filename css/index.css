@@ -16,6 +16,11 @@
   src: url(/font/CrimsonText-SemiBold.ttf);
 }
 
+.fp-section [data-aos] {
+  /* FullPage.js의 섹션에서 AOS 애니메이션이 올바르게 적용되도록 조정 */
+  will-change: transform, opacity;
+  transition-timing-function: ease-in-out;
+}
 * {
   margin: 0;
   padding: 0;
@@ -30,6 +35,7 @@ ul {
 
 html {
   scroll-behavior: smooth;
+  overflow: hidden !important;
 }
 body {
   background: #0a0a0a;
@@ -156,7 +162,7 @@ header #menu a:hover {
   overflow: hidden;
 }
 #section1 .title {
-  margin: 80px 0 60px;
+  margin: 80px 0 50px;
   font-size: 2em;
   font-weight: 600;
   color: #fff;
@@ -278,7 +284,7 @@ header #menu a:hover {
   height: auto;
   background: #b90e0a;
   text-align: center;
-  margin-top: 85px;
+  margin-top: 70px;
   color: #fff;
   text-shadow: 0 0 12px #fff, 0 0 30px #ff6666, 0 0 50px #ff3333,
     0 0 70px #ff1111;
@@ -293,7 +299,6 @@ header #menu a:hover {
 #section2,
 #section3 {
   width: 100%;
-  overflow: hidden;
 }
 .tit {
   color: #fff;
@@ -425,10 +430,12 @@ header #menu a:hover {
   height: 100%;
   object-fit: contain;
 }
+#section4 {
+  height: 300px;
+}
 footer {
   width: 100%;
   height: 300px;
-  margin-top: 150px;
   background: #b90e0a;
 }
 footer .icon {
