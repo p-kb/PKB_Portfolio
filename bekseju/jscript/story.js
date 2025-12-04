@@ -105,3 +105,14 @@ $(window).on("scroll", function () {
     });
   }
 });
+
+let btn = document.querySelector(".hamburger");
+let submenu = document.querySelector(".topsub");
+let spans = btn.querySelectorAll("span");
+
+btn.addEventListener("click", function () {
+  spans.forEach(function (v) {
+    v.classList.toggle("on");
+  });
+  submenu.classList.toggle("on");
+});
