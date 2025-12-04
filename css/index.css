@@ -16,11 +16,6 @@
   src: url(/font/CrimsonText-SemiBold.ttf);
 }
 
-.fp-section [data-aos] {
-  /* FullPage.js의 섹션에서 AOS 애니메이션이 올바르게 적용되도록 조정 */
-  will-change: transform, opacity;
-  transition-timing-function: ease-in-out;
-}
 * {
   margin: 0;
   padding: 0;
@@ -35,7 +30,6 @@ ul {
 
 html {
   scroll-behavior: smooth;
-  overflow: hidden !important;
 }
 body {
   background: #0a0a0a;
