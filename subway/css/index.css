@@ -56,6 +56,7 @@ header .hinner .menu li a {
   background-position: center;
   background-size: cover;
   position: relative;
+  overflow: hidden;
 }
 .visual .fra a::before {
   content: "";
@@ -113,12 +114,15 @@ header .hinner .menu li a {
   width: 100%;
   object-fit: cover;
 }
-.visual .bsan {
+.visual .bsanwrap {
   width: 55%;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.visual .bsanwrap .bsan {
+  width: 100%;
 }
 .visual .bsan img {
   width: 100%;
