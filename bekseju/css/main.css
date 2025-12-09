@@ -243,6 +243,7 @@ main.v1 section div::after {
   background-image: url(../img/ph.png);
   z-index: 5;
 }
+
 main.v2 {
   display: none;
   width: 100%;
@@ -258,6 +259,7 @@ main.v2 .mo {
   z-index: -1;
 }
 main.v2 .mo img {
+  display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -271,11 +273,13 @@ main.v2 .fir .firtop {
 }
 main.v2 .fir .firtop img {
   width: 100%;
+  height: 100%;
   display: block;
   object-fit: cover;
 }
 main.v2 .fir .firtxt {
   width: 100%;
+  height: 100%;
   padding: 4vh 0;
   background: #fffde7;
   display: flex;
