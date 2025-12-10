@@ -1,380 +1,378 @@
 <!DOCTYPE html>
 <html lang="ko">
   <head>
-    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PKB's Portfolio</title>
-    <link rel="stylesheet" href="css/index2.css" />
+    <title>PKB Portfolio</title>
+    <meta name="author" content="Matthew Howell" />
+    <meta name="description" content="fullPage continuous scrolling demo." />
+    <meta
+      name="keywords"
+      content="fullpage,jquery,demo,scroll,loop,continuous"
+    />
+    <meta name="Resource-type" content="Document" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/scrolloverflow.js"></script>
   </head>
   <body>
     <header>
-      <ul class="menu">
-        <li><a href="#section0">Home</a></li>
-        <li><a href="#section1">About Me</a></li>
-        <li><a href="#section2">Works</a></li>
-        <li><a href="#section3">Contact</a></li>
+      <ul id="menu">
+        <li data-menuanchor="firstPage">
+          <a href="#section0">Home</a>
+        </li>
+        <li data-menuanchor="secondPage">
+          <a href="#section1">About Me</a>
+        </li>
+        <li data-menuanchor="3rdPage"><a href="#section2">Project</a></li>
+        <li data-menuanchor="4thPage"><a href="#section3">Design</a></li>
+        <li data-menuanchor="5thPage"><a href="#section4">Contact</a></li>
       </ul>
     </header>
 
-    <div id="section0">
-      <div class="swrap">
-        <div class="tit">
-          <h1>PORTFOLIO</h1>
-          <p>Web Designer & Publisher</p>
-        </div>
-        <div class="con">
-          <p>Tel. 010-6621-3738</p>
-          <p>Email. ghol7416open@gmail.com</p>
-        </div>
-      </div>
+    <div class="section" id="section0">
+      <h1>PORTFOLIO</h1>
+      <p>Web Designer & Publisher</p>
     </div>
-
-    <div id="section1">
-      <div class="swrap">
-        <div class="swrapper">
-          <p><img src="img/profile.jpg" alt="" /></p>
-          <div class="pwrap">
-            <div class="profile">
-              <div class="ptxt">
-                <div class="name">
-                  <h3>박규빈</h3>
-                  <p class="bir">2002. 11. 17</p>
-                </div>
-                <div class="list">
-                  <ul>
-                    <li>E-mail</li>
-                    <li>Tel</li>
-                    <li>Web</li>
-                  </ul>
-                  <ul>
-                    <li class="info">ghol7416open@gmail.com</li>
-                    <li class="info">010-6621-3738</li>
-                    <li class="info">ghol7416open.dothome.co.kr</li>
-                  </ul>
-                </div>
-              </div>
+    <div class="section" id="section1">
+      <h1 class="title">About Me</h1>
+      <div class="profile">
+        <p
+          data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="1500"
+        >
+          <img src="img/profile.jpg" alt="" />
+        </p>
+        <div
+          class="pinner"
+          data-aos="fade-up"
+          data-aos-delay="800"
+          data-aos-duration="1000"
+        >
+          <div id="name">
+            <h1>Profile</h1>
+            <div class="nb">
+              <p class="name">박규빈</p>
+              <p class="bir">2002. 11. 17</p>
             </div>
-            <div class="edu">
-              <h3>Education</h3>
+            <div class="list">
               <ul>
-                <li>
-                  <p class="year">2021. 03 - 2025. 08</p>
-                  <p class="year"><br>2025. 08 - 2025. 12</p>
-                </li>
-                <li>
-                  <p class="infoa">
-                    청주대학교 졸업 <br />
-                    <span>
-                      주. 디지털보안학과 / 부. 회계학과
-                    </span>
-                  </p>
-                  <p class="infoa">그린컴퓨터아트학원 과정 수료 <br>
-                    <span> [디지털디자인] 트렌디한 UI/UX 반응형 웹제작을<br />
-                    위한 웹디자인 & 웹퍼블리셔(프론트엔드)
-                  </span>
-                  </p>
-                  </p>
-                </li>
+                <li>E-mail</li>
+                <li>Tel</li>
+                <li>Web</li>
               </ul>
-            </div>
-            <div class="skills">
-              <h3>Skills</h3>
               <ul>
-                <li>
-                  <p><img src="img/html240.png" alt="" /></p>
-                </li>
-                <li>
-                  <p><img src="img/css240.png" alt="" /></p>
-                </li>
-                <li>
-                  <p><img src="img/js240.png" alt="" /></p>
-                </li>
-                <li>
-                  <p><img src="img/jquery240.png" alt="" /></p>
-                </li>
-                <li>
-                  <p><img src="img/vscode-240.png" alt="" /></p>
-                </li>
-                <li>
-                  <p><img src="img/github-b.png" alt="" /></p>
-                </li>
-                <li>
-                  <p><img src="img/photo240.png" alt="" /></p>
-                </li>
-                <li>
-                  <p><img src="img/iller240.png" alt="" /></p>
-                </li>
-                <li>
-                  <p><img src="img/figma240.png" alt="" /></p>
-                </li>
+                <li class="info">ghol7416open@gmail.com</li>
+                <li class="info">010-6621-3738</li>
+                <li class="info">ghol7416open.dothome.co.kr</li>
               </ul>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-
-    <div id="section2">
-      <div class="swrap">
-        <div class="project">
-          <p><img src="img/s_pc.png" alt="" /></p>
-          <div class="txt">
-            <h1>Project Renewal</h1>
-            <h3 class="site">Subway</h3>
-            <p>
-              aaaaaaaaaaaaaaaaaaaaaaaaaaa<br />
-              aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa<br />
-              aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa<br />
-            </p>
-            <div class="wrapper">
-              <div class="wrap">
-                <p class="work">기여도</p>
-                <div>
-                  <p>리뉴얼 100%</p>
-                  <p>퍼블리싱 100%</p>
-                </div>
-              </div>
-              <div class="wrap">
-                <p class="work">Tools</p>
-                <div class="winfo">
-                  <p>HTML5</p>
-                  <p>CSS3</p>
-                  <p>javascript</p>
-                  <p>jquery</p>
-                  <p>figma</p>
-                </div>
-              </div>
-            </div>
-            <ul class="link">
-              <li><a href="/subway/">Website</a></li>
+          <div class="edu">
+            <h1>Education</h1>
+            <ul>
               <li>
-                <a href="https://github.com/p-kb/PKB_Portfolio/tree/main/subway"
-                  >Github</a
-                >
+                <p class="year">2025. 08</p>
+                <p class="infoa">청주대학교 졸업</p>
+                <p class="infob">주. 디지털보안학과 / 부. 회계학과</p>
               </li>
               <li>
+                <p class="year">2025. 08 - 2025. 12</p>
+                <p class="infoa">그린컴퓨터아트학원 과정 수료</p>
+                <p class="infob">
+                  [디지털디자인] 트렌디한 UI/UX 반응형 웹제작을<br />
+                  위한 웹디자인 & 웹퍼블리셔(프론트엔드)
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div class="skills">
+            <h1>Skills</h1>
+            <ul>
+              <li>
+                <p><img src="img/html240.png" alt="" /></p>
+              </li>
+              <li>
+                <p><img src="img/css240.png" alt="" /></p>
+              </li>
+              <li>
+                <p><img src="img/js240.png" alt="" /></p>
+              </li>
+              <li>
+                <p><img src="img/jquery240.png" alt="" /></p>
+              </li>
+              <li>
+                <p><img src="img/vscode-240.png" alt="" /></p>
+              </li>
+              <li>
+                <p><img src="img/github-w.png" alt="" /></p>
+              </li>
+              <li>
+                <p><img src="img/photo240.png" alt="" /></p>
+              </li>
+              <li>
+                <p><img src="img/iller240.png" alt="" /></p>
+              </li>
+              <li>
+                <p><img src="img/figma240.png" alt="" /></p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="motto">
+        <h1>
+          Sometimes it is the people no one imagines anything of who do the
+          things that no one can imagines
+        </h1>
+      </div>
+    </div>
+    <div class="section" id="section2">
+      <h1 class="tit">Project</h1>
+      <div class="project">
+        <div class="pwrap">
+          <div
+            class="txt"
+            data-aos="fade-right"
+            data-aos-delay="500"
+            data-aos-easing="ease-in-sine"
+          >
+            <div class="txtwrap">
+              <p class="site">Subway</p>
+              <p class="work">기여도</p>
+              <div class="winfo">
+                <p>리뉴얼 100%</p>
+                <p>퍼블리싱 100%</p>
+              </div>
+              <p class="work">Tools</p>
+              <div class="winfo">
+                <p>HTML5</p>
+                <p>CSS3</p>
+                <p>javascript</p>
+                <p>jquery</p>
+                <p>figma</p>
+              </div>
+              <p class="work">Links</p>
+              <div class="link">
+                <a href="/subway/"><img src="img/web-w.png" alt="" /></a>
+                <a href="https://github.com/p-kb/PKB_Portfolio/tree/main/subway"
+                  ><img src="img/github-w.png" alt=""
+                /></a>
                 <a
                   href="https://www.figma.com/design/7VpDFeoJjTEDGuVKoPRAtI/subway?node-id=0-1&p=f&t=3FD7UghYH37JMJET-0"
-                  >Figma</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="project">
-          <p><img src="img/ar-device.png" alt="" /></p>
-          <div class="txt">
-            <h1>Project Publishing</h1>
-            <h3 class="site">Armoredfresh</h3>
-            <p>
-              aaaaaaaaaaaaaaaaaaaaaaaaaaa<br />
-              aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa<br />
-              aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa<br />
-            </p>
-            <div class="wrapper">
-              <div class="wrap">
-                <p class="work">기여도</p>
-                <div>
-                  <p>퍼블리싱 100%</p>
-                </div>
-              </div>
-              <div class="wrap">
-                <p class="work">Tools</p>
-                <div class="winfo">
-                  <p>HTML5</p>
-                  <p>CSS3</p>
-                  <p>javascript</p>
-                  <p>jquery</p>
-                </div>
+                  ><img src="img/figma-w.png" alt=""
+                /></a>
               </div>
             </div>
-            <ul class="link">
-              <li><a href="/armoredfresh/">Website</a></li>
-              <li>
+          </div>
+          <p data-aos="fade-up" data-aos-duration="800">
+            <img src="img/s_pc.png" alt="" />
+          </p>
+        </div>
+        <div class="pwrap">
+          <div
+            class="txt"
+            data-aos="fade-left"
+            data-aos-delay="500"
+            data-aos-easing="ease-in-sine"
+          >
+            <div class="txtwrap">
+              <p class="site">Armoredfresh</p>
+              <p class="work">기여도</p>
+              <div class="winfo">
+                <p>반응형 100%</p>
+                <p>퍼블리싱 100%</p>
+              </div>
+              <p class="work">Tools</p>
+              <div class="winfo">
+                <p>HTML5</p>
+                <p>CSS3</p>
+                <p>javascript</p>
+                <p>jquery</p>
+              </div>
+              <p class="work">Links</p>
+              <div class="link">
+                <a href="/armoredfresh/"><img src="img/web-w.png" alt="" /></a>
                 <a
                   href="https://github.com/p-kb/PKB_Portfolio/tree/main/armoredfresh"
-                  >Github</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="project">
-          <p><img src="img/bek-device.png" alt="" /></p>
-          <div class="txt">
-            <h1>Project Publishing</h1>
-            <h3 class="site">백세주</h3>
-            <p>
-              aaaaaaaaaaaaaaaaaaaaaaaaaaa<br />
-              aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa<br />
-              aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa<br />
-            </p>
-            <div class="wrapper">
-              <div class="wrap">
-                <p class="work">기여도</p>
-                <div>
-                  <p>퍼블리싱 100%</p>
-                </div>
-              </div>
-              <div class="wrap">
-                <p class="work">Tools</p>
-                <div class="winfo">
-                  <p>HTML5</p>
-                  <p>CSS3</p>
-                  <p>javascript</p>
-                  <p>jquery</p>
-                </div>
+                  ><img src="img/github-w.png" alt=""
+                /></a>
               </div>
             </div>
-            <ul class="link">
-              <li><a href="/bekseju/">Website</a></li>
-              <li>
+          </div>
+          <p data-aos="fade-up" data-aos-duration="800">
+            <img src="img/ar-device.png" alt="" />
+          </p>
+        </div>
+        <div class="pwrap">
+          <div
+            class="txt"
+            data-aos="fade-right"
+            data-aos-delay="500"
+            data-aos-easing="ease-in-sine"
+          >
+            <div class="txtwrap">
+              <p class="site">백세주</p>
+              <p class="work">기여도</p>
+              <div class="winfo">
+                <p>반응형 100%</p>
+                <p>퍼블리싱 100%</p>
+              </div>
+              <p class="work">Tools</p>
+              <div class="winfo">
+                <p>HTML5</p>
+                <p>CSS3</p>
+                <p>javascript</p>
+                <p>jquery</p>
+              </div>
+              <p class="work">Links</p>
+              <div class="link">
+                <a href="/bekseju/"><img src="img/web-w.png" alt="" /></a>
                 <a
                   href="https://github.com/p-kb/PKB_Portfolio/tree/main/bekseju"
-                  >Github</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="project">
-          <p><img src="img/cafebene.png" alt="" /></p>
-          <div class="txt">
-            <h1>Project Publishing</h1>
-            <h3 class="site">Cafebene</h3>
-            <p>
-              aaaaaaaaaaaaaaaaaaaaaaaaaaa<br />
-              aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa<br />
-              aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa<br />
-            </p>
-            <div class="wrapper">
-              <div class="wrap">
-                <p class="work">기여도</p>
-                <div>
-                  <p>퍼블리싱 100%</p>
-                </div>
-              </div>
-              <div class="wrap">
-                <p class="work">Tools</p>
-                <div class="winfo">
-                  <p>HTML5</p>
-                  <p>CSS3</p>
-                  <p>javascript</p>
-                  <p>jquery</p>
-                </div>
+                  ><img src="img/github-w.png" alt=""
+                /></a>
               </div>
             </div>
-            <ul class="link">
-              <li><a href="/cafebene/">Website</a></li>
-              <li>
+          </div>
+          <p data-aos="fade-up" data-aos-duration="800">
+            <img src="img/bek-device.png" alt="" />
+          </p>
+        </div>
+        <div class="pwrap">
+          <div
+            class="txt"
+            data-aos="fade-left"
+            data-aos-delay="500"
+            data-aos-easing="ease-in-sine"
+          >
+            <div class="txtwrap">
+              <p class="site">Cafebene</p>
+              <p class="work">기여도</p>
+              <div class="winfo">
+                <p>퍼블리싱 100%</p>
+              </div>
+              <p class="work">Tools</p>
+              <div class="winfo">
+                <p>HTML5</p>
+                <p>CSS3</p>
+                <p>javascript</p>
+                <p>jquery</p>
+              </div>
+              <p class="work">Links</p>
+              <div class="link">
+                <a href="/cafebene/"><img src="img/web-w.png" alt="" /></a>
                 <a
                   href="https://github.com/p-kb/PKB_Portfolio/tree/main/cafebene"
-                  >Github</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="project">
-          <p><img src="img/zic.png" alt="" /></p>
-          <div class="txt">
-            <h1>Project Design</h1>
-            <h3 class="site">zix&dacx</h3>
-            <p>
-              aaaaaaaaaaaaaaaaaaaaaaaaaaa<br />
-              aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa<br />
-              aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa<br />
-            </p>
-            <div class="wrapper">
-              <div class="wrap">
-                <p class="work">기여도</p>
-                <div>
-                  <p>리디자인 100%</p>
-                </div>
-              </div>
-              <div class="wrap">
-                <p class="work">Tools</p>
-                <div class="winfo">
-                  <p>figma</p>
-                </div>
+                  ><img src="img/github-w.png" alt=""
+                /></a>
               </div>
             </div>
-            <ul class="link">
-              <li>
+          </div>
+          <p data-aos="fade-up" data-aos-duration="800">
+            <img src="img/cafebene.png" alt="" />
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="section" id="section3">
+      <h1 class="tit">Design</h1>
+      <div class="project">
+        <div class="pwrap">
+          <div
+            class="txt"
+            data-aos="fade-right"
+            data-aos-delay="500"
+            data-aos-easing="ease-in-sine"
+          >
+            <div class="txtwrap">
+              <p class="site">zix&dacx</p>
+              <p class="work">작업</p>
+              <div class="winfo">
+                <p>리디자인</p>
+              </div>
+              <p class="work">Tools</p>
+              <div class="winfo">
+                <p>figma</p>
+              </div>
+              <p class="work">Links</p>
+              <div class="link">
                 <a
                   href="https://www.figma.com/design/uiS6x7tc3Qq09HmQqw8vOJ/zix-dacx?node-id=0-1&p=f&t=AHUAkmDgqir1WUb9-0"
-                  >Figma</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="project">
-          <p><img src="img/osulloc-pc.png" alt="" /></p>
-          <div class="txt">
-            <h1>Project Design</h1>
-            <h3 class="site">오설록</h3>
-            <p>
-              aaaaaaaaaaaaaaaaaaaaaaaaaaa<br />
-              aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa<br />
-              aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa<br />
-            </p>
-            <div class="wrapper">
-              <div class="wrap">
-                <p class="work">기여도</p>
-                <div>
-                  <p>리디자인 100%</p>
-                </div>
-              </div>
-              <div class="wrap">
-                <p class="work">Tools</p>
-                <div class="winfo">
-                  <p>figma</p>
-                </div>
+                  ><img src="img/figma-w.png" alt=""
+                /></a>
               </div>
             </div>
-            <ul class="link">
-              <li>
+          </div>
+          <p data-aos="fade-up" data-aos-duration="800">
+            <img src="img/zic.png" alt="" />
+          </p>
+        </div>
+        <div class="pwrap">
+          <div
+            class="txt"
+            data-aos="fade-left"
+            data-aos-delay="500"
+            data-aos-easing="ease-in-sine"
+          >
+            <div class="txtwrap">
+              <p class="site">오설록</p>
+              <p class="work">작업</p>
+              <div class="winfo">
+                <p>리디자인</p>
+              </div>
+              <p class="work">Tools</p>
+              <div class="winfo">
+                <p>figma</p>
+              </div>
+              <p class="work">Links</p>
+              <div class="link">
                 <a
                   href="https://www.figma.com/design/pbxYOxAo2dL4kvREYBeR64/osulloc?node-id=0-1&p=f&t=AHUAkmDgqir1WUb9-0"
-                  >Figma</a
-                >
-              </li>
-            </ul>
+                  ><img src="img/figma-w.png" alt=""
+                /></a>
+              </div>
+            </div>
           </div>
+          <p data-aos="fade-up" data-aos-duration="800">
+            <img src="img/osulloc-pc.png" alt="" />
+          </p>
         </div>
       </div>
     </div>
 
-    <footer id="section3">
-      <div class="swrap">
-        <ul class="icon">
-          <li>
-            <a href="tel:010-6621-3738"><img src="img/phone-w.png" alt="" /></a>
-          </li>
-          <li>
-            <a href="mailto:ghol7416open@gmail.com"
-              ><img src="img/mail-w.png" alt=""
-            /></a>
-          </li>
-          <li>
-            <a href="https://github.com/p-kb/PKB_Portfolio.git"
-              ><img src="img/github-w.png" alt=""
-            /></a>
-          </li>
-          <li>
-            <a href="https://open.kakao.com/o/sb55dS3h"
-              ><img src="img/talk-w.png" alt=""
-            /></a>
-          </li>
-          <li>
-            <a href="https://ghol7416open.dothome.co.kr/"
-              ><img src="img/web-w.png" alt=""
-            /></a>
-          </li>
-        </ul>
-        <p>© 2025 PKB All Rights Reserved.</p>
-      </div>
-    </footer>
+    <div class="section fp-auto-height" id="section4">
+      <footer>
+        <div class="icon">
+          <a href="sms:010-6621-3738">
+            <img src="img/phone-w.png" alt="" />
+          </a>
+          <a href="mailto:ghol7416open@gmail.com">
+            <img src="img/mail-w.png" alt="" />
+          </a>
+          <a href="https://github.com/p-kb/PKB_Portfolio.git">
+            <img src="img/github-w.png" alt="" />
+          </a>
+          <a href="https://open.kakao.com/o/sb55dS3h">
+            <img src="img/talk-w.png" alt="" />
+          </a>
+          <a href="https://ghol7416open.dothome.co.kr/">
+            <img src="img/web-w.png" alt="" />
+          </a>
+        </div>
+        <a href="#section0">
+          <p>
+            <img src="img/up1.png" alt="" />
+          </p>
+        </a>
+      </footer>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>

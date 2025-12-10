@@ -1,378 +1,375 @@
 <!DOCTYPE html>
 <html lang="ko">
   <head>
-    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PKB Portfolio</title>
-    <meta name="author" content="Matthew Howell" />
-    <meta name="description" content="fullPage continuous scrolling demo." />
-    <meta
-      name="keywords"
-      content="fullpage,jquery,demo,scroll,loop,continuous"
-    />
-    <meta name="Resource-type" content="Document" />
-    <link rel="stylesheet" href="css/index.css" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-
+    <meta property="og:image" content="">
+    <title>PKB's Portfolio</title>
+    <link rel="stylesheet" href="css/index2.css" />
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-    <script type="text/javascript" src="js/scrolloverflow.js"></script>
   </head>
   <body>
+
     <header>
-      <ul id="menu">
-        <li data-menuanchor="firstPage">
-          <a href="#section0">Home</a>
-        </li>
-        <li data-menuanchor="secondPage">
-          <a href="#section1">About Me</a>
-        </li>
-        <li data-menuanchor="3rdPage"><a href="#section2">Project</a></li>
-        <li data-menuanchor="4thPage"><a href="#section3">Design</a></li>
-        <li data-menuanchor="5thPage"><a href="#section4">Contact</a></li>
+      <ul class="menu">
+        <li><a href="#section0">Home</a></li>
+        <li><a href="#section1">About Me</a></li>
+        <li><a href="#section2">Works</a></li>
+        <li><a href="#section3">Contact</a></li>
       </ul>
     </header>
 
-    <div class="section" id="section0">
-      <h1>PORTFOLIO</h1>
-      <p>Web Designer & Publisher</p>
+    <div id="section0">
+      <div class="swrap">
+        <div class="tit">
+          <h1>PORTFOLIO</h1>
+          <p>Web Designer & Publisher</p>
+        </div>
+        <div class="con">
+          <p>Tel. 010-6621-3738</p>
+          <p>Email. ghol7416open@gmail.com</p>
+        </div>
+      </div>
     </div>
-    <div class="section" id="section1">
-      <h1 class="title">About Me</h1>
-      <div class="profile">
-        <p
-          data-aos="flip-left"
-          data-aos-easing="ease-out-cubic"
-          data-aos-duration="1500"
-        >
-          <img src="img/profile.jpg" alt="" />
-        </p>
-        <div
-          class="pinner"
-          data-aos="fade-up"
-          data-aos-delay="800"
-          data-aos-duration="1000"
-        >
-          <div id="name">
-            <h1>Profile</h1>
-            <div class="nb">
-              <p class="name">박규빈</p>
-              <p class="bir">2002. 11. 17</p>
+
+    <div id="section1">
+      <div class="swrap">
+        <div class="swrapper">
+          <p><img src="img/profile.jpg" alt="" /></p>
+          <div class="pwrap">
+            <div class="profile">
+              <div class="ptxt">
+                <div class="name">
+                  <h3>박규빈</h3>
+                  <p class="bir">2002. 11. 17</p>
+                </div>
+                <div class="list">
+                  <ul>
+                    <li>E-mail</li>
+                    <li>Tel</li>
+                    <li>Web</li>
+                  </ul>
+                  <ul>
+                    <li class="info">ghol7416open@gmail.com</li>
+                    <li class="info">010-6621-3738</li>
+                    <li class="info">ghol7416open.dothome.co.kr</li>
+                  </ul>
+                </div>
+              </div>
             </div>
-            <div class="list">
+            <div class="edu">
+              <h3>Education</h3>
               <ul>
-                <li>E-mail</li>
-                <li>Tel</li>
-                <li>Web</li>
-              </ul>
-              <ul>
-                <li class="info">ghol7416open@gmail.com</li>
-                <li class="info">010-6621-3738</li>
-                <li class="info">ghol7416open.dothome.co.kr</li>
+                <li>
+                  <p class="year">2021. 03 - 2025. 08</p>
+                  <p class="year"><br>2025. 08 - 2025. 12</p>
+                </li>
+                <li>
+                  <p class="infoa">
+                    청주대학교 졸업 <br />
+                    <span>
+                      주. 디지털보안학과 / 부. 회계학과
+                    </span>
+                  </p>
+                  <p class="infoa">그린컴퓨터아트학원 과정 수료 <br>
+                    <span> [디지털디자인] 트렌디한 UI/UX 반응형 웹제작을 위한 웹디자인 & 웹퍼블리셔(프론트엔드)
+                  </span>
+                  </p>
+                  </p>
+                </li>
               </ul>
             </div>
-          </div>
-          <div class="edu">
-            <h1>Education</h1>
-            <ul>
-              <li>
-                <p class="year">2025. 08</p>
-                <p class="infoa">청주대학교 졸업</p>
-                <p class="infob">주. 디지털보안학과 / 부. 회계학과</p>
-              </li>
-              <li>
-                <p class="year">2025. 08 - 2025. 12</p>
-                <p class="infoa">그린컴퓨터아트학원 과정 수료</p>
-                <p class="infob">
-                  [디지털디자인] 트렌디한 UI/UX 반응형 웹제작을<br />
-                  위한 웹디자인 & 웹퍼블리셔(프론트엔드)
-                </p>
-              </li>
-            </ul>
-          </div>
-          <div class="skills">
-            <h1>Skills</h1>
-            <ul>
-              <li>
-                <p><img src="img/html240.png" alt="" /></p>
-              </li>
-              <li>
-                <p><img src="img/css240.png" alt="" /></p>
-              </li>
-              <li>
-                <p><img src="img/js240.png" alt="" /></p>
-              </li>
-              <li>
-                <p><img src="img/jquery240.png" alt="" /></p>
-              </li>
-              <li>
-                <p><img src="img/vscode-240.png" alt="" /></p>
-              </li>
-              <li>
-                <p><img src="img/github-w.png" alt="" /></p>
-              </li>
-              <li>
-                <p><img src="img/photo240.png" alt="" /></p>
-              </li>
-              <li>
-                <p><img src="img/iller240.png" alt="" /></p>
-              </li>
-              <li>
-                <p><img src="img/figma240.png" alt="" /></p>
-              </li>
-            </ul>
+            <div class="skills">
+              <h3>Skills</h3>
+              <ul>
+                <li>
+                  <p><img src="img/html240.png" alt="" /></p>
+                </li>
+                <li>
+                  <p><img src="img/css240.png" alt="" /></p>
+                </li>
+                <li>
+                  <p><img src="img/js240.png" alt="" /></p>
+                </li>
+                <li>
+                  <p><img src="img/jquery240.png" alt="" /></p>
+                </li>
+                <li>
+                  <p><img src="img/vscode-240.png" alt="" /></p>
+                </li>
+                <li>
+                  <p><img src="img/github-b.png" alt="" /></p>
+                </li>
+                <li>
+                  <p><img src="img/photo240.png" alt="" /></p>
+                </li>
+                <li>
+                  <p><img src="img/iller240.png" alt="" /></p>
+                </li>
+                <li>
+                  <p><img src="img/figma240.png" alt="" /></p>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
-      <div class="motto">
-        <h1>
-          Sometimes it is the people no one imagines anything of who do the
-          things that no one can imagines
-        </h1>
-      </div>
     </div>
-    <div class="section" id="section2">
-      <h1 class="tit">Project</h1>
-      <div class="project">
-        <div class="pwrap">
-          <div
-            class="txt"
-            data-aos="fade-right"
-            data-aos-delay="500"
-            data-aos-easing="ease-in-sine"
-          >
-            <div class="txtwrap">
-              <p class="site">Subway</p>
-              <p class="work">기여도</p>
-              <div class="winfo">
-                <p>리뉴얼 100%</p>
-                <p>퍼블리싱 100%</p>
+
+    <div id="section2">
+      <div class="swrap">
+        <div class="project">
+          <p><img src="img/s_pc.png" alt="" /></p>
+          <div class="txt">
+            <h1>Project Renewal</h1>
+            <h3 class="site">Subway</h3>
+            <p>
+               SUBWAY는 평소에도 좋아하고 컬러감이 확실한 브랜드라 리뉴얼을 생각하게 되었습니다.<br>
+               브랜드의 컬러와 제품을 이용하여 배너를 제작하여 브랜드의 정체성을 보여주고자 하였습니다.<br> 그리고 페이지의 구성 요소를 재배치하여 정보를 보다 다양하게 나타낼 수 있도록 하고,<br> 다양한 라이브러리를 사용하여 페이지를 보다 동적으로 보일 수 있게 제작하였습니다.<br />
+              또한 Gnuboard를 활용한 회원가입, 로그인, 게시판 시스템을 웹사이트에 적용시켰습니다.<br />
+            </p>
+            <div class="wrapper">
+              <div class="wrap">
+                <p class="work">기여도</p>
+                <div>
+                  <p>리뉴얼 100%</p>
+                  <p>퍼블리싱 100%</p>
+                </div>
               </div>
-              <p class="work">Tools</p>
-              <div class="winfo">
-                <p>HTML5</p>
-                <p>CSS3</p>
-                <p>javascript</p>
-                <p>jquery</p>
-                <p>figma</p>
+              <div class="wrap">
+                <p class="work">Tools</p>
+                <div class="winfo">
+                  <p>HTML5</p>
+                  <p>CSS3</p>
+                  <p>javascript</p>
+                  <p>jquery</p>
+                  <p>figma</p>
+                </div>
               </div>
-              <p class="work">Links</p>
-              <div class="link">
-                <a href="/subway/"><img src="img/web-w.png" alt="" /></a>
+            </div>
+            <ul class="link">
+              <li><a href="/subway/">Website</a></li>
+              <li>
                 <a href="https://github.com/p-kb/PKB_Portfolio/tree/main/subway"
-                  ><img src="img/github-w.png" alt=""
-                /></a>
+                  >Github</a
+                >
+              </li>
+              <li>
                 <a
                   href="https://www.figma.com/design/7VpDFeoJjTEDGuVKoPRAtI/subway?node-id=0-1&p=f&t=3FD7UghYH37JMJET-0"
-                  ><img src="img/figma-w.png" alt=""
-                /></a>
+                  >Figma</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="project">
+          <p><img src="img/ar-device.png" alt="" /></p>
+          <div class="txt">
+            <h1>Project Publishing</h1>
+            <h3 class="site">Armoredfresh</h3>
+            <p>
+              이 프로젝트는 식물성 치즈 브랜드 Armoredfresh의 퍼블리싱 작업입니다.<br> 이 웹사이트에 있는 영상의 움직임과 이미지의 색감이 눈에 들어와 작업을 하게 되었습니다.<br> 프로젝트 구성은 Index 페이지와 Our mission 페이지로 되어있으며<br> 모두 반응형으로 제작되었습니다.<br> 이 웹사이트의 메인페이지는 스크롤 이벤트를 활용하여 영상으로 들어가는 듯한 화면을 담아냈습니다.
+            </p>
+            <div class="wrapper">
+              <div class="wrap">
+                <p class="work">기여도</p>
+                <div>
+                  <p>퍼블리싱 100%</p>
+                </div>
+              </div>
+              <div class="wrap">
+                <p class="work">Tools</p>
+                <div class="winfo">
+                  <p>HTML5</p>
+                  <p>CSS3</p>
+                  <p>javascript</p>
+                  <p>jquery</p>
+                </div>
               </div>
             </div>
-          </div>
-          <p data-aos="fade-up" data-aos-duration="800">
-            <img src="img/s_pc.png" alt="" />
-          </p>
-        </div>
-        <div class="pwrap">
-          <div
-            class="txt"
-            data-aos="fade-left"
-            data-aos-delay="500"
-            data-aos-easing="ease-in-sine"
-          >
-            <div class="txtwrap">
-              <p class="site">Armoredfresh</p>
-              <p class="work">기여도</p>
-              <div class="winfo">
-                <p>반응형 100%</p>
-                <p>퍼블리싱 100%</p>
-              </div>
-              <p class="work">Tools</p>
-              <div class="winfo">
-                <p>HTML5</p>
-                <p>CSS3</p>
-                <p>javascript</p>
-                <p>jquery</p>
-              </div>
-              <p class="work">Links</p>
-              <div class="link">
-                <a href="/armoredfresh/"><img src="img/web-w.png" alt="" /></a>
+            <ul class="link">
+              <li><a href="/armoredfresh/">Website</a></li>
+              <li>
                 <a
                   href="https://github.com/p-kb/PKB_Portfolio/tree/main/armoredfresh"
-                  ><img src="img/github-w.png" alt=""
-                /></a>
+                  >Github</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="project">
+          <p><img src="img/bek-device.png" alt="" /></p>
+          <div class="txt">
+            <h1>Project Publishing</h1>
+            <h3 class="site">백세주</h3>
+            <p>
+              이 프로젝트는 백세주(百歲酒)라는 전통주 브랜드를 퍼블리싱하였습니다.<br> 이 웹사이트의 구성과 브랜드의 전통·고급스러운 분위기를 보고 작업을 하게 되었습니다.<br> Index 페이지, Main 페이지, Story 페이지로 구성되어 있으며<br> Index, Main 페이지는 반응형으로 제작되었습니다.<br> 또한 Index 페이지는 Intro를 담당하고 있습니다.<br> 이 작업을 통해 웹 구축 역량을 강화할 수 있었습니다.
+            </p>
+            <div class="wrapper">
+              <div class="wrap">
+                <p class="work">기여도</p>
+                <div>
+                  <p>퍼블리싱 100%</p>
+                </div>
+              </div>
+              <div class="wrap">
+                <p class="work">Tools</p>
+                <div class="winfo">
+                  <p>HTML5</p>
+                  <p>CSS3</p>
+                  <p>javascript</p>
+                  <p>jquery</p>
+                </div>
               </div>
             </div>
-          </div>
-          <p data-aos="fade-up" data-aos-duration="800">
-            <img src="img/ar-device.png" alt="" />
-          </p>
-        </div>
-        <div class="pwrap">
-          <div
-            class="txt"
-            data-aos="fade-right"
-            data-aos-delay="500"
-            data-aos-easing="ease-in-sine"
-          >
-            <div class="txtwrap">
-              <p class="site">백세주</p>
-              <p class="work">기여도</p>
-              <div class="winfo">
-                <p>반응형 100%</p>
-                <p>퍼블리싱 100%</p>
-              </div>
-              <p class="work">Tools</p>
-              <div class="winfo">
-                <p>HTML5</p>
-                <p>CSS3</p>
-                <p>javascript</p>
-                <p>jquery</p>
-              </div>
-              <p class="work">Links</p>
-              <div class="link">
-                <a href="/bekseju/"><img src="img/web-w.png" alt="" /></a>
+            <ul class="link">
+              <li><a href="/bekseju/">Website</a></li>
+              <li>
                 <a
                   href="https://github.com/p-kb/PKB_Portfolio/tree/main/bekseju"
-                  ><img src="img/github-w.png" alt=""
-                /></a>
+                  >Github</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="project">
+          <p><img src="img/cafebene.png" alt="" /></p>
+          <div class="txt">
+            <h1>Project Publishing</h1>
+            <h3 class="site">Cafebene</h3>
+            <p>
+              이 프로젝트는 카페 브랜드 Cafebene의 웹사이트를 참고하여 퍼블리싱하였습니다.<br> 어렸을 적 드라마를 보던 드라마에서 마지막에 ost와 스폰서 배너가 함께<br> 나오던 것을 생각하고 작업을 생각하게 되었습니다.<br> 브랜드의 따뜻하고 감성적인 스타일을 웹으로 구현하였습니다.<br>
+              이 사이트는 Index 페이지로 구성되어 있습니다.
+            </p>
+            <div class="wrapper">
+              <div class="wrap">
+                <p class="work">기여도</p>
+                <div>
+                  <p>퍼블리싱 100%</p>
+                </div>
+              </div>
+              <div class="wrap">
+                <p class="work">Tools</p>
+                <div class="winfo">
+                  <p>HTML5</p>
+                  <p>CSS3</p>
+                  <p>javascript</p>
+                  <p>jquery</p>
+                </div>
               </div>
             </div>
-          </div>
-          <p data-aos="fade-up" data-aos-duration="800">
-            <img src="img/bek-device.png" alt="" />
-          </p>
-        </div>
-        <div class="pwrap">
-          <div
-            class="txt"
-            data-aos="fade-left"
-            data-aos-delay="500"
-            data-aos-easing="ease-in-sine"
-          >
-            <div class="txtwrap">
-              <p class="site">Cafebene</p>
-              <p class="work">기여도</p>
-              <div class="winfo">
-                <p>퍼블리싱 100%</p>
-              </div>
-              <p class="work">Tools</p>
-              <div class="winfo">
-                <p>HTML5</p>
-                <p>CSS3</p>
-                <p>javascript</p>
-                <p>jquery</p>
-              </div>
-              <p class="work">Links</p>
-              <div class="link">
-                <a href="/cafebene/"><img src="img/web-w.png" alt="" /></a>
+            <ul class="link">
+              <li><a href="/cafebene/">Website</a></li>
+              <li>
                 <a
                   href="https://github.com/p-kb/PKB_Portfolio/tree/main/cafebene"
-                  ><img src="img/github-w.png" alt=""
-                /></a>
+                  >Github</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="project">
+          <p><img src="img/zic.png" alt="" /></p>
+          <div class="txt">
+            <h1>Project Design</h1>
+            <h3 class="site">zix&dacx</h3>
+            <p>
+              이 작업은 인테리어 회사 zix&dacx라는 브랜드의 웹사이트 리디자인 작업입니다.<br> 평소 가구나 인테리어 브랜드의 디자인을 하고 싶다고 생각했었기에 선택하게 되었습니다.<br> 주로 figma를 사용하여 디자인하였고 브랜드가 추구하는 색감을 착안하려고 노력하였습니다.
+            </p>
+            <div class="wrapper">
+              <div class="wrap">
+                <p class="work">기여도</p>
+                <div>
+                  <p>리디자인 100%</p>
+                </div>
+              </div>
+              <div class="wrap">
+                <p class="work">Tools</p>
+                <div class="winfo">
+                  <p>figma</p>
+                </div>
               </div>
             </div>
-          </div>
-          <p data-aos="fade-up" data-aos-duration="800">
-            <img src="img/cafebene.png" alt="" />
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="section" id="section3">
-      <h1 class="tit">Design</h1>
-      <div class="project">
-        <div class="pwrap">
-          <div
-            class="txt"
-            data-aos="fade-right"
-            data-aos-delay="500"
-            data-aos-easing="ease-in-sine"
-          >
-            <div class="txtwrap">
-              <p class="site">zix&dacx</p>
-              <p class="work">작업</p>
-              <div class="winfo">
-                <p>리디자인</p>
-              </div>
-              <p class="work">Tools</p>
-              <div class="winfo">
-                <p>figma</p>
-              </div>
-              <p class="work">Links</p>
-              <div class="link">
+            <ul class="link">
+              <li>
                 <a
                   href="https://www.figma.com/design/uiS6x7tc3Qq09HmQqw8vOJ/zix-dacx?node-id=0-1&p=f&t=AHUAkmDgqir1WUb9-0"
-                  ><img src="img/figma-w.png" alt=""
-                /></a>
+                  >Figma</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="project">
+          <p><img src="img/osulloc-pc.png" alt="" /></p>
+          <div class="txt">
+            <h1>Project Design</h1>
+            <h3 class="site">오설록</h3>
+            <p>
+              오설록은 주로 말차를 판매하는 브랜드로 평소 말차를 좋아하여 말차 제품을 찾아다니고<br> 오설록의 말차를 좋아해서 리다자인을 생각하게 되었습니다.<br> 주로 브랜드의 주 상품인 말차의 색감을 사용하여 브랜드를 보다 정체성을 나타내려 하였으며,<br> 페이지의 구성 요소를 재배치하였습니다.
+            </p>
+            <div class="wrapper">
+              <div class="wrap">
+                <p class="work">기여도</p>
+                <div>
+                  <p>리디자인 100%</p>
+                </div>
+              </div>
+              <div class="wrap">
+                <p class="work">Tools</p>
+                <div class="winfo">
+                  <p>figma</p>
+                </div>
               </div>
             </div>
-          </div>
-          <p data-aos="fade-up" data-aos-duration="800">
-            <img src="img/zic.png" alt="" />
-          </p>
-        </div>
-        <div class="pwrap">
-          <div
-            class="txt"
-            data-aos="fade-left"
-            data-aos-delay="500"
-            data-aos-easing="ease-in-sine"
-          >
-            <div class="txtwrap">
-              <p class="site">오설록</p>
-              <p class="work">작업</p>
-              <div class="winfo">
-                <p>리디자인</p>
-              </div>
-              <p class="work">Tools</p>
-              <div class="winfo">
-                <p>figma</p>
-              </div>
-              <p class="work">Links</p>
-              <div class="link">
+            <ul class="link">
+              <li>
                 <a
                   href="https://www.figma.com/design/pbxYOxAo2dL4kvREYBeR64/osulloc?node-id=0-1&p=f&t=AHUAkmDgqir1WUb9-0"
-                  ><img src="img/figma-w.png" alt=""
-                /></a>
-              </div>
-            </div>
+                  >Figma</a
+                >
+              </li>
+            </ul>
           </div>
-          <p data-aos="fade-up" data-aos-duration="800">
-            <img src="img/osulloc-pc.png" alt="" />
-          </p>
         </div>
       </div>
     </div>
 
-    <div class="section fp-auto-height" id="section4">
-      <footer>
-        <div class="icon">
-          <a href="sms:010-6621-3738">
-            <img src="img/phone-w.png" alt="" />
-          </a>
-          <a href="mailto:ghol7416open@gmail.com">
-            <img src="img/mail-w.png" alt="" />
-          </a>
-          <a href="https://github.com/p-kb/PKB_Portfolio.git">
-            <img src="img/github-w.png" alt="" />
-          </a>
-          <a href="https://open.kakao.com/o/sb55dS3h">
-            <img src="img/talk-w.png" alt="" />
-          </a>
-          <a href="https://ghol7416open.dothome.co.kr/">
-            <img src="img/web-w.png" alt="" />
-          </a>
-        </div>
-        <a href="#section0">
-          <p>
-            <img src="img/up1.png" alt="" />
-          </p>
-        </a>
-      </footer>
-    </div>
+    <footer id="section3">
+      <div class="swrap">
+        <ul class="icon">
+          <li>
+            <a href="tel:010-6621-3738"><img src="img/phone-w.png" alt="" /></a>
+          </li>
+          <li>
+            <a href="mailto:ghol7416open@gmail.com"
+              ><img src="img/mail-w.png" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="https://github.com/p-kb/PKB_Portfolio.git"
+              ><img src="img/github-w.png" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="https://open.kakao.com/o/sb55dS3h"
+              ><img src="img/talk-w.png" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="https://ghol7416open.dothome.co.kr/"
+              ><img src="img/web-w.png" alt=""
+            /></a>
+          </li>
+        </ul>
+        <p>© 2025 PKB All Rights Reserved.</p>
+      </div>
+    </footer>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/index.js"></script>
   </body>
 </html>

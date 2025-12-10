@@ -130,12 +130,9 @@ header .menu li:hover a {
 #section1 .swrapper {
   display: flex;
   gap: 70px;
-  /* border: 2px solid #ad7661;
-  padding: 7% 21%; */
 }
 #section1 .swrapper > p {
   height: 170px;
-  /* padding-left: 250px; */
 }
 #section1 .swrapper > p img {
   height: 100%;
@@ -154,7 +151,7 @@ header .menu li:hover a {
   position: relative;
   padding-left: 70px;
   max-width: 800px;
-  width: 70%;
+  width: 80%;
 }
 #section1 .swrap .pwrap .profile {
   margin-bottom: 30px;
@@ -169,9 +166,22 @@ header .menu li:hover a {
   padding: 5px 0;
   padding-left: 5px;
 }
+#section1 .swrap .pwrap h3 {
+  font-size: 25px;
+  color: #57463f;
+}
+#section1 .swrap .pwrap .profile .ptxt .name .bir {
+  font-size: 13px;
+  color: #ad7661;
+}
 #section1 .swrap .pwrap .profile .ptxt .list {
   display: flex;
   gap: 50px;
+  padding-left: 5px;
+}
+#section1 .swrap .pwrap .profile .ptxt .list li {
+  font-size: 15px;
+  margin-bottom: 10px;
 }
 #section1 .swrap .pwrap .edu {
   margin-bottom: 30px;
@@ -186,9 +196,21 @@ header .menu li:hover a {
 #section1 .swrap .pwrap .edu ul {
   display: flex;
   gap: 20px;
+  padding-left: 5px;
 }
 #section1 .swrap .pwrap .edu ul li p {
   margin-bottom: 10px;
+}
+#section1 .swrap .pwrap .edu ul .year {
+  font-size: 14px;
+  margin: 3px 0 27px;
+}
+#section1 .swrap .pwrap .edu ul .infoa {
+  font-size: 20px;
+  word-break: keep-all;
+}
+#section1 .swrap .pwrap .edu ul .infoa span {
+  font-size: 12px;
 }
 #section1 .swrap .pwrap .skills h3 {
   margin-bottom: 20px;
@@ -203,10 +225,11 @@ header .menu li:hover a {
   gap: 10px;
 }
 #section1 .swrap .pwrap .skills p {
-  height: 50px;
+  width: 50px;
+  text-align: center;
 }
 #section1 .swrap .pwrap .skills p img {
-  height: 100%;
+  width: 100%;
   object-fit: cover;
 }
 
@@ -259,7 +282,9 @@ header .menu li:hover a {
 }
 #section2 .swrap .txt > p {
   margin-bottom: 40px;
-  font-size: 25px;
+  font-size: 14px;
+  line-height: 1.4;
+  word-break: keep-all;
 }
 #section2 .swrap .txt .wrapper {
   display: flex;
@@ -295,6 +320,7 @@ header .menu li:hover a {
   padding: 5px 10px;
   text-align: center;
   box-shadow: 3px 3px 4px 0 rgba(0, 0, 0, 0.3);
+  font-size: 16px;
   font-weight: 600;
   transition: 0.2s;
 }
@@ -308,7 +334,7 @@ footer {
   height: 300px;
 }
 footer .swrap {
-  height: calc(100% - 19px);
+  height: 90%;
   margin: 0 20px 20px;
   background-color: #ad7661;
   position: relative;
@@ -344,7 +370,7 @@ footer .swrap > p {
   transform: translateX(-50%);
   bottom: 20px;
   color: #fff;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 1vw;
 }
 
@@ -354,6 +380,10 @@ footer .swrap > p {
     gap: 50px;
     justify-content: center;
     text-align: center;
+  }
+  #section2 .swrap div:nth-child(5) .winfo,
+  #section2 .swrap div:nth-child(6) .winfo {
+    grid-template-columns: 1fr !important;
   }
   #section2 .swrap .project > p::after {
     width: 100%;
@@ -368,7 +398,7 @@ footer .swrap > p {
     width: 60%;
   }
   #section2 .swrap .txt .site {
-    margin-bottom: 10px;
+    margin-bottom: 30px;
   }
   #section2 .swrap .txt > p {
     margin-bottom: 30px;
@@ -408,6 +438,9 @@ footer .swrap > p {
   #section1 .swrap .pwrap .edu ul {
     justify-content: flex-end;
   }
+  #section1 .swrap .pwrap .edu ul .year {
+    margin: 3px 0 13px;
+  }
   #section1 .swrap .pwrap .skills h3 {
     text-align: center;
     padding-left: 0;
@@ -416,13 +449,17 @@ footer .swrap > p {
     justify-content: center;
   }
   #section1 .swrap .pwrap .skills p {
-    height: 40px;
+    width: 40px;
+  }
+  footer .swrap {
+    height: 90%;
   }
   footer .swrap .icon {
     gap: 50px;
   }
   footer .swrap > p {
     font-size: 1.5vw;
+    bottom: 40px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -452,11 +489,17 @@ footer .swrap > p {
   #section0 .swrap .con p {
     font-size: 2vw;
   }
-  #section1 {
-    height: 94vh;
+  #section1 .swrap .pwrap .skills p {
+    width: 35px;
   }
   #section2 .swrap .project > p {
     width: 70%;
+  }
+  #section2 .swrap .txt > p br {
+    display: none;
+  }
+  footer {
+    height: 250px;
   }
   footer .swrap .icon {
     gap: 15px;
@@ -465,23 +508,131 @@ footer .swrap > p {
     width: 30px;
   }
   footer .swrap .icon li:first-child img {
-    padding-left: 10px;
+    padding-left: 8px;
+  }
+}
+@media screen and (max-width: 570px) {
+  #section2 .swrap .txt h1 {
+    font-size: 9vw;
+    line-height: 0.7;
+  }
+  #section2 .swrap .txt .site {
+    font-size: 6vw;
+  }
+  #section2 .swrap .txt > p {
+    font-size: 2.5vw;
+  }
+  #section2 .swrap .txt .wrapper {
+    gap: 40px;
+    font-size: 2.7vw;
+  }
+  #section2 .swrap .txt .link {
+    gap: 5%;
+  }
+  #section2 .swrap .txt .link li {
+    width: 90px;
+  }
+  #section2 .swrap .txt .link li a {
+    font-size: 14px;
   }
 }
 @media screen and (max-width: 480px) {
   header {
-    width: 350px;
-    gap: 20px;
+    width: calc(100% - 60px);
     font-size: 13px;
+  }
+  header .menu {
+    gap: 8%;
   }
   #section0 .swrap .con p {
     font-size: 2.5vw;
   }
+  #section1 .swrapper {
+    gap: 30px;
+  }
+  #section1 .swrapper > p {
+    height: 130px;
+  }
+  #section1 .swrap .pwrap .profile .ptxt .name {
+    gap: 5px;
+  }
+  #section1 .swrap .pwrap h3 {
+    font-size: 18px;
+  }
+  #section1 .swrap .pwrap .profile .ptxt .name .bir {
+    font-size: 10px;
+  }
+  #section1 .swrap .pwrap .profile .ptxt .list {
+    gap: 30px;
+  }
+  #section1 .swrap .pwrap .profile .ptxt .list li {
+    font-size: 13px;
+  }
+  #section1 .swrap .pwrap .edu ul .year {
+    font-size: 12px;
+    margin: 2px 0 7px;
+  }
+  #section1 .swrap .pwrap .edu ul .infoa {
+    font-size: 16px;
+  }
+  #section1 .swrap .pwrap .edu ul .infoa span {
+    font-size: 10px;
+  }
+  #section1 .swrap .pwrap .skills ul {
+    gap: 5px;
+  }
+  #section1 .swrap .pwrap .skills p {
+    width: 32px;
+  }
   #section2 .swrap .project > p {
     width: 100%;
   }
-
+  #section2 .swrap .txt .link li {
+    width: 80px;
+  }
+  #section2 .swrap .txt .link li a {
+    font-size: 12px;
+    padding: 3px 7px;
+  }
+  footer .swrap .icon {
+    gap: 10px;
+  }
+  footer .swrap .icon li a {
+    width: 20px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+  }
+  footer .swrap .icon li:first-child img {
+    padding-left: 7px;
+  }
   footer .swrap > p {
     font-size: 2vw;
+  }
+}
+@media screen and (max-width: 390px) {
+  #section1 .swrap .pwrap .profile {
+    margin-bottom: 20px;
+  }
+  #section1 .swrap .pwrap .profile .ptxt .list li {
+    font-size: 12px;
+  }
+  #section1 .swrap .pwrap .edu {
+    margin-bottom: 20px;
+  }
+  #section1 .swrap .pwrap .edu ul .year {
+    font-size: 10px;
+    margin: 2px 0 7px;
+  }
+  #section1 .swrap .pwrap .edu ul .infoa {
+    font-size: 14px;
+  }
+  #section1 .swrap .pwrap .edu ul .infoa span {
+    font-size: 9px;
+  }
+  #section1 .swrap .pwrap .skills ul {
+    gap: 4px;
+  }
+  #section1 .swrap .pwrap .skills p {
+    width: 25px;
   }
 }
