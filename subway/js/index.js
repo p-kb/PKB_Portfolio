@@ -3,7 +3,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const swiper1 = new Swiper(".mySwiper1", {
     slidesPerView: 4,
     spaceBetween: 10,
-    loop: true,
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
@@ -37,23 +36,6 @@ document.addEventListener("DOMContentLoaded", function () {
     if (htmlArray.length) {
       swiper1.appendSlide(htmlArray);
     }
-
-    // 4) 인덱스 초기화 (loop 모드일 때 안전하게 첫 루프 위치로 이동)
-    // slideToLoop(0) 은 loop 모드에서도 0번 슬라이드로 이동시켜줌
-    setTimeout(() => {
-      try {
-        swiper1.slideToLoop(0, 0); // 즉시 이동
-        swiper1.update();
-      } catch (e) {
-        // 일부 Swiper 버전에서는 slideToLoop가 없을 수 있음 -> slideTo(0)
-        try {
-          swiper1.slideTo(0, 0);
-          swiper1.update();
-        } catch (e2) {
-          swiper1.update();
-        }
-      }
-    }, 0);
   }
 
   // 초기 활성화
@@ -106,6 +88,17 @@ var swiper2 = new Swiper(".mySwiper2", {
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
+  },
+});
+
+var swiper3 = new Swiper(".mySwiper3", {
+  spaceBetween: 30,
+  centeredSlides: true,
+  loop: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+    pauseOnMouseEnter: true,
   },
 });
 
