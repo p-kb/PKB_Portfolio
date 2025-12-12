@@ -1,9 +1,3 @@
-<? 
-$G5_PATH="./gnuboard5";
-include_once($G5_PATH.'/common.php');
-include_once($G5_PATH.'/head.sub.php');
-include_once($G5_PATH.'/lib/outlogin.lib.php');
-?>
 
 <!DOCTYPE html>
 <html lang="ko">
