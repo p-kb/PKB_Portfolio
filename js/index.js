@@ -1,3 +1,5 @@
+AOS.init();
+
 // 아이콘 호버 시 이미지 교체
 $(".icon a").hover(
   function () {
