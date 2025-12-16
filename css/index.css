@@ -236,6 +236,7 @@ header .menu li:hover a {
 
 #section2 {
   width: 100%;
+  overflow: hidden;
 }
 #section2 .swrap {
   margin: 0 20px;
