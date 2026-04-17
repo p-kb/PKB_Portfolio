@@ -464,6 +464,8 @@ footer .swrap > p {
     bottom: 40px;
   }
 }
+@media screen and (max-width: 850px) {
+}
 @media screen and (max-width: 768px) {
   header {
     left: 50%;
