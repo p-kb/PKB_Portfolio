@@ -331,6 +331,36 @@ header .menu li:hover a {
   color: #fff;
 }
 
+#section2 .poster {
+  width: 100%;
+  height: 1000px;
+  background-color: #57463f;
+  margin: 0 auto;
+}
+#section2 .poster h5 {
+  color: #fff;
+  font-size: 100px;
+  font-weight: bolder;
+  font-family: "Caveat";
+  text-align: center;
+  padding-top: 30px;
+}
+#section2 .poster p {
+  width: 500px;
+  margin: 30px auto;
+  align-items: center;
+  border: 3px solid #ad7661;
+  border-radius: 30px;
+  padding: 20px;
+  overflow: hidden;
+}
+#section2 .poster p img {
+  display: block;
+  width: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
 footer {
   width: 100%;
   height: 300px;
@@ -463,8 +493,6 @@ footer .swrap > p {
     font-size: 1.5vw;
     bottom: 40px;
   }
-}
-@media screen and (max-width: 850px) {
 }
 @media screen and (max-width: 768px) {
   header {

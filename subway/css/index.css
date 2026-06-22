@@ -200,6 +200,7 @@ section {
 }
 
 #s1 .swmenu {
+  height: 400px;
   text-align: center;
 }
 #s1 .swmenu .tit {
