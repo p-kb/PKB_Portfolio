@@ -443,6 +443,18 @@ footer .swrap > p {
   #section2 .swrap .txt .link {
     justify-content: center;
   }
+  #section2 .poster {
+    height: 700px;
+  }
+  #section2 .poster p {
+    width: 300px;
+    margin: 30px auto;
+    align-items: center;
+    border: 3px solid #ad7661;
+    border-radius: 30px;
+    padding: 20px;
+    overflow: hidden;
+  }
 }
 @media screen and (max-width: 1024px) {
   #section1 .swrapper {
@@ -533,6 +545,11 @@ footer .swrap > p {
   #section2 .swrap .txt > p br {
     display: none;
   }
+
+  #section2 .poster h5 {
+    font-size: 70px;
+  }
+
   footer {
     height: 250px;
   }
@@ -569,6 +586,20 @@ footer .swrap > p {
   }
   #section2 .swrap .txt .link li a {
     font-size: 14px;
+  }
+  #section2 .poster {
+    height: 500px;
+  }
+  #section2 .poster h5 {
+    font-size: 50px;
+  }
+  #section2 .poster p {
+    width: 200px;
+    border-radius: 20px;
+    padding: 10px;
+  }
+  #section2 .poster p img {
+    border-radius: 10px;
   }
 }
 @media screen and (max-width: 480px) {
