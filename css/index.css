@@ -331,13 +331,12 @@ header .menu li:hover a {
   color: #fff;
 }
 
-#section2 .poster {
+#section2 .powrap {
   width: 100%;
   height: 1000px;
   background-color: #57463f;
-  margin: 0 auto;
 }
-#section2 .poster h5 {
+#section2 .powrap h5 {
   color: #fff;
   font-size: 100px;
   font-weight: bolder;
@@ -345,16 +344,19 @@ header .menu li:hover a {
   text-align: center;
   padding-top: 30px;
 }
-#section2 .poster p {
+#section2 .powrap .poster {
+  display: flex;
+  align-items: center;
+}
+#section2 .powrap .poster p {
   width: 500px;
   margin: 30px auto;
-  align-items: center;
   border: 3px solid #ad7661;
   border-radius: 30px;
   padding: 20px;
   overflow: hidden;
 }
-#section2 .poster p img {
+#section2 .powrap .poster p img {
   display: block;
   width: 100%;
   border-radius: 20px;
@@ -443,10 +445,10 @@ footer .swrap > p {
   #section2 .swrap .txt .link {
     justify-content: center;
   }
-  #section2 .poster {
+  #section2 .powrap {
     height: 700px;
   }
-  #section2 .poster p {
+  #section2 .powrap .poster p {
     width: 300px;
     margin: 30px auto;
     align-items: center;
@@ -546,7 +548,7 @@ footer .swrap > p {
     display: none;
   }
 
-  #section2 .poster h5 {
+  #section2 .powrap h5 {
     font-size: 70px;
   }
 
@@ -587,18 +589,18 @@ footer .swrap > p {
   #section2 .swrap .txt .link li a {
     font-size: 14px;
   }
-  #section2 .poster {
+  #section2 .powrap {
     height: 500px;
   }
-  #section2 .poster h5 {
+  #section2 .powrap h5 {
     font-size: 50px;
   }
-  #section2 .poster p {
+  #section2 .powrap .poster p {
     width: 200px;
     border-radius: 20px;
     padding: 10px;
   }
-  #section2 .poster p img {
+  #section2 .powrap .poster p img {
     border-radius: 10px;
   }
 }
