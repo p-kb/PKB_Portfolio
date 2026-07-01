@@ -347,6 +347,7 @@ header .menu li:hover a {
 #section2 .powrap .poster {
   display: flex;
   align-items: center;
+  gap: 10px;
 }
 #section2 .powrap .poster p {
   width: 500px;
